@@ -60,6 +60,8 @@
     -moz-osx-font-smoothing: grayscale;
     font-size:45px;
     margin: 7px;
+    top: 5px;
+   position: relative;
   }
   .icon-bp-icons-specialties-extra-small:before {
     content: "\45";
@@ -230,21 +232,22 @@ button.btn:hover{
     display: inline-block;
     margin: 0;
 }
-.container-social .blogs-icon, .container-social .twitter-icon, .container-social .fb-icon {
-    margin: -20px auto 0;
+.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon,
+.nav-mobile .blogs-icon, .nav-mobile .twitter-icon, .nav-mobile .fb-icon {
+    margin: 10px auto 0;
     width: 40px;
     height: 40px;
     border-radius: 30px;
     background-color: #2A6EBB;
     position: relative;
 }
-.container-social .blogs-icon img, .container-social .fb-icon img, .container-social .twitter-icon img {
+.container-links .blogs-icon img, .container-links .fb-icon img, .container-links .twitter-icon img {
     height:26px;
     widows: 26px;
     background-color: #2A6EBB;
     background-repeat: no-repeat;
     position: absolute;
-    top: 8px;
+    top: 0px;
     left: 8px;
 }
 .container-strapline {
@@ -256,7 +259,7 @@ button.btn:hover{
     text-align: center;
 }
 .container-strapline h2{
-    margin: 0 auto;
+    margin: 20px auto;
     line-height: 6rem;
 }
 .container-search {
