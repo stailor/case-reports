@@ -34,6 +34,7 @@
     font-style: normal;
   
   }
+
   [data-icon]:before {
     font-family: "bmj-icons" !important;
     content: attr(data-icon);
@@ -334,77 +335,77 @@ button.btn:hover{
     background-color: #C50084;
     position: relative;
 }
-.widgets .container-publish-spotlight .widget-publish, 
-.widgets .container-publish-spotlight .widget-spotlight,
-.widgets .container-specialty-altmetrics .widget-specialty,
-.widgets .container-specialty-altmetrics .widget-altmetrics,
-.widgets .container-products-most-read .widget-products,
-.widgets .container-products-most-read .widget-most-read {
+.widget-publish, 
+.widget-spotlight,
+.widget-specialty,
+.widget-altmetrics,
+.widget-products,
+.widget-most-read {
     background-color: #fff;
 }
-.widgets .container-publish-spotlight .widget-publish {
+.widget-publish {
     margin: 0 25px 25px 0;
     padding: 30px 20px 0;
     text-align: center;
     min-height: 489px;
 }
-.widgets .container-publish-spotlight .widget-publish button{
+.widget-publish button{
     padding: 1.3rem;
     margin: 1.3rem auto;
     width: 93%;
 }
-.widgets .container-publish-spotlight .widget-spotlight {
+.widget-spotlight {
     margin: 0 0px 25px 0;
     padding: 30px 20px 0;
     min-height: 489px;
 }
-.widgets .container-publish-spotlight .widget-spotlight footer,
-.widgets .container-specialty-altmetrics .widget-altmetrics footer,
-.widgets .container-products-most-read .widget-most-read footer {
+.widget-spotlight footer,
+.widget-altmetrics footer,
+.widget-most-read footer {
     font-style: italic;
     color: #999;
     font-size: 0.8rem;
 }
-.widgets .container-publish-spotlight .widget-spotlight .row {
+.widget-spotlight .row {
     border-bottom: 1px solid #eee;
     margin:5px;
 }
-.widgets .container-publish-spotlight .widget-spotlight .row:last-child {
+.widget-spotlight .row:last-child {
     border-bottom: none;
 }
-.container-specialty-altmetrics .widget-altmetrics figure {
+.widget-altmetrics figure {
     margin: 0 1rem 1rem 0;
     float: left;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-purple {
+.widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-green {
+.widget-specialty .specialty-green {
     border-left: 5px solid #69BE28;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-yellow {
+.widget-specialty .specialty-yellow {
     border-left: 5px solid #F0AB00;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-pink {
+.widget-specialty .specialty-pink {
     border-left: 5px solid #C50084;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-orange {
+.widget-specialty .specialty-orange {
     border-left: 5px solid #E37222;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-red {
+.widget-specialty .specialty-red {
     border-left: 5px solid #CD202C;
     padding-left: 8px;
 }
-.container-specialty-altmetrics .widget-specialty .specialty-blue {
+.widget-specialty .specialty-blue {
     border-left: 5px solid #2A6EBB;
     padding-left: 8px;
 }
-.widgets .container-specialty-altmetrics .widget-specialty {
+.widget-specialty {
     margin: 25px 25px 25px 0;
     padding: 30px 20px 0;
     text-align: left;
@@ -435,12 +436,12 @@ button.btn:hover{
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     font-size 14px;
 }
-.container-products-most-read .widget-products {
+.widget-products {
     margin: 25px 0px 25px 0;
     padding: 30px 20px;
     min-height:563px;
 }
-.container-products-most-read .widget-most-read {
+.widget-most-read {
     margin: 25px 0px 25px 0;
     padding: 30px 20px 0;
     text-align: left;
@@ -460,49 +461,6 @@ a.nav-expander.fixed,
 .navbar {
     display: none
 }
-@media screen and (max-width: 768px){
-    nav.nav-mobile, 
-    a.nav-expander.fixed,
-    .navbar {
-        display: block;
-        padding:0;
-    }
-    .container-nav .nav-desktop,
-    .container-social,
-    .container-logo
-    {
-        display:none;
-    }
-    .container-strapline h2 {
-        margin: 20px auto;
-        line-height: initial;
-    }
-    .container-nav .case-reports h1{
-        margin:0;
-    }
+footer h2 {
+    text-align: left
 }
-/* Small devices (landscape phones, 576px and up)*/
-@media only screen and (max-width: 576px) { 
-
-    .widgets .container-publish-spotlight .col-sm-12 .widget-publish,
-    .widgets .container-products-most-read .widget-most-read,
-    .widgets .container-specialty-altmetrics .widget-specialty {
-        margin:0 0 50px 0!important;
-        padding: 30px 20px!important;
-    }
- }
-
-/* Medium devices (tablets, 768px and up)*/
-@media only screen and (max-width: 768px) { 
-    
-    .widgets .container-publish-spotlight .col-sm-12 .widget-publish {
-        margin:0 0 50px 0;
-        padding: 30px 20px;
-    }
- }
-
-/* Large devices (desktops, 992px and up)*/
-@media only screen and (min-width: 992px) { ... }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media only screen and (min-width: 1200px) { ... }

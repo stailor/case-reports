@@ -1,0 +1,65 @@
+@media screen and (max-width: 1229px) {
+    .container-strapline h2 {
+        margin: 15px auto;
+        line-height: initial;
+    }
+    .container-social .email-link {
+        padding: 0 5px 0 0;
+    }
+    .widget-publish,
+    .widget-spotlight,
+    .widget-specialty,
+    .widget-altmetrics,
+    .widget-products,
+    .widget-most-read
+    {
+        min-height: auto;
+        margin: 20px auto
+    }
+}
+@media screen and (max-width: 768px){
+    nav.nav-mobile, 
+    a.nav-expander.fixed,
+    .navbar {
+        display: block;
+        padding:0;
+    }
+    .container-nav .nav-desktop,
+    .container-social,
+    .container-logo
+    {
+        display:none;
+    }
+    .container-strapline h2 {
+        margin: 20px auto;
+        line-height: initial;
+    }
+    .container-nav .case-reports h1{
+        margin:0;
+    }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 576px) { 
+
+    .widget-publish,
+    .widget-most-read,
+    .widget-specialty {
+        margin:20px 0 50px 0!important;
+        padding: 30px 20px!important;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) { 
+    
+    .widgets .container-publish-spotlight .col-sm-12 .widget-publish {
+        margin:0 0 50px 0;
+        padding: 30px 20px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) { ... }
