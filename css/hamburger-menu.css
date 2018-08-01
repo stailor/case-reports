@@ -31,7 +31,7 @@ a.nav-expander {
     cursor: pointer;
   } 
   a.nav-expander.fixed {
-    position: absolute;
+    position: fixed;
   } 
   .nav-expanded a.nav-expander.fixed {
       right: 20em;
@@ -41,7 +41,7 @@ a.nav-expander {
   Next we will style the off canvas menu. Here you can adjust the background color of the menu container.
   =============================
   */
-  nav {
+  nav.nav-mobile {
     background: #2d2f33;
     display: block;
     height: 100%;
