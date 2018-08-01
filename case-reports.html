@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Case Reports - one page site</title>
+    <script src="main.js"></script>
+    <!-- JOURNAL STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://ard.bmj.com/pages/wp-content/plugins/jnp-layouts/css/e.css?ver=c145f2bd07eb45411fd70eca75a388c7264b1045" />
+    <!-- FOOTER STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://ard.bmj.com/pages/wp-content/themes/jnp-base/css/style.css?ver=027b5ddcaa694db00be47d0039101eb81ee9cf57" />
+    <!-- BOOTSTRAP CODE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+    <!-- HAMBURGER MENU BITS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hamburger-menu.css" />    
+    <script src="js/hamburger-menu.js"></script>
+
+</head>
+<body>
+    
+    
+    <header>
+
+    <!-- BANNER AD -->
+    <div class="row container-banner-ad">
+
+        <div class="col-12">
+            <img src="images/banner-ad.jpg" alt="banner ad"/>
+        </div>
+
+    </div>
+
+    <!-- LOGO & LOGIN -->
+    <div class="row container-logo">
+
+        <div class="col-md-6 col-sm-12 logo">
+                <a href="//journals.bmj.com/"><img src="images/bmj-journals-logo.jpg" alt="bmj-journals-logo" /></a>
+        </div>
+
+        <div class="col-md-6 col-sm-12 container-links">
+            <ul>
+                <li>
+                    <a href="#">Subscribe <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="#">Log In</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- NAV -->
+    <div class="row container-nav">
+
+        <div class="col-md-6 col-sm-12 case-reports navbar-text">
+            <h1>BMJ Case Reports</h1>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <div class="nav-desktop">
+                <ul>
+                    <li>
+                        <a href="#">Latest content</a>
+                    </li>
+                    <li>
+                        <a href="#">Archive</a>
+                    </li>
+                    <li>
+                        <a href="#">Authors</a>
+                    </li>
+                    <li>
+                        <a href="#">Become a fellow</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+    <!-- HAMBURGER MENU -->
+    <nav class="nav-mobile">
+            <ul class="list-unstyled main-menu">            
+                <!--Include your navigation here-->
+                <li class="text-right"><a href="#" id="nav-close">X</a></li>
+                <li><a href="#">Menu One <span class="icon"></span></a></li>
+                <li><a href="#">Menu Two <span class="icon"></span></a></li>
+                <li><a href="#">Menu Three <span class="icon"></span></a></li>
+                <li><a href="#">Dropdown</a>
+                <ul class="list-unstyled">
+                    <li class="sub-nav"><a href="#">Sub Menu One <span class="icon"></span></a></li>
+                    <li class="sub-nav"><a href="#">Sub Menu Two <span class="icon"></span></a></li>
+                    <li class="sub-nav"><a href="#">Sub Menu Three <span class="icon"></span></a></li>
+                    <li class="sub-nav"><a href="#">Sub Menu Four <span class="icon"></span></a></li>
+                    <li class="sub-nav"><a href="#">Sub Menu Five <span class="icon"></span></a></li>
+                </ul>
+                </li>
+                <li><a href="#">Menu Four <span class="icon"></span></a></li>
+                <li><a href="#">Menu Five <span class="icon"></span></a></li>
+            </ul>
+        </nav>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">       
+            <!--Include your brand here-->
+            <div class="navbar-header pull-right">
+            <a id="nav-expander" class="nav-expander fixed">
+                <img class="hamburger-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48cmVjdCB4PSI4IiB5PSIxNC41IiB3aWR0aD0iMzIiIGhlaWdodD0iMyIgY2xhc3M9ImEiLz48cmVjdCB4PSI4IiB5PSIyMi41IiB3aWR0aD0iMzIiIGhlaWdodD0iMyIgY2xhc3M9ImEiLz48cmVjdCB4PSI4IiB5PSIzMC41IiB3aWR0aD0iMzIiIGhlaWdodD0iMyIgY2xhc3M9ImEiLz48L3N2Zz4K" />
+            </a>
+            </div>
+        </div>    
+    <!-- HAMBURGER MENU ENDS -->
+
+        </div>
+
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="row container-social">
+
+
+        <div class="col-lg-7 col-md-6"></div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 social">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="fb-icon">
+                            <img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-facebook.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJmYWNlYm9vay1pY29uIiBkPSJNMTcuOTEsMTZoLTV2OWg1djIyaDlWMjVoNy40ODVsMC42OTQtOWgtOC4xOGMwLDAsMC0yLjE5OSwwLTMuNzRjMC0xLjg1MSwxLjMyMy0zLjI2LDMuMTExLTMuMjYKCWMxLjQ0LDAsNC44ODksMCw0Ljg4OSwwVjFjMCwwLTUuMTYzLDAtNi4zMDQsMEMyMS42MzgsMSwxNy45MSw0LjU5NywxNy45MSwxMC40NzFDMTcuOTEsMTUuNTksMTcuOTEsMTYsMTcuOTEsMTZ6Ii8+Cjwvc3ZnPg==">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="twitter-icon">
+                            <!-- <img src="images/icon-title-twitter.svg" srcset="images/icon-title-twitter.svg" alt="twitter"> -->
+                            <img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-twitter.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJ0d2l0dGVyLWljb24iIGQ9Ik00Nyw5Ljg4Yy0xLjY5MiwwLjc0Mi0zLjUxMSwxLjI0NS01LjQyLDEuNDdjMS45NDgtMS4xNTYsMy40NDQtMi45ODcsNC4xNS01LjE2OAoJYy0xLjgyNCwxLjA3LTMuODQ0LDEuODQ4LTUuOTk0LDIuMjY4Yy0xLjcyMi0xLjgxNi00LjE3NC0yLjk1LTYuODg5LTIuOTVjLTYuMDkxLDAtMTAuNTY5LDUuNjI2LTkuMTkyLDExLjQ2OQoJQzE1LjgxMSwxNi41NzksOC44NTcsMTIuODYsNC4yMDIsNy4yMUMxLjczLDExLjQwNywyLjkyLDE2LjksNy4xMjQsMTkuNjhjLTEuNTQ4LTAuMDQ4LTMuMDAzLTAuNDY5LTQuMjc1LTEuMTY5CgljLTAuMTAzLDQuMzI3LDMuMDMsOC4zNzQsNy41NjksOS4yNzdjLTEuMzI4LDAuMzU4LTIuNzgzLDAuNDM5LTQuMjYyLDAuMTZjMS4yMDIsMy43MTEsNC42ODYsNi40MTEsOC44MTYsNi40ODcKCUMxMS4wMDQsMzcuNTEzLDYuMDA3LDM4Ljg4NywxLDM4LjMwNGM0LjE3NywyLjY1LDkuMTM4LDQuMTk2LDE0LjQ2Nyw0LjE5NmMxNy41MjEsMCwyNy40MTktMTQuNjQ3LDI2LjgyMy0yNy43ODYKCUM0NC4xMzUsMTMuMzk4LDQ1LjczNSwxMS43NTMsNDcsOS44OHoiLz4KPC9zdmc+">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">                                    
+                        <div class="blogs-icon">
+                            <img src="images/icon-title-blogs.svg" srcset="images/icon-title-blogs.svg">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            
+        <div class="col-md-2 col-sm-12 email-link">
+                <div class="email">
+                    <a href="/alerts">
+                    <div class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 22">
+                        <style>.a{fill:none;}</style>
+                        <rect x="0.5" y="0.5" width="32" height="21" class="a"></rect>
+                        <polyline points="0.6 0.7 16.6 13.4 32.4 0.9 " class="a"></polyline>
+                        <line x1="0.8" y1="21.3" x2="11.6" y2="9.8" class="a"></line>
+                        <line x1="32.4" y1="21.5" x2="21.5" y2="9.7" style="fill:none;stroke-linejoin:round;"></line>
+                    </svg></div>
+                    <p>Email alerts</p>
+                    </a>
+                </div>
+        </div>
+
+    </div>
+
+    </header>
+
+
+    <!-- STRAPLINE -->
+    <div class="row container-strapline center-block page-header">
+
+        <div class="col-12">
+            <h2>The world's largest collection of clinical case reports-sharing and learning through experience</h2>
+        </div>
+
+    </div>
+
+    <!-- SEARCH -->
+    <div class="row container-search">
+
+        <div class="col-12">
+            <form>
+                <div class="form-group">
+                    <label for="search" class="sr-only">Search</label>
+                    <input type="text" class="form-control" id="search" placeholder="Search the BMJ case reports archive">
+                </div>
+                <button type="submit" class="search-btn"><img src="images/icon-search.svg" width="30" height="30" /></button>
+            </form>
+            <div
+                class="advanced-search"><a href="#">Advanced search</a></div>                   
+        </div>
+
+    </div>
+
+    <!-- BROWSE CASE REPORT LINKS -->
+    <div class="row container-browse">
+
+        <div class="col-12">
+            <ul>
+                <li class="title">Browse case reports by:</li>
+                <li><a href="#">Specialty</a></li>
+                <li><a href="#">Case report type</a></li>
+                <li><a href="#">Latest content</a></li>
+                <li><a href="#">Most read</a></li>
+                <li><a href="#">Responses</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Images</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- WIDGET SECTION -->
+    <div class="widgets">
+
+        <div class="row container-publish-spotlight">
+
+            <!-- WIDGET: PUBLISH BUTTONS -->
+            <div class="col-md-4 col-sm-12">
+                <div class="widget-publish">
+                
+                    <div class="icon">
+                        <svg version="1.1" id="publish" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="-285 408.9 24 24" style="enable-background:new -285 408.9 24 24;" xml:space="preserve">
+                        <style type="text/css">
+                        #publish{fill:#FFFFFF;height: 45px;margin:6px}
+                        </style>
+                        <path class="st0" d="M-280,412.9v2h14v-2H-280z M-280,422.9h4v6h6v-6h4l-7-7L-280,422.9z"/>
+                        </svg>
+                    </div>
+                    <h2>Publish in BMJ Case Reports</h2>
+                    <button class="btn">BMJ case reports</button>
+                    <button class="btn">Submit a case report</button>
+                    <button class="btn">Become a fellow</button>
+                </div>
+            </div>
+
+            <!-- WIDGET: SPOTLIGHT -->
+            <div class="col-md-8 col-sm-12">
+                <div class="widget-spotlight">
+                    <div class="icon">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="-288 411.9 18 18" style="enable-background:new -288 411.9 18 18;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                        .st1{fill:none;}
+                        </style>
+                        <path class="st0" d="M-279,423.2l3.7,2.7l-1.4-4.4l3.7-2.6h-4.5l-1.5-4.5l-1.5,4.5h-4.5l3.7,2.6l-1.4,4.4L-279,423.2z"/>
+                        <path class="st1" d="M-288,411.9h18v18h-18V411.9z"/>
+                        </svg> 
+                    </div>
+
+                    <h2>Spotlight</h2>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <article>
+                                <header><h5>Letter:</h5></header>
+                                <h3><a href="/content/early/2018/07/25/annrheumdis-2018-213823">In RA, becoming seronegative over the first year of treatment does not translate to better chances of drug-free remission</a></h3>
+                                <footer>25 July, 2018</footer>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">    
+                            <article>                            
+                            <header><h5>Basic and translational research:</h5></header>
+                            <h3><a href="/content/early/2018/07/25/annrheumdis-2018-213511">Maresin 1 improves the Treg/Th17 imbalance in rheumatoid arthritis through miR-21</a></h3>
+                            <footer>25 July, 2018</footer>
+                            </article>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <iframe width="150" height="115" src="https://www.youtube.com/embed/LfRNRymrv9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9 col-sm-12">
+                            <article>
+                            <header><h5>Correspondence response:</h5></header>
+                            <h3><a href="/content/early/2018/07/20/annrheumdis-2018-213962">Response to: ‘Can we further SPARkle the SPAR model?’ by Kavadichanda <em>et al</em></a></h3>
+                            <footer><time pubdate="" datetime="2018-07-21">21 July, 2018</footer>
+                            </article>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <img src="http://casereports.bmj.com/content/2018/bcr-2018-226226/F1.large.jpg" alt="case report image" width="150"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row container-specialty-altmetrics">
+
+            <!-- WIDGET: SPECIALTY -->
+            <div class="col-md-8 col-sm-12">
+                <div class="widget-specialty">
+                    <div class="icon">
+                        <span class="icon-bp-icons-specialties"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Case Reports by specialty</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 row1">
+                            <ul>
+                                <li><div class="specialty-purple">Infectious diseases</div></li>
+                                <li><div class="specialty-red">General surgery</div></li>
+                                <li><div class="specialty-blue">Respiratory medicine</div></li>
+                                <li><div class="specialty-orange">Stroke</div></li>
+                                <li><div class="specialty-green">ENT</div></li>
+                                <li><div class="specialty-red">Haematology</div></li>
+                                <li><div class="specialty-pink">Surgery</div></li>
+                                <li><div class="specialty-purple">Rheumatology</div></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 row2">
+                            <ul>
+                                <li><div class="specialty-purple">Neurology</div></li>
+                                <li><div class="specialty-red">Orthopaedics</div></li>
+                                <li><div class="specialty-blue">Anaesthesia</div></li>
+                                <li><div class="specialty-orange">Ophthalmology</div></li>
+                                <li><div class="specialty-green">Psychiatry</div></li>
+                                <li><div class="specialty-yellow">Urology</div></li>
+                                <li><div class="specialty-purple">ardiothoracic surgery</div></li>
+                                <li><div class="specialty-blue">Echocardiography</div></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 row3">
+                            <ul class="row3">
+                                <li><div class="specialty-red">General practice</div></li>
+                                <li><div class="specialty-green">Dermatology</div></li>
+                                <li><div class="specialty-yellow">Obstetrics and Gynaecology</div></li>
+                                <li><div class="specialty-blue">Paediatrics</div></li>
+                                <li><div class="specialty-orange">Cardiovascular medicine</div></li>
+                                <li><div class="specialty-purple">Dentistry and oral medicine</div></li>
+                                <li><div class="specialty-pink">Otolaryngology</div></li>
+                                <li><div class="specialty-green">Geriatric medicine</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="row full-list">
+                        <div class="col-12">
+                            <h3><a href="#">View full list</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WIDGET: ALTMETRICS -->
+            <div class="col-md-4 col-sm-12">                
+                <div class="widget-altmetrics"> 
+
+                <div class="row">
+                    <div class="col-12">
+                    <div class="icon">
+                        <svg class="altmetrics-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="-277 400.9 40 40" style="enable-background:new -277 400.9 40 40;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                        .altmetrics-logo{
+                        height:39px;
+                        margin:10px
+                        }
+                        </style>
+                        <g>
+                        <g id="XMLID_9_">
+                        <path class="st0" d="M-264.9,421.6c-2.2,0-3.9-1.8-3.9-3.9c0-2.2,1.8-3.9,3.9-3.9s3.9,1.8,3.9,3.9
+                        C-261,419.8-262.7,421.6-264.9,421.6z M-264.9,415.3c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4
+                        S-263.6,415.3-264.9,415.3z"/>
+                        </g>
+                        <g id="XMLID_8_">
+                        <path class="st0" d="M-247.8,415.2c-2.2,0-3.9-1.8-3.9-3.9s1.8-3.9,3.9-3.9c2.2,0,3.9,1.8,3.9,3.9S-245.6,415.2-247.8,415.2z
+                        M-247.8,408.9c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4S-246.5,408.9-247.8,408.9z"/>
+                        </g>
+                        <g id="XMLID_7_">
+                        <path class="st0" d="M-254.8,431c-2.2,0-3.9-1.8-3.9-3.9c0-2.2,1.8-3.9,3.9-3.9c2.2,0,3.9,1.8,3.9,3.9S-252.7,431-254.8,431z
+                        M-254.8,424.7c-1.3,0-2.4,1.1-2.4,2.4c0,1.3,1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4C-252.4,425.8-253.5,424.7-254.8,424.7z"/>
+                        </g>
+                        <g id="XMLID_6_">
+                        <path class="st0" d="M-269.6,424.2c-0.2,0-0.3,0-0.5-0.1c-0.3-0.3-0.4-0.7-0.2-1.1l2.5-3.4c0.3-0.3,0.7-0.4,1.1-0.2
+                        c0.3,0.3,0.4,0.7,0.2,1.1l-2.5,3.4C-269.1,424.1-269.4,424.2-269.6,424.2z"/>
+                        </g>
+                        <g id="XMLID_5_">
+                        <path class="st0" d="M-256.8,425.3c-0.2,0-0.4-0.1-0.5-0.2l-5.2-4.6c-0.3-0.3-0.3-0.8-0.1-1.1c0.3-0.3,0.8-0.4,1.1-0.1l5.2,4.6
+                        c0.3,0.3,0.3,0.8,0.1,1.1C-256.4,425.2-256.6,425.3-256.8,425.3z"/>
+                        </g>
+                        <g id="XMLID_4_">
+
+                        <rect x="-256.7" y="418.4" transform="matrix(-0.4035 0.915 -0.915 -0.4035 30.5607 818.4789)" class="st0" width="10.5" height="1.5"/>
+                        </g>
+                        <g id="XMLID_3_">
+                        <path class="st0" d="M-240.5,419c-0.2,0-0.4-0.1-0.5-0.2l-4.5-4c-0.3-0.3-0.3-0.8-0.1-1.1c0.3-0.3,0.8-0.3,1.1-0.1l4.5,4
+                        c0.3,0.3,0.3,0.8,0.1,1.1C-240,418.9-240.3,419-240.5,419z"/>
+                        </g>
+                        <g id="XMLID_1_">
+                        <path class="st0" d="M-239,438.9h-36c-0.5,0-0.9-0.4-0.9-0.9v-34.2c0-0.5,0.4-0.9,0.9-0.9s0.9,0.4,0.9,0.9v33.3h35.1
+                        c0.5,0,0.9,0.4,0.9,0.9C-238.1,438.5-238.5,438.9-239,438.9z"/>
+                        </g>
+                        <g id="XMLID_2_">
+                        <path class="st0" d="M-239,438.9c-0.5,0-0.9-0.4-0.9-0.9v-1.8c0-0.5,0.4-0.9,0.9-0.9s0.9,0.4,0.9,0.9v1.8
+                        C-238.1,438.5-238.5,438.9-239,438.9z"/>
+                        </g>
+                        <g id="XMLID_10_">
+                        <path class="st0" d="M-250.7,438.9c-0.5,0-0.9-0.4-0.9-0.9v-1.8c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9v1.8
+                        C-249.8,438.5-250.2,438.9-250.7,438.9z"/>
+                        </g>
+                        <g id="XMLID_11_">
+                        <path class="st0" d="M-263.3,438.9c-0.5,0-0.9-0.4-0.9-0.9v-1.8c0-0.5,0.4-0.9,0.9-0.9c0.5,0,0.9,0.4,0.9,0.9v1.8
+                        C-262.4,438.5-262.8,438.9-263.3,438.9z"/>
+                        </g>
+                        <g id="XMLID_16_">
+                        <path class="st0" d="M-273.2,404.7h-1.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h1.8c0.5,0,0.9,0.4,0.9,0.9
+                        C-272.3,404.3-272.7,404.7-273.2,404.7z"/>
+                        </g>
+                        <g id="XMLID_15_">
+                        <path class="st0" d="M-273.2,416.4h-1.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h1.8c0.5,0,0.9,0.4,0.9,0.9
+                        C-272.3,416-272.7,416.4-273.2,416.4z"/>
+                        </g>
+                        <g id="XMLID_14_">
+                        <path class="st0" d="M-273.2,428.1h-1.8c-0.5,0-0.9-0.4-0.9-0.9s0.4-0.9,0.9-0.9h1.8c0.5,0,0.9,0.4,0.9,0.9
+                        S-272.7,428.1-273.2,428.1z"/>
+                        </g>
+                        </g>
+                        </svg>
+                       
+                    </div>
+                        <h2>Altmetrics</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3">
+                                    <figure><a href="http://www.altmetric.com/details.php?citation_id=16054489">
+                                    <img src="https://badges.altmetric.com/?size=64&amp;score=944&amp;types=mbvrtwfg"></a>
+                                    </figure> 
+                                </div>
+                                <div class="col-md-12 col-lg-9">       
+                                    <div class="copy">
+                                        <h3><a href="//dx.doi.org/10.1136/annrheumdis-2016-210597">Non-steroidal anti-inflammatory drugs for spinal pain: a systematic review and meta-analysis</a></h3>   <footer>2 February 2017</footer>  
+                                    </div>
+                                </div>
+                            </div>
+                        </article>  
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3">  
+                                    <figure><a href="http://www.altmetric.com/details.php?citation_id=1859094">
+                                    <img src="https://badges.altmetric.com/?size=64&amp;score=487&amp;types=mabtttfd"></a>
+                                    </figure>    
+                                </div>
+                                <div class="col-md-12 col-lg-9">
+                                    <div class="copy">
+                                        <h3><a href="//dx.doi.org/10.1136/annrheumdis-2013-204573">EULAR recommendations for the management of rheumatoid arthritis with synthetic and biological disease-modifying antirheumatic drugs: 2013 update</a></h3>    
+                                        <footer>25 October 2013</footer>  
+                                    </div>
+                                </div>
+                            </div>
+                        </article>  
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3">
+                                    <figure><a href="http://www.altmetric.com/details.php?citation_id=33843401">
+                                    <img src="https://badges.altmetric.com/?size=64&amp;score=452&amp;types=mmmttttf"></a>
+                                    </figure>  
+                                </div>
+                                <div class="col-md-12 col-lg-9">
+                                        <div class="copy">  
+                                        <h3><a href="//dx.doi.org/10.1136/annrheumdis-2018-213023">Risk of preterm delivery and small-for-gestational-age births in women with autoimmune disease using biologics before or during pregnancy: a population-based cohort study</a></h3>    
+                                        <footer>1 March 2018</footer> 
+                                    </div>
+                                </div>
+                            </div>
+                        </article>  
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3">
+                                    <figure><a href="http://www.altmetric.com/details.php?citation_id=247771">
+                                    <img src="https://badges.altmetric.com/?size=64&amp;score=335&amp;types=qmbvrtfg"></a></figure> 
+                                </div>
+                                <div class="col-md-12 col-lg-9">                            
+                                    <div class="copy">
+                                        <h3><a href="//dx.doi.org/10.1136/ard.49.5.308">Effect of habitual knuckle cracking on hand function.</a></h3>    
+                                        <footer>1 May 1990</footer>  
+                                    </div>
+                                </div>
+                            </div>
+                        </article>  
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-3">
+                                    <figure><a href="http://www.altmetric.com/details.php?citation_id=20393537">
+                                    <img src="https://badges.altmetric.com/?size=64&amp;score=273&amp;types=mbttttfg"></a>
+                                    </figure>
+                                </div>
+                                <div class="col-md-12 col-lg-9">                            
+                                    <div class="copy">
+                                        <h3><a href="//dx.doi.org/10.1136/annrheumdis-2016-210860">Pharmaceutical-grade Chondroitin sulfate is as effective as celecoxib and superior to placebo in symptomatic knee osteoarthritis: the ChONdroitin versus CElecoxib versus Placebo Trial (CONCEPT)</a></h3>    
+                                        <footer>20 May 2017</footer>  
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-products-most-read">
+            
+            <!-- WIDGET: BMJ PRODUCTS -->
+            <div class="col-md-4 col-sm-12">
+                <div class="widget-products">
+                    <div class="icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="-285 408.9 24 24" style="enable-background:new -285 408.9 24 24;" xml:space="preserve">
+                        <g id="Layer_1" class="st0">
+                        <path class="st1" d="M-280,412.9v2h14v-2H-280z M-280,422.9h4v6h6v-6h4l-7-7L-280,422.9z"/>
+                        </g>
+                        <g id="Layer_2">
+                        <path class="st2" d="M-265.8,423.6c-0.6-0.6-1.2-1.2-1.2-4.1c0-3-2.2-5.4-5-5.9c0.1-0.2,0.2-0.4,0.2-0.6c0-0.6-0.5-1.1-1.1-1.1
+                        s-1.1,0.5-1.1,1.1c0,0.2,0.1,0.5,0.2,0.6c-2.8,0.5-5,2.9-5,5.9c0,2.9-0.6,3.5-1.2,4.1c-1.7,1.7-0.5,4.2,1.6,4.2h3.3
+                        c0,1.3,1,2.3,2.3,2.3s2.3-1,2.3-2.3h3.3C-265.4,427.7-264.1,425.3-265.8,423.6z M-273,428.6c-0.5,0-0.9-0.4-0.9-0.9h1.7
+                        C-272.1,428.2-272.5,428.6-273,428.6z M-267.4,426h-11.2c-0.6,0-0.9-0.7-0.5-1.1c1-1,1.8-2,1.8-5.5c0-2.3,1.9-4.2,4.2-4.2
+                        s4.2,1.9,4.2,4.2c0,3.5,0.8,4.4,1.8,5.5C-266.5,425.3-266.8,426-267.4,426L-267.4,426z"/>
+                        </g>
+                        </svg>
+                    </div>
+
+                    <h2>BMJ Products</h2>
+                    <p>BMJ Best Practice is the only tool needed to support clinical decisions at the point of care.</p>
+                    <p>Ranked one of the best clinical decision support tools worldwide; BMJ Best Practice provides fast and easy access to the latest evidence-based information for healthcare professionals. It is uniquely structured around the patient consultation with advice on symptom evaluation, test ordering, treatment approach and follow up.</p>
+                    <img src="images/bmj-products.jpg" alt="bmj product BP" />
+                </div>
+            </div>
+
+            <!-- WIDGET: MOST READ -->
+            <div class="col-md-8 col-sm-12">
+                <div class="widget-most-read">
+                    <div class="icon">
+                        <svg  class="logo" width="40" height="40" version="1.1" id="mostread" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="-277 400.9 40 40" style="enable-background:new -277 400.9 40 40;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0{fill:#FFFFFF;}
+                        .st1{fill:none;}
+                        .st2{fill:#FFFDFD;}
+                        .icon .logo {overflow: hidden;vertical-align: middle;height: 40px;margin: 11px 0 0 11px;}
+                        </style>
+                        <g id="XMLID_6_">
+                        <polygon class="st0" points="-270.7,433.5 -274.6,433.5 -274.6,400.9 -249.5,400.9 -249.5,404.4 -251,404.4 -251,402.4 
+                        -273.1,402.4 -273.1,432 -270.7,432 	"/>
+                        </g>
+                        <polygon class="st1" points="-241.8,430.1 -246.4,429.5 -248.5,425.4 -250.5,429.6 -255.1,430.3 -251.7,433.5 -252.4,438.1 
+                        -248.3,435.9 -244.2,438 -245.1,433.4 "/>
+                        <polygon class="st1" points="-258.3,429.4 -251.5,428.2 -248.6,422 -246.7,425.7 -246.7,406.7 -268.8,406.7 -268.8,436.3 
+                        -253.7,436.3 -253.3,434.1 "/>
+                        <path class="st0" d="M-238.6,429l-6.6-0.8v-23h-25.1v32.6h16.4l-0.5,3.1l6-3.3l6.2,3.1l-1.2-6.8L-238.6,429z M-268.8,436.3v-29.6
+                        h22.1v19l-1.9-3.7l-2.9,6.2l-6.8,1.1l5,4.7l-0.3,2.2h-15.2V436.3z M-248.3,435.9l-4.1,2.2l0.7-4.6l-3.4-3.2l4.6-0.8l2-4.2l2.1,4.1
+                        l4.6,0.6l-3.3,3.3l0.9,4.6L-248.3,435.9z"/>
+                        <path id="XMLID_4_" class="st0" d="M-249.9,414.2h-15.7c-0.3,0-0.5-0.4-0.5-0.8c0-0.4,0.2-0.8,0.5-0.8h15.7c0.3,0,0.5,0.4,0.5,0.8
+                        C-249.4,413.8-249.6,414.2-249.9,414.2z"/>
+                        <path id="XMLID_2_" class="st0" d="M-249.9,420.8h-15.7c-0.3,0-0.5-0.4-0.5-0.8c0-0.4,0.2-0.8,0.5-0.8h15.7c0.3,0,0.5,0.4,0.5,0.8
+                        C-249.3,420.4-249.6,420.8-249.9,420.8z"/>
+                        <path id="XMLID_1_" class="st2" d="M-251.4,427.4h-14.2c-0.3,0-0.5-0.4-0.5-0.8s0.2-0.8,0.5-0.8h14.2c0.3,0,0.5,0.4,0.5,0.8
+                        S-251.2,427.4-251.4,427.4z"/>
+                        </svg>
+                    </div>
+
+                    <h2>Most read</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <article>
+                            <header>
+                                <h5>Recommendation:</h5>
+                            </header>
+                            <h3><a href="/content/early/2018/04/06/annrheumdis-2018-213225">2018 update of the EULAR recommendations for the management of Behçet’s syndrome</a></h3>
+                            <footer>
+                            6 April, 2018
+                                    </footer>
+                            </article>
+                            <article>
+                            <header>
+                                <h5>Recommendation:</h5>
+                            </header>
+                            <h3><a href="/content/early/2018/05/03/annrheumdis-2017-212662">EULAR recommendations for the health professional’s approach to pain management in inflammatory arthritis and osteoarthritis</a></h3>
+                            <footer>3 May, 2018
+                                    </footer>
+                            </article>
+                            <article>
+                            <header>
+                                <h5>Clinical and epidemiological research:</h5>
+                            </header>
+                            <h3><a href="/content/early/2018/05/26/annrheumdis-2018-213416">Tocilizumab discontinuation after attaining remission in patients with rheumatoid arthritis who were treated with tocilizumab alone or in combination with methotrexate: results from a prospective randomised controlled study (the second year of the SURPRISE study)</a></h3>
+                            <footer>31 May, 2018</footer>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12">                        
+                            <article>
+                                <header>
+                                    <h5>Recommendation:</h5>
+                                </header>
+                                <h3><a href="/content/77/5/636">EULAR recommendations for the use of imaging in large vessel vasculitis in clinical practice</a></h3>
+                                <footer>22 January, 2018                            </footer>
+                            </article>                        
+                            <article>
+                                <header>
+                                    <h5>Basic and translational research:</h5>
+                                </header>
+                                <h3><a href="/content/early/2018/06/07/annrheumdis-2017-212627">Number of individual ACPA reactivities in synovial fluid immune complexes, but not serum anti-CCP2 levels, associate with inflammation and joint destruction in rheumatoid arthritis</a></h3>
+                                <footer>12 June, 2018 </footer>
+                            </article>
+                            <article>
+                                <header>
+                                    <h5>Basic and translational research:</h5>
+                                </header>
+                                <h3><a href="/content/early/2018/06/07/annrheumdis-2017-212627">Number of individual ACPA reactivities in synovial fluid immune complexes, but not serum anti-CCP2 levels, associate with inflammation and joint destruction in rheumatoid arthritis</a></h3>
+                                <footer>
+                                    <time pubdate="" datetime="2018-06-12">12 June, 2018
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- WIDGET SECTION -->
+
+<footer>
+    <section class="logos">
+    <a href="https://www.eular.org/" title="EULAR"><img alt="EULAR logo" src="https://resources.bmj.com/repository/journals-network-project/images/society-logos/society-logo-eular.png" width="142" height="90"></a>
+    <a href="http://ard.bmj.com/pages/eular-textbooks/" title="EULAR textbooks"><img alt="EULAR textbooks logo" src="https://resources.bmj.com/repository/journals-network-project/images/society-logos/eular-textbooks.png" width="237" height="90"></a>
+    </section>
+    <nav class="primary-color">
+        <div class="wrapper">
+    <div><div class="footer-menu-a footer-menu"><h2>Content</h2><ul id="menu-content" class="menu"><li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="//ard.bmj.com/content/early/recent">Latest content</a></li>
+    <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="//ard.bmj.com/content/current">Current issue</a></li>
+    <li id="menu-item-1182" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1182"><a href="http://promotions.bmj.com/ardsummaries/">Lay summaries</a></li>
+    <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="//ard.bmj.com/content/by/year">Archive</a></li>
+    <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="https://ard.bmj.com/pages/browse-by-topic/">Browse by topic</a></li>
+    <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="https://ard.bmj.com/pages/most-read-articles/">Most read articles</a></li>
+    <li id="menu-item-2521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2521"><a href="/eletters">Responses</a></li>
+    </ul></div><div class="social-sidebar">
+    <ul>
+    <li id="social_rss-5" class="widget widget_social_rss">
+    <a href="https://ard.bmj.com/pages/rss-feeds"><img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-rss.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJyc3MtaWNvbiIgZD0iTTEzLjAwNyw0MS41MDZjMCwzLjU4Ny0yLjkxMyw2LjQ5NC02LjUwNCw2LjQ5NEMyLjkxMiw0OCwwLDQ1LjA5MywwLDQxLjUwNmMwLTMuNTg3LDIuOTEyLTYuNDk2LDYuNTAzLTYuNDk2CglDMTAuMDk0LDM1LjAxLDEzLjAwNywzNy45MTksMTMuMDA3LDQxLjUwNnogTTAsMTYuMzU5djkuNjI1QzEyLjEwMSwyNi4xMDcsMjEuOTIxLDM1LjkxNSwyMi4wNDQsNDhoOS42MzUKCUMzMS41NTYsMzAuNTgyLDE3LjQ0MSwxNi40ODYsMCwxNi4zNTl6IE0wLDkuNjIzYzEwLjIzLDAuMDQ1LDE5Ljg0LDQuMDQyLDI3LjA3OSwxMS4yNzFDMzQuMzMyLDI4LjEzOSwzOC4zMzYsMzcuNzYyLDM4LjM2NCw0OEg0OAoJQzQ3Ljk0MSwyMS41MzgsMjYuNDg4LDAuMDkyLDAsMFY5LjYyM3oiLz4KPC9zdmc+"></a>
+    
+    </li>
+    <li id="social_twitter-5" class="widget widget_social_twitter">
+    <a href="https://twitter.com/ARD_BMJ"><img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-twitter.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJ0d2l0dGVyLWljb24iIGQ9Ik00Nyw5Ljg4Yy0xLjY5MiwwLjc0Mi0zLjUxMSwxLjI0NS01LjQyLDEuNDdjMS45NDgtMS4xNTYsMy40NDQtMi45ODcsNC4xNS01LjE2OAoJYy0xLjgyNCwxLjA3LTMuODQ0LDEuODQ4LTUuOTk0LDIuMjY4Yy0xLjcyMi0xLjgxNi00LjE3NC0yLjk1LTYuODg5LTIuOTVjLTYuMDkxLDAtMTAuNTY5LDUuNjI2LTkuMTkyLDExLjQ2OQoJQzE1LjgxMSwxNi41NzksOC44NTcsMTIuODYsNC4yMDIsNy4yMUMxLjczLDExLjQwNywyLjkyLDE2LjksNy4xMjQsMTkuNjhjLTEuNTQ4LTAuMDQ4LTMuMDAzLTAuNDY5LTQuMjc1LTEuMTY5CgljLTAuMTAzLDQuMzI3LDMuMDMsOC4zNzQsNy41NjksOS4yNzdjLTEuMzI4LDAuMzU4LTIuNzgzLDAuNDM5LTQuMjYyLDAuMTZjMS4yMDIsMy43MTEsNC42ODYsNi40MTEsOC44MTYsNi40ODcKCUMxMS4wMDQsMzcuNTEzLDYuMDA3LDM4Ljg4NywxLDM4LjMwNGM0LjE3NywyLjY1LDkuMTM4LDQuMTk2LDE0LjQ2Nyw0LjE5NmMxNy41MjEsMCwyNy40MTktMTQuNjQ3LDI2LjgyMy0yNy43ODYKCUM0NC4xMzUsMTMuMzk4LDQ1LjczNSwxMS43NTMsNDcsOS44OHoiLz4KPC9zdmc+"></a>
+    
+    </li>
+    <li id="social_facebook-5" class="widget widget_social_facebook">
+    <a href="https://facebook.com/Annals.of.the.Rheumatic.Diseases"><img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-facebook.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJmYWNlYm9vay1pY29uIiBkPSJNMTcuOTEsMTZoLTV2OWg1djIyaDlWMjVoNy40ODVsMC42OTQtOWgtOC4xOGMwLDAsMC0yLjE5OSwwLTMuNzRjMC0xLjg1MSwxLjMyMy0zLjI2LDMuMTExLTMuMjYKCWMxLjQ0LDAsNC44ODksMCw0Ljg4OSwwVjFjMCwwLTUuMTYzLDAtNi4zMDQsMEMyMS42MzgsMSwxNy45MSw0LjU5NywxNy45MSwxMC40NzFDMTcuOTEsMTUuNTksMTcuOTEsMTYsMTcuOTEsMTZ6Ii8+Cjwvc3ZnPg=="></a>
+    
+    </li>
+    <li id="social_soundcloud-4" class="widget widget_social_soundcloud">
+    <a href="https://soundcloud.com/bmjpodcasts/sets/ard-podcast"><img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-soundcloud.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJzb3VuZGNsb3VkLWljb24iIGQ9Ik00NywyOC4zNTVDNDcsMzEuNDczLDQ0LjUwMiwzNCw0MS40MjIsMzRIMjUuOTA2VjE0LjYwNWMwLjU5My0wLjIyLDEuMjEyLTAuMzgxLDEuODUyLTAuNDg0CgljMC41LTAuMDc3LDEuMDEzLTAuMTIxLDEuNTM2LTAuMTIxYzUuMTk0LDAsOS40NTEsNC4wNTMsOS44NTEsOS4yMDVjMC42OTYtMC4zMTYsMS40NjUtMC40OTMsMi4yNzctMC40OTMKCUM0NC41MDIsMjIuNzEyLDQ3LDI1LjIzOCw0NywyOC4zNTV6IE0yMC4xMDMsMTguNDM5VjM0aDEuODUyVjE3LjMwMWMtMC40MTIsMC40NjEtMC43ODMsMC45NjItMS4xMDQsMS40OTcKCUMyMC42MDksMTguNjY2LDIwLjM1OSwxOC41NDUsMjAuMTAzLDE4LjQzOXogTTIyLjk3NCwzNGgxLjg1MlYxNS4wOGMtMC42NjQsMC4zNC0xLjI4NSwwLjc1NC0xLjg1MiwxLjIzMlYzNHogTTExLjIxNSwyMC4zODlWMzQKCWgxLjg1MlYxOC45MDFDMTIuMzc4LDE5LjMwMiwxMS43NTUsMTkuODA1LDExLjIxNSwyMC4zODl6IE01LjY2LDIzLjIxM3YxMC43NEM1Ljg4OCwzMy45ODMsNi4xMTksMzQsNi4zNTQsMzRoMC45NzNWMjMuMjU1CgljLTAuMzE1LTAuMDU5LTAuNjQxLTAuMDktMC45NzMtMC4wOUM2LjExOSwyMy4xNjUsNS44ODgsMjMuMTgyLDUuNjYsMjMuMjEzeiBNMy4yMDYsMzIuOTY0YzAuNDIxLDAuMzEsMC44ODksMC41NTksMS4zOSwwLjczNQoJVjIzLjQ2NGMtMC41MDEsMC4xNzgtMC45NjgsMC40MjctMS4zOSwwLjczNlYzMi45NjR6IE04LjM0NSwyMy41NTNWMzRoMS44NTJWMjEuNzUyYy0wLjQxNiwwLjcwMS0wLjczMiwxLjQ3LTAuOTI0LDIuMjg4CglDOC45ODIsMjMuODQ5LDguNjcsMjMuNjg3LDguMzQ1LDIzLjU1M3ogTTE0LjE3OCwzNGgxLjg1MlYxNy44OTFjLTAuNjQ1LDAuMDgzLTEuMjY1LDAuMjQ1LTEuODUyLDAuNDczVjM0eiBNMTcuMTQsMzRoMS44NTJWMTguMDY3CgljLTAuNTkzLTAuMTUtMS4yMTMtMC4yMzMtMS44NTItMC4yNFYzNEwxNy4xNCwzNHogTTIuMjk3LDMyLjExNVYyNS4wNUMxLjQ4OSwyNS45OTksMSwyNy4yMzIsMSwyOC41ODNTMS40ODksMzEuMTY1LDIuMjk3LDMyLjExNXoiCgkvPgo8L3N2Zz4="></a>
+    
+    </li>
+    <li id="social_youtube-4" class="widget widget_social_youtube">
+    <a href="https://youtube.com/ARDBMJ"><img src="//resources.bmj.com/repository/journals-network-project/images/wordpress/icon-footer-youtube.png" srcset="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0OCA0OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZT5wYXRoe2ZpbGw6I2ZmZjsgc3Ryb2tlOiNmZmY7fTwvc3R5bGU+CjxwYXRoIGlkPSJ5b3V0dWJlLWljb24iIGQ9Ik05LjUxNCwwLjVoMi44MzhsMS45NDYsNy4yNWwxLjgwNi03LjI1aDIuODY3bC0zLjI4MiwxMC43ODF2Ny4zNTdoLTIuODJ2LTcuMzU3TDkuNTE0LDAuNXogTTE4Ljg0NCwxNS4zCgljMCwyLjM1OCwxLjI0LDMuNTg1LDMuNjY5LDMuNTg1YzIuMDE1LDAsMy42MDEtMS4zMzgsMy42MDEtMy41ODVWOC43NDJjMC0yLjA5NC0xLjU3MS0zLjU5NC0zLjYwMS0zLjU5NAoJYy0yLjIwNSwwLTMuNjY5LDEuNDQ4LTMuNjY5LDMuNTk0VjE1LjN6IE0yMS40MTksOC45NjNjMC0wLjczMiwwLjM0MS0xLjI3NiwxLjA0NS0xLjI3NmMwLjc2NywwLDEuMDk4LDAuNTI4LDEuMDk4LDEuMjc2djYuMjI0CgljMCwwLjcyOC0wLjM3NCwxLjI2Ny0xLjA0OSwxLjI2N2MtMC42OTMsMC0xLjA5NC0wLjU2My0xLjA5NC0xLjI2N1Y4Ljk2M3ogTTMyLjg4NCw1LjI1OHYxMC4xNTUKCWMtMC4zMDYsMC4zNzktMC45ODcsMS4wMDItMS40NzQsMS4wMDJjLTAuNTM1LDAtMC42NjgtMC4zNjMtMC42NjgtMC45MDFWNS4yNThoLTIuNTAzdjExLjE4M2MwLDEuMzIsMC40MDcsMi4zODksMS43NSwyLjM4OQoJYzAuNzU1LDAsMS44MDgtMC4zOTIsMi44OTQtMS42Njl2MS40NzdoMi41MDVWNS4yNThIMzIuODg0eiBNMjkuMTk5LDMyLjY4NmMwLjE2OSwwLjIyMiwwLjI1NSwwLjU0OSwwLjI1NSwwLjk3OXY2LjU3OQoJYzAsMC40MDYtMC4wNjgsMC42OTktMC4yMDYsMC44NzhjLTAuMjYzLDAuMzQxLTAuODMzLDAuMzI3LTEuMjIsMC4xMzFjLTAuMTgzLTAuMDkyLTAuMzctMC4yNDEtMC41NjYtMC40NDh2LTcuOTQxCgljMC4xNjUtMC4xNzUsMC4zMjktMC4zMDUsMC40OTQtMC4zODlDMjguMzcyLDMyLjI2NiwyOC45MTEsMzIuMzA3LDI5LjE5OSwzMi42ODZ6IE0zNy4yMjgsMzIuMzk3Yy0wLjg4NiwwLTEuMDY1LDAuNjE3LTEuMDY1LDEuNDkzCgl2MS4yOTFoMi4xMDh2LTEuMjkxQzM4LjI3MSwzMy4wMjksMzguMDg2LDMyLjM5NywzNy4yMjgsMzIuMzk3eiBNNDQuNSw0MS43OTZjMCwzLjE1LTIuNTY5LDUuNzA0LTUuNzQsNS43MDRIOS4yNAoJYy0zLjE3MywwLTUuNzQtMi41NTQtNS43NC01LjcwNHYtMTQuNDFjMC0zLjE1MSwyLjU2Ny01LjcwNCw1Ljc0LTUuNzA0aDI5LjUyYzMuMTcxLDAsNS43NCwyLjU1Myw1Ljc0LDUuNzA0VjQxLjc5Nkw0NC41LDQxLjc5NnoKCSBNMTMuMTc0LDI4LjQ2M2gyLjc4di0yLjUwN0g3LjcxdjIuNTA3aDIuNzc4VjQzLjIzaDIuNjg2VjI4LjQ2M0wxMy4xNzQsMjguNDYzeiBNMjIuNzI5LDMwLjQ4OGgtMi4zODR2OS42NzIKCWMtMC4yOTIsMC4zNjMtMC45MzgsMC45NTQtMS40MDUsMC45NTRjLTAuNTEsMC0wLjYzNS0wLjM0Ni0wLjYzNS0wLjg1OHYtOS43NjhIMTUuOTJ2MTAuNjVjMCwyLjU4NiwxLjc2NSwyLjYwMSwzLjA1LDEuODcKCWMwLjQ3NS0wLjI3MSwwLjkzMi0wLjY2NiwxLjM3NC0xLjE4NHYxLjQwN2gyLjM4NFYzMC40ODh6IE0zMS45MDYsMzMuNTJjMC0xLjcyOC0wLjU3Ni0zLjE5My0yLjMyNC0zLjE5MwoJYy0wLjg0OSwwLTEuNTgxLDAuNTM4LTIuMTIyLDEuMTl2LTUuNTYxaC0yLjQwNlY0My4yM2gyLjQwNnYtMC45OGMwLjY2NiwwLjgyNCwxLjM5NCwxLjE0MSwyLjI3LDEuMTQxCgljMS41ODQsMCwyLjE3Ni0xLjIyNSwyLjE3Ni0yLjgwMVYzMy41MnogTTQwLjcyNCwzMy45MTRjMC0yLjMwMy0xLjEwNi0zLjc0OC0zLjM5My0zLjc0OGMtMi4xNTMsMC0zLjYyNCwxLjUzNS0zLjYyNCwzLjc0OHY1LjcxOQoJYzAsMi4yOTQsMS4xNjYsMy45NDIsMy40NDMsMy45NDJjMi41MTMsMCwzLjU3NC0xLjQ4NywzLjU3NC0zLjk0MnYtMC45NTdoLTIuNDUzdjAuODg1YzAsMS4xMDktMC4wNTgsMS43ODItMS4wNjcsMS43ODIKCWMtMC45NjIsMC0xLjA0MS0wLjgyNi0xLjA0MS0xLjc4MnYtMi40MDRoNC41NjFWMzMuOTE0TDQwLjcyNCwzMy45MTR6Ii8+Cjwvc3ZnPg=="></a>
+    
+    </li>
+    </ul>
+    </div>
+    </div><div><div class="footer-menu-b footer-menu"><h2>Journal</h2><ul id="menu-journal" class="menu"><li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://ard.bmj.com/pages/about/">About</a></li>
+    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://ard.bmj.com/pages/editorial-board/">Editorial board</a></li>
+    <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a href="https://ard.bmj.com/pages/thank-you-to-our-reviewers/">Thank you to our reviewers</a></li>
+    <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="//ard.bmj.com/alerts/toc/edit?destination=">Sign up for email alerts</a></li>
+    <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="https://ard.bmj.com/pages/subscribe/"><b>Subscribe</b></a></li>
+    <li id="menu-item-1123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1123"><a href="https://ard.bmj.com/pages/eular-textbooks/">EULAR textbooks</a></li>
+    <li id="menu-item-1583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1583"><a href="http://summaries.bmj.com/rheum">Lay summaries</a></li>
+    </ul></div></div>  </div><div class="wrapper">
+    <div><div class="footer-menu-c footer-menu"><h2>Authors</h2><ul id="menu-authors" class="menu"><li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://ard.bmj.com/pages/authors/">Instructions for authors</a></li>
+    <li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="https://mc.manuscriptcentral.com/ard">Submit an article</a></li>
+    <li id="menu-item-2317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2317"><a href="http://authors.bmj.com/policies/">Editorial policies</a></li>
+    <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="http://openaccess.bmj.com/">Open access at BMJ</a></li>
+    <li id="menu-item-2316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2316"><a href="http://authors.bmj.com/">BMJ Author Hub</a></li>
+    </ul></div></div><div><div class="footer-menu-d footer-menu"><h2>Help</h2><ul id="menu-help" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://ard.bmj.com/pages/contact-us/">Contact us</a></li>
+    <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="http://journals.bmj.com/cgi/reprintform">Reprints</a></li>
+    <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://www.bmj.com/company/products-services/rights-and-licensing/permissions">Permissions</a></li>
+    <li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="https://www.bmj.com/company/for-advertisers-and-sponsor/">Advertising</a></li>
+    <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="https://myaccount.bmj.com/myaccount/customerservice/salesforce-form.html">Feedback form</a></li>
+    </ul></div></div>  </div>
+        <div id="oas_Bottom"><iframe id="oas_frame_Bottom" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" height="90" width="728" style="height: 90px; width: 728px; border: 0px;"></iframe></div>
+        &nbsp;<script type="text/javascript">oas_tag.loadAd("Bottom");</script>
+    </nav>
+    <section class="platform">
+        <div class="logo">
+        <a href="http://www.bmj.com/company"><img src="https://resources.bmj.com/repository/journals-network-project/images/wordpress/logo-bmj-footer.png" srcset="https://resources.bmj.com/repository/journals-network-project/images/wordpress/logo-bmj-footer.svg"></a>
+        </div><div class="menu">
+    <ul>
+        <li><a href="http://www.bmj.com/company/legal-information/">Website Terms &amp; Conditions</a></li>
+        <li><a href="http://www.bmj.com/company/your-privacy/">Privacy &amp; Cookies</a></li>
+        <li><a href="http://www.bmj.com/company/contact-us/">Contact BMJ</a></li>
+    </ul>
+        </div><div class="content">
+    <p><span>Online ISSN:<rc-c2d-number data-rc-number=" 1468-2060"> 1468-2060</rc-c2d-number></span> <span>Print ISSN:<rc-c2d-number data-rc-number=" 0003-4967"> 0003-4967</rc-c2d-number></span></p>
+    <p>Copyright © 2018 BMJ Publishing Group Ltd &amp; European League Against Rheumatism. All rights reserved.</p>
+        <p>京ICP<rc-c2d-number data-rc-number="备15042040">备15042040</rc-c2d-number>号-3</p>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://ard.bmj.com/pages/wp-content/themes/jnp-base/js/feedbackify.js?ver=4.9.7"></script>
+    <script type="text/javascript" src="https://ard.bmj.com/pages/wp-includes/js/wp-embed.min.js?ver=4.9.7"></script>
+    <script type="text/javascript" src="https://ard.bmj.com/pages/wp-content/plugins/jnp-widgets/misc/../js/handlebars.min.js?ver=add768c6e7828c5b902b7d50d85bd01922e3e562"></script>
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var altmetrics = {"timeframe":"3m","num_results":"5","issns":"1468-2060,0003-4967"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="https://ard.bmj.com/pages/wp-content/plugins/jnp-widgets/misc/js/altmetrics.js?ver=add768c6e7828c5b902b7d50d85bd01922e3e562"></script>
+</footer>
+</body>
+</html>
