@@ -232,8 +232,7 @@ button.btn:hover{
     display: inline-block;
     margin: 0;
 }
-.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon,
-.nav-mobile .blogs-icon, .nav-mobile .twitter-icon, .nav-mobile .fb-icon {
+.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon {
     margin: 10px auto 0;
     width: 40px;
     height: 40px;

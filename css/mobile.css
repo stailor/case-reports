@@ -6,15 +6,23 @@
     .container-social .email-link {
         padding: 0 5px 0 0;
     }
-    .widget-publish,
     .widget-spotlight,
-    .widget-specialty,
     .widget-altmetrics,
     .widget-products,
-    .widget-most-read
+    .widget-most-read,
+    .widget-publish
     {
         min-height: auto;
         margin: 20px auto
+    }
+    .widget-spotlight {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:766px) and (max-width: 838px) { 
+    .container-links ul li a{
+        padding-right: 0;
     }
 }
 @media screen and (max-width: 768px){
@@ -31,7 +39,7 @@
         display:none;
     }
     .container-strapline h2 {
-        margin: 20px auto;
+        margin: 25px auto;
         line-height: initial;
     }
     .container-nav .case-reports h1{

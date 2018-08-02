@@ -47,9 +47,36 @@ a.nav-expander {
   nav.nav-mobile li.grey {
     background-color: #555;
   }
+  nav.nav-mobile li.white-logo {
+    background-color: #fff;
+    border-bottom: none;
+    clear: both;
+    padding: 6px 0;
+    border-bottom: 1px solid #888;
+    height: 42px;
+    vertical-align: middle;
+  }
+  nav.nav-mobile li.white-logo img {
+    height:31px;
+    width: auto
+  }
   nav.nav-mobile li.white {
     background-color: #fff;
-    border-bottom: 1px solid #555;
+    display: inline-block;
+    float: left;
+    padding:10px 15px;
+  }
+  .nav-mobile .blogs-icon, .nav-mobile .twitter-icon, .nav-mobile .fb-icon {
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #2A6EBB;
+    position: relative;
+  }
+  .nav-mobile .blogs-icon img, .nav-mobile .twitter-icon img, .nav-mobile .fb-icon img {
+    height: 39px;
+    padding: 5px;
   }
   .nav-expanded nav {
     right: 0;
