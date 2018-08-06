@@ -514,6 +514,5 @@ a.nav-expander.fixed,
 footer h2 {
     text-align: left
 }
-footer a:hover{
-    color: #fff;
-}
+footer nav.primary-color .wrapper ul li a:hover{
+    color: #fff!important;
