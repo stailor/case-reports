@@ -11,10 +11,8 @@
     <!-- FOOTER STYLES -->
     <link rel="stylesheet" type="text/css" media="screen" href="https://ard.bmj.com/pages/wp-content/themes/jnp-base/css/style.css?ver=027b5ddcaa694db00be47d0039101eb81ee9cf57" />
     <!-- BOOTSTRAP CODE -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- JQUERY CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- MAIN STYLES -->
@@ -41,11 +39,11 @@
         <!-- LOGO & LOGIN -->
         <div class="row container-logo">
 
-            <div class="col-md-6 col-sm-12 logo">
+            <div class="col-sm-6 col-xs-12 logo">
                     <a href="//journals.bmj.com/"><img src="images/bmj-journals-logo.jpg" alt="bmj-journals-logo" /></a>
             </div>
 
-            <div class="col-md-6 col-sm-12 container-links">
+            <div class="col-sm-6 col-xs-12 container-links">
                 <ul>
                     <li><a href="#">
                         <div class="fb-icon">
@@ -81,14 +79,14 @@
         <!-- NAV -->
         <div class="row container-nav">
 
-            <div class="col-md-6 col-sm-12 case-reports navbar-text">
+            <div class="col-sm-5 col-xs-12 case-reports">
                 <h1>BMJ Case Reports</h1>
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="col-sm-7 col-xs-12 navigation">
 
                 <!-- HAMBURGER MENU -->
-                <div class="navbar navbar-inverse navbar-fixed-top">  
+                <div class="navbar">  
                     <a id="nav-expander" class="nav-expander fixed">
                         <img class="hamburger-icon" src="images/icon-hamburger-menu.png" />
                     </a>
@@ -151,21 +149,7 @@
 
         <!-- SOCIAL MEDIA -->
         <div class="row container-social">
-
-
-            <div class="col-lg-7 col-md-6"></div>
-
-            <div class="col-lg-3 col-md-4 col-sm-12 social">
-                <ul>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
-                    </li>
-                </ul>
-            </div>
-                
+            <div class="col-sm-10"></div>
             <div class="col-md-2 col-sm-12 email-link">
                     <div class="email">
                         <a href="/alerts">
@@ -188,9 +172,12 @@
 
         <!-- STRAPLINE -->
         <div class="row container-strapline center-block page-header">
+        <!-- <div class="row container-banner center-block page-header"> -->
 
             <div class="col-12">
-                <h2>The world's largest collection of clinical case reports &ndash; sharing and learning through experience</h2>
+                <h2>The world's largest collection of clinical case reports</h2>
+                <p>&ndash; sharing and learning through experience</p>
+                <!-- <span class="pill"><img src="images/icon-pill.png" class="pill-img"/></span> -->
             </div>
 
         </div>
@@ -202,9 +189,10 @@
                 <form>
                     <div class="form-group">
                         <label for="search" class="sr-only">Search</label>
-                        <input type="text" class="form-control" id="search" placeholder="Search the BMJ case reports archive">
+                        <input type="text" class="form-control" id="search" placeholder="Search the BMJ case reports archive"
+                        ><button type="submit" class="search-btn"><img src="images/icon-search.svg" width="30" height="30" /></button>
                     </div>
-                    <button type="submit" class="search-btn"><img src="images/icon-search.svg" width="30" height="30" /></button>
+                    
                 </form>
                 <div
                     class="advanced-search"><a href="#">Advanced search</a></div>                   
@@ -547,7 +535,7 @@
             <div class="row container-products-most-read">
                 
                 <!-- WIDGET: BMJ PRODUCTS -->
-                <div class="col-md-4 col-sm-12 order-2">
+                <div class="col-md-4 col-sm-12">
                     <div class="widget-products">
                         <div class="icon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -573,7 +561,7 @@
                 </div>
 
                 <!-- WIDGET: MOST READ -->
-                <div class="col-md-8 col-sm-12 order-1">
+                <div class="col-md-8 col-sm-12">
                     <div class="widget-most-read">
                         <div class="icon">
                             <svg  class="logo" width="40" height="40" version="1.1" id="mostread" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

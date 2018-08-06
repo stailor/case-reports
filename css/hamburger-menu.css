@@ -10,7 +10,7 @@ img.hamburger-icon{
 }
 a.nav-expander {
     right: 33px;
-    top: -50px;   
+    top: 0px;   
   } 
   a.nav-expander:hover {
     cursor: pointer;

@@ -86,6 +86,7 @@ a, .widgets h2 {
 a:hover{
     cursor: pointer;
     text-decoration: none;
+    color: #C50084
 }
 h2{
     text-align: center;
@@ -111,6 +112,7 @@ button.btn {
 button.btn:hover{   
   transition: border 0.2s ease;
   background-color: #1F5189;
+  color: #fff
 }
 .widgets h2 {
     font-size: 28px;
@@ -165,8 +167,14 @@ button.btn:hover{
     background-color: #2862b4;
     color: #fff;
 }
+.case-reports {
+    padding-right: 0;
+}
 .container-nav .case-reports h1 {
     font-family: 'InterFace bold';
+}
+.container-nav .navigation{    
+    padding-left: 0;
 }
 .container-nav .nav-desktop {    
     text-align: right;
@@ -179,6 +187,7 @@ button.btn:hover{
 .container-nav .nav-desktop ul li {
     display: inline-block;
     vertical-align: middle;
+    margin:    20px 0;
 }
 .container-nav .nav-desktop ul li a {
     text-decoration: none;
@@ -186,7 +195,6 @@ button.btn:hover{
     color: #fff;
     display: inline-block;
     height: 100%;
-    line-height: 70px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -208,6 +216,7 @@ button.btn:hover{
 }
 .container-social .email-link {
     text-align: right;
+    padding:10px 10px 0 0;
 }
 .container-social .email-link a {
     vertical-align: baseline;
@@ -228,7 +237,7 @@ button.btn:hover{
     stroke: #2a6ebb;
 }
 .container-social .email a p {
-    padding: 5px 0 0 0;
+    padding: 0;
     display: inline-block;
     margin: 0;
 }
@@ -248,6 +257,44 @@ button.btn:hover{
     position: absolute;
     top: 0px;
     left: 8px;
+}
+/* .container-banner{ */
+    /* background: url('../images/banner_4.jpg') no-repeat 0 0 #fff; */
+    /* text-align: right;
+    background: url('../images/banner_3.jpg') repeat-x 0 0 #fff;
+    background-size: contain;
+    height: 225px;
+    margin: 0;
+    padding:0;
+    border-top: 3px solid #2a6ebb;
+    border-bottom: 3px solid #2a6ebb;
+    position: relative;
+}
+.container-banner .pill{
+    position: absolute;
+    right: 5%;
+    bottom: 0px;
+}
+.container-banner .pill .pill-img {
+    width: 30%;
+    height: auto;
+    position: absolute;
+}
+.container-banner p{
+    color: #C50084;
+    font-size: 2vw;
+    font-family: InterFace italic;
+    text-align: left;
+    margin: 0 0 0 10%;
+}
+.container-banner .pill img {
+} */
+.container-banner h2 {
+    color: #2A6EBB;
+    font-size: 3vw;
+    font-family: InterFace Bold;
+    text-align: left;
+    margin: 50px 0 0 10%;
 }
 .container-strapline {
     background-color: #C50084;
@@ -273,6 +320,7 @@ button.btn:hover{
 }
 .container-search .form-group {
     margin-bottom:5px;
+    position: relative;
 }
 .container-search >div{
     padding:0;
@@ -465,4 +513,7 @@ a.nav-expander.fixed,
 }
 footer h2 {
     text-align: left
+}
+footer a:hover{
+    color: #fff;
 }
