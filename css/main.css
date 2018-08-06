@@ -138,8 +138,10 @@ button.btn:hover{
     margin-left:15px;
 }
 .container-logo a img {
-    height: 42px;
-    margin-top: 9px;
+    height: 58px;
+}
+.container-logo .logo a {
+    margin-left:5px;
 }
 .container-links {
     display: inline-block!important;
@@ -149,6 +151,7 @@ button.btn:hover{
     float:right;
     max-height: 58px;
     list-style: none;
+    margin:0;
 }
 .container-links ul li {
     display: inline-block;
@@ -255,7 +258,7 @@ button.btn:hover{
     background-color: #2A6EBB;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0px;
+    top: 9px;
     left: 8px;
 }
 .container-banner{
@@ -392,6 +395,7 @@ button.btn:hover{
 .widget-products,
 .widget-most-read {
     background-color: #fff;
+    padding: 40px 20px;
 }
 .widget-publish {
     margin: 0 25px 25px 0;
@@ -403,6 +407,7 @@ button.btn:hover{
     padding: 1.3rem;
     margin: 1.3rem auto;
     width: 93%;
+    font-size: 17px;
 }
 .widget-spotlight {
     margin: 0 0px 25px 0;
@@ -415,6 +420,7 @@ button.btn:hover{
     font-style: italic;
     color: #999;
     font-size: 0.8rem;
+    padding:0;
 }
 .widget-spotlight .row {
     border-bottom: 1px solid #eee;
@@ -424,8 +430,15 @@ button.btn:hover{
     border-bottom: none;
 }
 .widget-altmetrics figure {
-    margin: 0 1rem 1rem 0;
+    margin: 0 1rem;
     float: left;
+}
+.widget-altmetrics .altmetics-title{
+    padding: 0;
+    margin:0;
+}
+.widget-altmetrics .altmetics-title h2 {
+    margin:0;
 }
 .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
@@ -485,11 +498,16 @@ button.btn:hover{
 }
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     font-size 14px;
+    padding:0 0 10px;
 }
 .widget-products {
     margin: 25px 0px 25px 0;
     padding: 30px 20px;
     min-height:563px;
+}
+.widget-products img {
+    display: block;
+    margin: 10px auto;
 }
 .widget-most-read {
     margin: 25px 0px 25px 0;
@@ -511,8 +529,15 @@ a.nav-expander.fixed,
 .navbar {
     display: none
 }
-footer h2 {
-    text-align: left
+footer h3 {
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    text-transform: capitalize;
 }
 footer nav.primary-color .wrapper ul li a:hover{
     color: #fff!important;
+}
+footer ul li a, footer ul li {
+    font-size: 15px;
+}

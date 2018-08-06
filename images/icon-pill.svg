@@ -14,7 +14,7 @@
 	L283,516.9z"/>
 <g>
 	
-		<image style="overflow:visible;opacity:0.78;" width="1180" height="1085" id="XMLID_18_" xlink:href="292AF10C.png"  transform="matrix(0.24 0 0 0.24 268.5711 317.7621)">
+		<image style="overflow:visible;opacity:0.78;" width="1180" height="1085" id="XMLID_18_" xlink:href="292AF10F.png"  transform="matrix(0.24 0 0 0.24 268.5711 317.7621)">
 	</image>
 	<g id="XMLID_11_">
 		<path id="XMLID_17_" class="st1" d="M423.5,555.1l-133.9-36.4c-3.6-1-5.8-4.8-4.8-8.4l46.6-171.5c1-3.6,4.8-5.8,8.4-4.8
@@ -23,5 +23,5 @@
 </g>
 <path class="st2" d="M450,413.3l-217.8-59.2c-3.2-0.9-5.2-4.2-4.3-7.5l0.8-3c0.9-3.2,4.2-5.2,7.5-4.3L454,398.5
 	c3.2,0.9,5.2,4.2,4.3,7.5l-0.8,3C456.6,412.3,453.2,414.2,450,413.3z"/>
-<text transform="matrix(0.965 0.2623 -0.2623 0.965 95.1716 383.0704)"><tspan x="0" y="0" class="st1 st3 st4">BMJ Case</tspan><tspan x="214.9" y="0" class="st5 st3 st4"> Reports</tspan></text>
+<text id="XMLID_2_" transform="matrix(0.965 0.2623 -0.2623 0.965 89.1713 383.0704)"><tspan x="0" y="0" class="st1 st3 st4">BMJ Case</tspan><tspan x="214.9" y="0" class="st5 st3 st4"> Reports</tspan></text>
 </svg>

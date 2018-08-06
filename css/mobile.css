@@ -18,6 +18,9 @@
     .widget-spotlight {
         padding: 20px;
     }
+    .widget-spotlight{
+        
+    }
 }
 
 @media only screen and (min-width:766px) and (max-width: 838px) { 
