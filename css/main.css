@@ -258,9 +258,9 @@ button.btn:hover{
     top: 0px;
     left: 8px;
 }
-/* .container-banner{ */
+.container-banner{
     /* background: url('../images/banner_4.jpg') no-repeat 0 0 #fff; */
-    /* text-align: right;
+    text-align: right;
     background: url('../images/banner_3.jpg') repeat-x 0 0 #fff;
     background-size: contain;
     height: 225px;
@@ -288,7 +288,7 @@ button.btn:hover{
     margin: 0 0 0 10%;
 }
 .container-banner .pill img {
-} */
+}
 .container-banner h2 {
     color: #2A6EBB;
     font-size: 3vw;
