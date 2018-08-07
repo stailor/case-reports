@@ -258,8 +258,8 @@ button.btn:hover{
     background-color: #2A6EBB;
     background-repeat: no-repeat;
     position: absolute;
-    top: 9px;
-    left: 8px;
+    top: 7px;
+    left: 7px;
 }
 .container-banner{
     /* background: url('../images/banner_4.jpg') no-repeat 0 0 #fff; */
@@ -314,7 +314,7 @@ button.btn:hover{
 .container-search {
     margin:50px auto!important;
     width:100%;
-    border:1px solid #000;
+    border:1px solid #333;
     border-radius: 4px;
     background-color: #fff;
     height:50px;
@@ -395,10 +395,9 @@ button.btn:hover{
 .widget-products,
 .widget-most-read {
     background-color: #fff;
-    padding: 40px 20px;
+    margin: 40px 20px;
 }
 .widget-publish {
-    margin: 0 25px 25px 0;
     padding: 30px 20px 0;
     text-align: center;
     min-height: 489px;
@@ -410,9 +409,11 @@ button.btn:hover{
     font-size: 17px;
 }
 .widget-spotlight {
-    margin: 0 0px 25px 0;
     padding: 30px 20px 0;
     min-height: 489px;
+}
+.widget-spotlight iframe, .widget-spotlight img {
+    float: right;
 }
 .widget-spotlight footer,
 .widget-altmetrics footer,
@@ -420,7 +421,8 @@ button.btn:hover{
     font-style: italic;
     color: #999;
     font-size: 0.8rem;
-    padding:0;
+    padding:
+    padding: 0 0 0.5rem;
 }
 .widget-spotlight .row {
     border-bottom: 1px solid #eee;
@@ -430,8 +432,11 @@ button.btn:hover{
     border-bottom: none;
 }
 .widget-altmetrics figure {
-    margin: 0 1rem;
+    margin: 0 1rem 2rem;
     float: left;
+}
+.widget-altmetrics article .copy{
+    padding:0 15px 0 0;
 }
 .widget-altmetrics .altmetics-title{
     padding: 0;
@@ -439,6 +444,17 @@ button.btn:hover{
 }
 .widget-altmetrics .altmetics-title h2 {
     margin:0;
+}
+.widget-specialty ul.specialty-list{
+    height: auto; /*your fixed height*/
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+.widget-specialty ul.specialty-list li {
+    display: inline-block;
+    max-width: 230px;
+    min-width: 200px;
 }
 .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
@@ -469,7 +485,6 @@ button.btn:hover{
     padding-left: 8px;
 }
 .widget-specialty {
-    margin: 25px 25px 25px 0;
     padding: 30px 20px 0;
     text-align: left;
     min-height: 793px;
@@ -482,8 +497,7 @@ button.btn:hover{
     padding: 15px 0 15px 0;
     font-size: 16px;
 }
-.widgets .container-specialty-altmetrics .widget-altmetrics {
-    margin: 25px 0px 25px 0;
+.widget-altmetrics {
     padding: 30px 20px 0;
     min-height: 793px;
 }
@@ -501,7 +515,6 @@ button.btn:hover{
     padding:0 0 10px;
 }
 .widget-products {
-    margin: 25px 0px 25px 0;
     padding: 30px 20px;
     min-height:563px;
 }
@@ -510,7 +523,6 @@ button.btn:hover{
     margin: 10px auto;
 }
 .widget-most-read {
-    margin: 25px 0px 25px 0;
     padding: 30px 20px 0;
     text-align: left;
     min-height:560px;
