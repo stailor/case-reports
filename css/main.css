@@ -79,7 +79,9 @@ body{
     -webkit-font-smoothing: antialiased;
     font-size: 17px
 }
-
+h1, h2, h3{
+    margin:10px 0;
+}
 a, .widgets h2 {
     color: #2a6ebb;
 }
@@ -88,13 +90,35 @@ a:hover{
     text-decoration: none;
     color: #C50084
 }
+p{
+    line-height: 1.625rem!important;
+}
 h2{
     text-align: center;
     margin: 10px auto 25px;
+    font-size: 28px
 }
 h3{
+    line-height: 2rem;
+    margin-bottom: 0!important;
+    font-weight: 400;
+}
+h4 {
     font-size: 16px;
-    color: #000;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: inline;
+}
+h5 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+article {
+    padding: 0 0 10px 0
 }
 button.btn {
     background-color: #2a6ebb;
@@ -109,14 +133,10 @@ button.btn {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-button.btn:hover{   
+button.btn:hover, .btn.focus, .btn:focus, .btn:hover{   
   transition: border 0.2s ease;
   background-color: #1F5189;
   color: #fff
-}
-.widgets h2 {
-    font-size: 28px;
-    font-family: 'Interface'
 }
 .primary-color {
     background-color: #2862b4 !important;
@@ -161,8 +181,15 @@ button.btn:hover{
 }
 .container-links ul li a {
     color: #333;
-    font-size: 17px;
     padding-right: 15px;
+    display: inline-block;
+    font-size: 1.0625rem;
+    height: 56px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-links ul li.login a:hover, .container-links ul li.subscribe a:hover {
+    background-color:#eee;
 }
 .container-nav {
     min-height: 45px;
@@ -175,9 +202,14 @@ button.btn:hover{
 }
 .container-nav .case-reports h1 {
     font-family: 'InterFace bold';
+    line-height: 2.8rem;
+    
+    font-size: 36px;
+    max-width: 280px;
 }
 .container-nav .navigation{    
     padding-left: 0;
+    float: right;
 }
 .container-nav .nav-desktop {    
     text-align: right;
@@ -190,19 +222,21 @@ button.btn:hover{
 .container-nav .nav-desktop ul li {
     display: inline-block;
     vertical-align: middle;
-    margin:    20px 0;
+}
+.container-nav .nav-desktop ul li:hover {
+background-color:rgba(255,255,255,.2);
 }
 .container-nav .nav-desktop ul li a {
-    text-decoration: none;
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: #fff;
     display: inline-block;
     height: 100%;
+    line-height: 70px;
     padding-left: 15px;
     padding-right: 15px;
 }
 .container-social {
-    min-height:60px;
+    min-height:35px;
 }
 .container-social .social {
     float: right;
@@ -219,7 +253,6 @@ button.btn:hover{
 }
 .container-social .email-link {
     text-align: right;
-    padding:10px 10px 0 0;
 }
 .container-social .email-link a {
     vertical-align: baseline;
@@ -234,15 +267,20 @@ button.btn:hover{
     float: left;
 }
 .container-social .email a .svg-wrapper svg {
-    background-color: #fff;
-    height: 15px;
     width: 23px;
+    background-color: #fff;
     stroke: #2a6ebb;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: 5px;
+    vertical-align: text-top;
 }
 .container-social .email a p {
     padding: 0;
     display: inline-block;
     margin: 0;
+    font-size: 1.0625rem;
+    text-align: right;
 }
 .container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon {
     margin: 10px auto 0;
@@ -262,16 +300,21 @@ button.btn:hover{
     left: 7px;
 }
 .container-banner{
-    /* background: url('../images/banner_4.jpg') no-repeat 0 0 #fff; */
+   /* 
+   background: url('../images/banner_4.jpg') no-repeat 0 0 #fff;
     text-align: right;
-    background: url('../images/banner_3.jpg') repeat-x 0 0 #fff;
-    background-size: contain;
+    background: url('../images/banner_3.jpg') repeat-x 0 0 #fff; 
+    background-size: contain; 
+    background-size: cover;
     height: 225px;
     margin: 0;
-    padding:0;
-    border-top: 3px solid #2a6ebb;
-    border-bottom: 3px solid #2a6ebb;
+    padding:0 0 0 150px;
+    */
+    border-top: 2px solid #2a6ebb;
+    border-bottom: 2px solid #2a6ebb;
     position: relative;
+    text-align: center;
+    padding: 0
 }
 .container-banner .pill{
     position: absolute;
@@ -303,7 +346,6 @@ button.btn:hover{
     background-color: #C50084;
     color: #fff;
     font-size: 28px;
-    font-family: 'Interface';
     min-height: 100px;
     text-align: center;
 }
@@ -313,7 +355,7 @@ button.btn:hover{
 }
 .container-search {
     margin:50px auto!important;
-    width:100%;
+    width:98%;
     border:1px solid #333;
     border-radius: 4px;
     background-color: #fff;
@@ -340,7 +382,6 @@ button.btn:hover{
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 120%;
 }
 .container-search button {
     background-color: transparent;
@@ -364,10 +405,9 @@ button.btn:hover{
 }
 .container-browse ul li {
     list-style-type: none;
-  display: inline-block;
-  padding: 0px 8px;
-  border-right: 1px solid #000;
-  font-size: 17px;
+    display: inline-block;
+    padding: 0px 8px;
+    border-right: 1px solid #000;
 }
 .container-browse ul li a {
     color: #000;
@@ -378,7 +418,7 @@ button.btn:hover{
 }
 .widgets{
     background-color: #eee;
-    padding:3rem;
+    padding:2rem;
 }
 .widgets .icon{
     margin: -60px auto 0;
@@ -396,33 +436,32 @@ button.btn:hover{
 .widget-most-read {
     background-color: #fff;
     margin: 40px 20px;
+    padding: 30px 20px;
 }
 .widget-publish {
-    padding: 30px 20px 0;
     text-align: center;
-    min-height: 489px;
 }
 .widget-publish button{
-    padding: 1.3rem;
     margin: 1.3rem auto;
     width: 93%;
     font-size: 17px;
 }
-.widget-spotlight {
-    padding: 30px 20px 0;
-    min-height: 489px;
+.widget-spotlight, .widget-publish {
+    min-height: 453px
 }
 .widget-spotlight iframe, .widget-spotlight img {
     float: right;
+    padding: 5px 0;
 }
 .widget-spotlight footer,
 .widget-altmetrics footer,
 .widget-most-read footer {
-    font-style: italic;
-    color: #999;
-    font-size: 0.8rem;
-    padding:
-    padding: 0 0 0.5rem;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #333;
+    line-height: 24px;
+    display: inline;
 }
 .widget-spotlight .row {
     border-bottom: 1px solid #eee;
@@ -431,19 +470,29 @@ button.btn:hover{
 .widget-spotlight .row:last-child {
     border-bottom: none;
 }
+.widget-altmetrics, .widget-specialty {
+    min-height: 834px
+}
 .widget-altmetrics figure {
-    margin: 0 1rem 2rem;
+    margin: 0 0 2rem;
     float: left;
 }
-.widget-altmetrics article .copy{
-    padding:0 15px 0 0;
+.widget-altmetrics article .copy a,
+.widget-most-read article h3 a,
+.widget-spotlight article h3 a
+{
+    line-height: 1.625rem !important
 }
-.widget-altmetrics .altmetics-title{
-    padding: 0;
-    margin:0;
+.widget-specialty {
+    position: relative;
 }
-.widget-altmetrics .altmetics-title h2 {
-    margin:0;
+.widget-specialty .specialty-list-container{
+    margin-bottom: 35px
+}
+.widget-specialty .full-list {
+    position: absolute;
+    bottom: 2%;
+    left: 45%;
 }
 .widget-specialty ul.specialty-list{
     height: auto; /*your fixed height*/
@@ -453,8 +502,9 @@ button.btn:hover{
 }
 .widget-specialty ul.specialty-list li {
     display: inline-block;
-    max-width: 230px;
-    min-width: 200px;
+    max-width: 270px;
+    min-width: 270px;
+    line-height: 1.625rem !important;
 }
 .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
@@ -484,48 +534,32 @@ button.btn:hover{
     border-left: 5px solid #2A6EBB;
     padding-left: 8px;
 }
-.widget-specialty {
-    padding: 30px 20px 0;
-    text-align: left;
-    min-height: 793px;
-}
 .widget-specialty .full-list h3 {
     text-align: center;
     color: #2a6ebb;
 }
 .widget-specialty li {
     padding: 15px 0 15px 0;
-    font-size: 16px;
-}
-.widget-altmetrics {
-    padding: 30px 20px 0;
-    min-height: 793px;
 }
 .widget-altmetrics article {
     border-bottom: 1px solid #eee;
     display: inline-block;
     margin: 5px 0;
+    padding: 5px 15px;
 }
 .widget-altmetrics article:last-child {
     border:none;
     margin:0;
 }
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
-    font-size 14px;
     padding:0 0 10px;
 }
-.widget-products {
-    padding: 30px 20px;
-    min-height:563px;
+.widget-products, .widget-most-read {
+    min-height: 615px
 }
 .widget-products img {
     display: block;
     margin: 10px auto;
-}
-.widget-most-read {
-    padding: 30px 20px 0;
-    text-align: left;
-    min-height:560px;
 }
 .widget-most-read article {
     border-bottom: 1px solid #eee;
@@ -542,14 +576,10 @@ a.nav-expander.fixed,
     display: none
 }
 footer h3 {
-    font-size: 16px;
     color: #fff;
     text-align: left;
     text-transform: capitalize;
 }
 footer nav.primary-color .wrapper ul li a:hover{
     color: #fff!important;
-}
-footer ul li a, footer ul li {
-    font-size: 15px;
 }

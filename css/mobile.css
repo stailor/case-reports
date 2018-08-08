@@ -3,37 +3,72 @@
         margin: 15px auto;
         line-height: initial;
     }
+    .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
+        float: right;
+    }
     .container-social .email-link {
         padding: 0 5px 0 0;
     }
-    .widget-spotlight,
-    .widget-altmetrics,
-    .widget-products,
-    .widget-most-read,
-    .widget-publish
-    {
-        min-height: auto;
-        margin: 20px auto
-    }
-    .widget-spotlight {
-        padding: 20px;
-    }
-    .widget-spotlight{
-        
+    .widget-specialty ul.specialty-list {
+        -webkit-column-count:2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
 }
-
+@media screen and (max-width: 991px){   
+    .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
+        float:none
+    }
+    .widget-specialty ul.specialty-list{
+        -webkit-column-count:2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+    .widget-most-read{
+        margin-top:40px
+    }
+    .widget-altmetrics figure {
+        margin: 0 10px 2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:917px) {
+    .container-nav .case-reports{
+        max-width: 187px;
+    }
+    .container-nav .case-reports h1{
+        font-size: 22px
+    }
+    .container-nav .nav-desktop ul li a {
+        font-size: 15px;        
+        padding-left: 10px;
+        padding-right: 10px; 
+    }    
+    .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
+        float:none
+    }
+}
 @media only screen and (min-width:766px) and (max-width: 838px) { 
     .container-links ul li a{
         padding-right: 0;
     }
 }
 @media screen and (max-width: 768px){
+    .widget-specialty ul.specialty-list {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
     nav.nav-mobile, 
     a.nav-expander.fixed,
     .navbar {
         display: block;
         padding:0;
+    }
+    a.nav-expander.fixed {
+        top: 13px;
+    }
+    .nav-expanded a.nav-expander.fixed {
+        right: 13rem;
     }
     .container-nav .nav-desktop,
     .container-social,
@@ -46,31 +81,37 @@
         line-height: initial;
     }
     .container-nav .case-reports h1{
-        margin:0;
+        float: left;
+    }
+    .case-reports {
+        padding-right: 0;
+        width: auto;
+        float: left;
+        display: inline-block;
+    }
+    .container-nav .navigation {
+        float: right;
+        width: auto;
     }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 576px) { 
-
-    .widget-publish,
-    .widget-most-read,
-    .widget-specialty {
-        margin:20px 0 50px 0!important;
-        padding: 30px 20px!important;
+    .widget-specialty ul.specialty-list{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
  }
-
 /* Medium devices (tablets, 768px and up)*/
 @media only screen and (max-width: 768px) { 
-    
-    .widgets .container-publish-spotlight .col-sm-12 .widget-publish {
-        margin:0 0 50px 0;
-        padding: 30px 20px;
+    .widget-altmetrics figure{
+        margin-bottom: 3rem;
     }
- }
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media only screen and (min-width: 992px) { ... }
+@media only screen and (min-width: 992px) {
 
+ }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media only screen and (min-width: 1200px) { ... }
