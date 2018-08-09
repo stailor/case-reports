@@ -1,7 +1,7 @@
 # case-reports
 
 Viewable link for master is:
-https://cdn.rawgit.com/stailor/case-reports/master/case-reports.html
+http://htmlpreview.github.io/?https://github.com/stailor/case-reports/blob/master/case-reports.html
 
 Viewable link for banner design is:
-https://cdn.rawgit.com/stailor/case-reports/banner-design/case-reports.html
+http://htmlpreview.github.io/?https://github.com/stailor/case-reports/blob/banner-design/case-reports.html
