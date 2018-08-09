@@ -30,6 +30,9 @@
     .widget-altmetrics figure {
         margin: 0 10px 2rem;
     }
+    .search-area .img-left, .search-area .img-right {
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) and (max-width:917px) {
     .container-nav .case-reports{
@@ -52,6 +55,8 @@
         padding-right: 0;
     }
 }
+
+/* Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px){
     .widget-specialty ul.specialty-list {
         -webkit-column-count: 1;
@@ -93,6 +98,9 @@
         float: right;
         width: auto;
     }
+    .widget-altmetrics figure{
+        margin-bottom: 3rem;
+    }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 576px) { 
@@ -102,27 +110,17 @@
         column-count: 1;
     }
  }
-/* Medium devices (tablets, 768px and up)*/
-@media only screen and (max-width: 768px) { 
-    .widget-altmetrics figure{
-        margin-bottom: 3rem;
-    }
-}
+
 /* HIDE Product widget till width (690px)*/
 @media only screen and (min-width: 691px) { 
     .widget-products{
         display: none;
     }
 }
+
 /* HIDE Product widget till width (690px)*/
     @media only screen and (max-width: 690px) { 
     .widget-products{
         display: block;
     }
 }
-/* Large devices (desktops, 992px and up)*/
-@media only screen and (min-width: 992px) {
-
- }
-/* Extra large devices (large desktops, 1200px and up)*/
-@media only screen and (min-width: 1200px) { ... }

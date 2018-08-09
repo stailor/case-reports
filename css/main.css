@@ -336,8 +336,6 @@ background-color:rgba(255,255,255,.2);
     text-align: left;
     margin: 0 0 0 10%;
 }
-.container-banner .pill img {
-}
 .container-banner h2 {
     color: #2A6EBB;
     font-size: 3vw;
@@ -356,11 +354,17 @@ background-color:rgba(255,255,255,.2);
     margin: 20px auto;
     line-height: 6rem;
 }
+.search-area .img-left img {
+    margin:10% 0 0 10%;
+}
+.search-area .img-right img{
+    margin:10px;
+}
 .search h3 {
     color: #2a6ebb;
     max-width: 670px;
     width:98%;
-    margin:0 auto;
+    margin:10px auto 0;
     font-size: 28px;
 }
 .search h4 {
@@ -411,7 +415,7 @@ background-color:rgba(255,255,255,.2);
     text-align: right
 }
 .container-browse {
-    padding: 20px 0;
+    padding: 40px 0 20px;
     max-width: 670px;
     width:98%;
     margin:0 auto;
@@ -419,7 +423,7 @@ background-color:rgba(255,255,255,.2);
 }
 .container-browse .title {
     color:#2a6ebb;
-    font-family: 'InterFace bold'
+    font-family: 'InterFace'
 }
 .container-browse ul {
     margin: 0;
