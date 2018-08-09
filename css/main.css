@@ -310,12 +310,14 @@ background-color:rgba(255,255,255,.2);
     padding:0 0 0 150px;
     border-top: 2px solid #2a6ebb;
     border-bottom: 2px solid #2a6ebb;
-    */
     position: relative;
-    text-align: center;
     margin: 0;
     padding: 0;
     border:none;
+    */
+    text-align: center;
+    margin:0;
+    padding:0;
 }
 .container-banner .pill{
     position: absolute;
@@ -353,6 +355,21 @@ background-color:rgba(255,255,255,.2);
 .container-strapline h2{
     margin: 20px auto;
     line-height: 6rem;
+}
+.search h3 {
+    color: #2a6ebb;
+    max-width: 670px;
+    width:98%;
+    margin:0 auto;
+    font-size: 28px;
+}
+.search h4 {
+    color: #C50084;
+    max-width: 670px;
+    width:98%;
+    margin:0 auto;
+    display: block;
+    font-weight: 600;
 }
 .container-search {
     margin:15px auto!important;
@@ -394,21 +411,30 @@ background-color:rgba(255,255,255,.2);
     text-align: right
 }
 .container-browse {
-    margin:40px 0;
+    padding: 20px 0;
+    max-width: 670px;
+    width:98%;
+    margin:0 auto;
+    display: block;
 }
 .container-browse .title {
-    color:#C50084;
+    color:#2a6ebb;
     font-family: 'InterFace bold'
 }
 .container-browse ul {
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-size: 0.88rem;
 }
 .container-browse ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 0px 8px;
-    border-right: 1px solid #000;
+    padding: 0px;
+
+}
+.container-browse ul li:not(:first-child):not(:nth-child(2)):before {
+    content: " | ";
+    padding:0 3px;
 }
 .container-browse ul li a {
     color: #000;
@@ -554,6 +580,9 @@ background-color:rgba(255,255,255,.2);
 }
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     padding:0 0 10px;
+}
+.col-sm-4 .widget-products{
+    display: none;
 }
 .widget-products, .widget-most-read {
     min-height: 615px
