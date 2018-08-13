@@ -1,3 +1,8 @@
+/* 
+================================
+        FONTS
+================================
+*/
 @font-face {
     font-family: 'InterFace italic';
     src: url('interface/if_std_it-webfont.eot'); /* IE9 Compat Modes */
@@ -22,6 +27,7 @@
          url('interface/if_std_rg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
          url('interface/if_std_rg-webfont.svg#if_std_bd-webfont') format('svg'); /* Legacy iOS */
 }
+
 /* FONT FOR SPECIALTIES ICON */
 @font-face {
     font-family: "bmj-icons";
@@ -33,9 +39,13 @@
     font-weight: normal;
     font-style: normal;
   
-  }
-
-  [data-icon]:before {
+}
+/* 
+================================
+        ICONS
+================================
+*/
+[data-icon]:before {
     font-family: "bmj-icons" !important;
     content: attr(data-icon);
     font-style: normal !important;
@@ -47,8 +57,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  [class^="icon-"]:before,
-  [class*=" icon-"]:before {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
     font-family: "bmj-icons" !important;
     font-style: normal !important;
     font-weight: normal !important;
@@ -61,19 +71,23 @@
     font-size:45px;
     margin: 7px;
     top: 5px;
-   position: relative;
-  }
-  .icon-bp-icons-specialties-extra-small:before {
+    position: relative;
+}
+.icon-bp-icons-specialties-extra-small:before {
     content: "\45";
-  }
-  .icon-bp-icons-specialties:before {
+}
+.icon-bp-icons-specialties:before {
     content: "\46";
-  }
-  .container-specialty-altmetrics .widget-specialty .icon .icon-bp-icons-specialties{
-      color: #fff;
-  }
-/* SPECIALTIES ICON ENDS */
+}
+.container-specialty-altmetrics .widget-specialty .icon .icon-bp-icons-specialties{
+    color: #fff;
+}
 
+/* 
+================================
+        DEAULT STYLES 
+================================
+*/
 body{
     font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -85,7 +99,7 @@ h1, h2, h3{
 a, .widgets h2 {
     color: #2a6ebb;
 }
-a:hover{
+a:hover, a .svg-wrapper:hover{
     cursor: pointer;
     text-decoration: none;
     color: #C50084
@@ -141,6 +155,11 @@ button.btn:hover, .btn.focus, .btn:focus, .btn:hover{
 .primary-color {
     background-color: #2862b4 !important;
 }
+/* 
+================================
+BMJ JOURNALS LOGO AND LOGIN ROW
+================================
+*/
 .container-banner-ad {
     background-color: #eee;
     border-bottom: 1px solid #ccc;
@@ -148,13 +167,9 @@ button.btn:hover, .btn.focus, .btn:focus, .btn:hover{
     padding: 15px 0 12px;
     text-align: center;
 }
-.container-logo {
-    min-height: 58px;
-    position: relative;
-}
 .container-logo a {
+    position: relative;
     display: inline-block;
-    height: 58px;
     margin-left:15px;
 }
 .container-logo a img {
@@ -163,48 +178,59 @@ button.btn:hover, .btn.focus, .btn:focus, .btn:hover{
 .container-logo .logo a {
     margin-left:5px;
 }
-.container-links {
-    display: inline-block!important;
-    float: right;
-}
-.container-links ul {
+.container-logo .container-links ul {
     float:right;
     max-height: 58px;
-    list-style: none;
     margin:0;
 }
-.container-links ul li {
+.container-logo .container-links ul li {
     display: inline-block;
     line-height: 56px;
-    padding: 0;
     vertical-align: top;
 }
-.container-links ul li a {
+.container-logo .container-links ul li a {
     color: #333;
-    padding-right: 15px;
-    display: inline-block;
-    font-size: 1.0625rem;
     height: 56px;
     padding-left: 10px;
     padding-right: 10px;
 }
-.container-links ul li.login a:hover, .container-links ul li.subscribe a:hover {
+.container-logo .container-links ul li.login a:hover, .container-links ul li.subscribe a:hover {
     background-color:#eee;
 }
+.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon {
+    margin: 10px auto 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #2A6EBB;
+    position: relative;
+}
+.container-links .blogs-icon img, .container-links .fb-icon img, .container-links .twitter-icon img {
+    height:26px;
+    widows: 26px;
+    background-color: #2A6EBB;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+/* 
+================================
+    BLUE NAVIGATION ROW
+================================
+*/
 .container-nav {
-    min-height: 45px;
     padding-left: 15px;
     background-color: #2862b4;
     color: #fff;
 }
-.case-reports {
+.container-nav .case-reports {
     padding-right: 0;
 }
 .container-nav .case-reports h1 {
     font-family: 'InterFace bold';
-    line-height: 2.8rem;
-    
-    font-size: 36px;
+    line-height: 3.1rem;    
+    font-size: 26px;
     max-width: 280px;
 }
 .container-nav .navigation{    
@@ -235,38 +261,30 @@ background-color:rgba(255,255,255,.2);
     padding-left: 15px;
     padding-right: 15px;
 }
-.container-social {
-    min-height:35px;
+.container-nav nav.nav-mobile, 
+.container-nav a.nav-expander.fixed, 
+.container-nav .navbar {
+    display: none
 }
-.container-social .social {
-    float: right;
-    text-align: right
-}
-.container-social .social ul {
-    list-style: none;
-    margin: 0;
-}
-.container-social .social ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding:30px 15px 0;
-}
-.container-social .email-link {
+/* 
+================================
+    EMAIL ALERTS ROW
+================================
+*/
+.email .email-link {
     text-align: right;
 }
-.container-social .email-link a {
+.email .email-link a {
     vertical-align: baseline;
     padding:5px 15px 0 0;
     display: inline-block
 }
-.container-social .email a .svg-wrapper {
+.email .email a .svg-wrapper {
     margin-top: 1px;
     margin-right: 5px;
-    vertical-align: text-top;
-    color: #2a6ebb;
     float: left;
 }
-.container-social .email a .svg-wrapper svg {
+.email .email a .svg-wrapper svg {
     width: 23px;
     background-color: #fff;
     stroke: #2a6ebb;
@@ -275,107 +293,42 @@ background-color:rgba(255,255,255,.2);
     margin-right: 5px;
     vertical-align: text-top;
 }
-.container-social .email a p {
+.email .email a p {
     padding: 0;
     display: inline-block;
     margin: 0;
     font-size: 1.0625rem;
     text-align: right;
 }
-.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon {
-    margin: 10px auto 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 30px;
-    background-color: #2A6EBB;
-    position: relative;
-}
-.container-links .blogs-icon img, .container-links .fb-icon img, .container-links .twitter-icon img {
-    height:26px;
-    widows: 26px;
-    background-color: #2A6EBB;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 7px;
-    left: 7px;
-}
-.container-banner{
-   /* 
-   background: url('../images/banner_4.jpg') no-repeat 0 0 #fff;
-    text-align: right;
-    background: url('../images/banner_3.jpg') repeat-x 0 0 #fff; 
-    background-size: contain; 
-    background-size: cover;
-    height: 225px;
-    padding:0 0 0 150px;
-    border-top: 2px solid #2a6ebb;
-    border-bottom: 2px solid #2a6ebb;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border:none;
-    */
-    text-align: center;
-    margin:0;
-    padding:0;
-}
-.container-banner .pill{
-    position: absolute;
-    right: 5%;
-    bottom: 0px;
-}
-.container-banner .pill .pill-img {
-    width: 30%;
-    height: auto;
-    position: absolute;
-}
-.container-banner p{
-    color: #C50084;
-    font-size: 2vw;
-    font-family: InterFace italic;
-    text-align: left;
-    margin: 0 0 0 10%;
-}
-.container-banner h2 {
-    color: #2A6EBB;
-    font-size: 3vw;
-    font-family: InterFace Bold;
-    text-align: left;
-    margin: 50px 0 0 10%;
-}
-.container-strapline {
-    background-color: #C50084;
-    color: #fff;
-    font-size: 28px;
-    min-height: 100px;
-    text-align: center;
-}
-.container-strapline h2{
-    margin: 20px auto;
-    line-height: 6rem;
-}
-.search-area .img-left img {
-    margin:10% 0 0 10%;
+/* 
+================================
+    SEARCH BOX ROW
+================================
+*/
+.search-area .img-left {
+    text-align: right
 }
 .search-area .img-right img{
     margin:10px;
 }
-.search h3 {
+.search-area .search h3 {
     color: #2a6ebb;
     max-width: 670px;
     width:98%;
     margin:10px auto 0;
     font-size: 28px;
+    font-weight: bold;
 }
-.search h4 {
+.search-area .search h4 {
     color: #C50084;
     max-width: 670px;
     width:98%;
     margin:0 auto;
     display: block;
     font-weight: 600;
+    font-style: italic;
 }
-.container-search {
+.search-area .container-search {
     margin:15px auto!important;
     width:98%;
     border:1px solid #333;
@@ -385,71 +338,68 @@ background-color:rgba(255,255,255,.2);
     max-width: 670px;
     padding: 0;
 }
-.container-search .form-group {
+.search-area .container-search .form-group {
     margin-bottom:5px;
     position: relative;
 }
-.container-search >div{
-    padding:0;
-}
-.container-search input{
+.search-area .container-search input{
     background:transparent;
     width:100%;    
     border: none;
     height: 48px;
     max-width: 670px;
 }
-.container-search button {    
+.search-area .container-search button {    
     cursor: pointer;
     position: absolute;
     right: 0;
     top: 0;
 }
-.container-search button {
+.search-area .container-search button {
     background-color: transparent;
     border: none 0;
-    margin: 5px;
+    margin: 8px;
 }
-.container-search .advanced-search{
+.search-area .container-search .advanced-search{
     font-size:11px;
     text-align: right
 }
-.container-browse {
-    padding: 40px 0 20px;
+.search-area .container-browse {
+    padding: 30px 0 20px;
     max-width: 670px;
     width:98%;
     margin:0 auto;
-    display: block;
 }
-.container-browse .title {
+.search-area .container-browse .title {
     color:#2a6ebb;
     font-family: 'InterFace'
 }
-.container-browse ul {
-    margin: 0;
-    text-align: left;
+.search-area .container-browse ul {
     font-size: 0.88rem;
 }
-.container-browse ul li {
+.search-area .container-browse ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 0px;
-    font-size: 0.83rem
 }
-.container-browse ul li:not(:first-child):not(:nth-child(2)):before {
+.search-area .container-browse ul li:not(:first-child):not(:nth-child(2)):before {
     content: " | ";
     padding:0 3px;
 }
-.container-browse ul li a {
+.search-area .container-browse ul li a {
     color: #000;
 }
-.container-browse ul li a:hover,.container-browse ul li a:active {
+.search-area .container-browse ul li a:hover,.container-browse ul li a:active {
     font-weight:bold;
     text-decoration: none;
 }
+/* 
+================================
+WIDGETS PUBLISH & SPOTLIGHT
+================================
+*/
 .widgets{
     background-color: #eee;
-    padding:2rem;
+    padding:1rem;
 }
 .widgets .icon{
     margin: -60px auto 0;
@@ -459,34 +409,34 @@ background-color:rgba(255,255,255,.2);
     background-color: #C50084;
     position: relative;
 }
-.widget-publish, 
-.widget-spotlight,
-.widget-specialty,
-.widget-altmetrics,
-.widget-products,
-.widget-most-read {
+.widgets .widget-publish, 
+.widgets .widget-spotlight,
+.widgets .widget-specialty,
+.widgets .widget-altmetrics,
+.widgets .widget-products,
+.widgets .widget-most-read {
     background-color: #fff;
     margin: 40px 20px;
     padding: 30px 20px;
 }
-.widget-publish {
+.widgets .widget-publish {
     text-align: center;
 }
-.widget-publish button{
+.widgets .widget-publish button {
     margin: 1.3rem auto;
     width: 93%;
     font-size: 17px;
 }
-.widget-spotlight, .widget-publish {
+.widgets .widget-spotlight, .widgets .widget-publish {
     min-height: 453px
 }
-.widget-spotlight iframe, .widget-spotlight img {
+.widgets .widget-spotlight iframe, .widgets .widget-spotlight img {
     float: right;
     padding: 5px 0;
 }
-.widget-spotlight footer,
-.widget-altmetrics footer,
-.widget-most-read footer {
+.widgets .widget-spotlight footer,
+.widgets .widget-altmetrics footer,
+.widgets .widget-most-read footer {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -494,121 +444,128 @@ background-color:rgba(255,255,255,.2);
     line-height: 24px;
     display: inline;
 }
-.widget-spotlight .row {
+.widgets .widget-spotlight .row {
     border-bottom: 1px solid #eee;
     margin:5px;
 }
-.widget-spotlight .row:last-child {
+.widgets .widget-spotlight .row:last-child {
     border-bottom: none;
 }
-.widget-altmetrics, .widget-specialty {
+/* 
+================================
+WIDGETS ALTMETRICS & SPECIALTY
+================================
+*/
+.widgets .widget-altmetrics, .widgets .widget-specialty {
     min-height: 834px
 }
-.widget-altmetrics figure {
+.widgets .widget-altmetrics figure {
     margin: 0 0 2rem;
     float: left;
 }
-.widget-altmetrics article .copy a,
-.widget-most-read article h3 a,
-.widget-spotlight article h3 a
+.widgets .widget-altmetrics article .copy a,
+.widgets .widget-most-read article h3 a,
+.widgets .widget-spotlight article h3 a
 {
     line-height: 1.625rem !important
 }
-.widget-specialty {
+.widgets .widget-specialty {
     position: relative;
 }
-.widget-specialty .specialty-list-container{
+.widgets .widget-specialty .specialty-list-container{
     margin-bottom: 35px
 }
-.widget-specialty .full-list {
+.widgets .widget-specialty .full-list {
     position: absolute;
     bottom: 2%;
     left: 45%;
 }
-.widget-specialty ul.specialty-list{
+.widgets .widget-specialty ul.specialty-list{
     height: auto; /*your fixed height*/
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
 }
-.widget-specialty ul.specialty-list li {
+.widgets .widget-specialty ul.specialty-list li {
     display: inline-block;
     max-width: 270px;
     min-width: 270px;
     line-height: 1.625rem !important;
 }
-.widget-specialty .specialty-purple {
+.widgets .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
     padding-left: 8px;
 }
-.widget-specialty .specialty-green {
+.widgets .widget-specialty .specialty-green {
     border-left: 5px solid #69BE28;
     padding-left: 8px;
 }
-.widget-specialty .specialty-yellow {
+.widgets .widget-specialty .specialty-yellow {
     border-left: 5px solid #F0AB00;
     padding-left: 8px;
 }
-.widget-specialty .specialty-pink {
+.widgets .widget-specialty .specialty-pink {
     border-left: 5px solid #C50084;
     padding-left: 8px;
 }
-.widget-specialty .specialty-orange {
+.widgets .widget-specialty .specialty-orange {
     border-left: 5px solid #E37222;
     padding-left: 8px;
 }
-.widget-specialty .specialty-red {
+.widgets .widget-specialty .specialty-red {
     border-left: 5px solid #CD202C;
     padding-left: 8px;
 }
-.widget-specialty .specialty-blue {
+.widgets .widget-specialty .specialty-blue {
     border-left: 5px solid #2A6EBB;
     padding-left: 8px;
 }
-.widget-specialty .full-list h3 {
+.widgets .widget-specialty .full-list h3 {
     text-align: center;
     color: #2a6ebb;
 }
-.widget-specialty li {
+.widgets .widget-specialty li {
     padding: 15px 0 15px 0;
 }
-.widget-altmetrics article {
+.widgets .widget-altmetrics article {
     border-bottom: 1px solid #eee;
     display: inline-block;
-    margin: 5px 0;
+    margin: 0;
     padding: 5px 15px;
 }
-.widget-altmetrics article:last-child {
+.widgets .widget-altmetrics article:last-child {
     border:none;
     margin:0;
 }
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     padding:0 0 10px;
 }
-.col-sm-4 .widget-products{
-    display: none;
-}
-.widget-products, .widget-most-read {
+/* 
+================================
+WIDGETS PRODUCTS & MOST READ
+================================
+*/
+.widgets .widget-products, .widget-most-read {
     min-height: 615px
 }
-.widget-products img {
+.widgets .widget-products img {
     display: block;
     margin: 10px auto;
 }
-.widget-most-read article {
+.widgets .widget-most-read article {
     border-bottom: 1px solid #eee;
     margin: 15px 0;
 }
 
-.widget-most-read article:last-child {
+.widgets .widget-most-read article:last-child {
     border-bottom: none;
     margin:0
 }
-nav.nav-mobile, 
-a.nav-expander.fixed, 
-.navbar {
-    display: none
-}
+/* 
+================================
+    FOOTER
+================================
+*/
 footer h3 {
     color: #fff;
     text-align: left;
