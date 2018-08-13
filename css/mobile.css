@@ -1,3 +1,15 @@
+@media screen and (min-width: 1229px) {
+    .row-column{
+        display: flex; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+    }
+
+    .row-column-cell {
+        flex:2; /* Make elements inside the container behave like table cells */
+        margin: 16px;
+        background: #fff
+    }
+}
 @media screen and (max-width: 1229px) {
     .container-strapline h2 {
         margin: 15px auto;
@@ -100,6 +112,10 @@
     }
     .widget-altmetrics figure{
         margin-bottom: 3rem;
+    }
+    [class*="col-"] {
+        display: block;
+        width: 100%;
     }
 }
 
