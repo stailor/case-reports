@@ -226,6 +226,8 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 }
 .container-nav .case-reports {
     padding-right: 0;
+    display: inline-block;
+    width: auto;
 }
 .container-nav .case-reports h1 {
     font-family: 'InterFace bold';
@@ -452,12 +454,6 @@ WIDGETS PUBLISH & SPOTLIGHT
     border-bottom: none;
 }
 
-
-/* EQUAL HEIGHT ROWS CODE */
-
-
-
-/* 
 ================================
 WIDGETS ALTMETRICS & SPECIALTY
 ================================

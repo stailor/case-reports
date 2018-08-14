@@ -70,15 +70,17 @@
 
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px){
-    .widget-specialty ul.specialty-list {
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-        column-count: 1;
+    .widgets .widget-specialty ul.specialty-list{
+        height: auto; /*your fixed height*/
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
     }
+    .container-nav nav.nav-mobile,
     nav.nav-mobile, 
     a.nav-expander.fixed,
     .navbar {
-        display: block;
+        display: block!important;
         padding:0;
     }
     a.nav-expander.fixed {
@@ -89,7 +91,8 @@
     }
     .container-nav .nav-desktop,
     .container-social,
-    .container-logo
+    .container-logo,
+    .container-banner-ad
     {
         display:none;
     }
@@ -122,14 +125,19 @@
 /* HIDE Product widget till width (690px)*/
 @media only screen and (min-width: 691px) { 
     .widget-products{
-        display: none;
+        display: block;
     }
 }
-
 /* HIDE Product widget till width (690px)*/
     @media only screen and (max-width: 690px) { 
     .widget-products{
-        display: block;
+        display: none;
+    }
+    .widgets .widget-specialty ul.specialty-list{
+        height: auto; /*your fixed height*/
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
 }
 /* Small devices (landscape phones, 576px and up)*/
