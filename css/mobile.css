@@ -1,13 +1,14 @@
 /* MAKE ALL BOXES EQUAL HEIGHTS     */
 @media screen and (min-width: 991px) {
-    .row-column{
+    .container-publish-spotlight, .container-specialty-altmetrics, .container-products-most-read {
         display: flex; /* Make the container element behave like a table */
         width: 100%; /* Set full-width to expand the whole page */
         margin: 0;
+        padding: 20px 0 0
     }
     .row-column-cell {
         flex:2; /* Make elements inside the container behave like table cells */
-        margin: 35px 27.5px;
+        margin: 20px;
         background: #fff
     }
     .search-area .col-lg-3.img-left img,.search-area .col-lg-3.img-right img {

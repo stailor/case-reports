@@ -309,7 +309,7 @@ background-color:rgba(255,255,255,.2);
 */
 .search-area{
     background-color: #F2F7FC;
-    padding: 15px 0
+    padding: 30px 0
 }
 .search-area .img-left {
     text-align: right
@@ -406,7 +406,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 
 .widgets{
     background-color: #eee;
-    padding:0 40px;
+    padding:18px 40px 60px;
 }
 .widgets .icon{
     margin: -90px auto 0;
@@ -470,7 +470,7 @@ WIDGETS ALTMETRICS & SPECIALTY
 {
     line-height: 1.625rem !important
 }
-.widget-specialty-container {
+.container-specialty-altmetrics div:first-child {
     position: relative;
 }
 .widgets .widget-specialty .specialty-list-container{
