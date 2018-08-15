@@ -307,6 +307,10 @@ background-color:rgba(255,255,255,.2);
     SEARCH BOX ROW
 ================================
 */
+.search-area{
+    background-color: #D4D4D5;
+    padding: 15px 0
+}
 .search-area .img-left {
     text-align: right
 }
@@ -383,7 +387,7 @@ background-color:rgba(255,255,255,.2);
     list-style-type: none;
     display: inline-block;
 }
-.search-area .container-browse ul li:not(:first-child):not(:nth-child(2)):before {
+.search-area .container-browse ul li:not(:first-child):not(:last-child):after {
     content: " | ";
     padding:0 3px;
 }
@@ -399,12 +403,13 @@ background-color:rgba(255,255,255,.2);
 WIDGETS PUBLISH & SPOTLIGHT
 ================================
 */
+
 .widgets{
     background-color: #eee;
-    padding:1rem;
+    padding:40px;
 }
 .widgets .icon{
-    margin: -60px auto 0;
+    margin: -90px auto 0;
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -429,9 +434,6 @@ WIDGETS PUBLISH & SPOTLIGHT
     width: 93%;
     font-size: 17px;
 }
-.widgets .widget-spotlight, .widgets .widget-publish {
-    min-height: 453px
-}
 .widgets .widget-spotlight iframe, .widgets .widget-spotlight img {
     float: right;
     padding: 5px 0;
@@ -454,12 +456,12 @@ WIDGETS PUBLISH & SPOTLIGHT
     border-bottom: none;
 }
 
-================================
+/*================================
 WIDGETS ALTMETRICS & SPECIALTY
 ================================
 */
-.widgets .widget-altmetrics, .widgets .widget-specialty {
-    min-height: 834px
+.widgets .widget-altmetrics .row .col-lg-3 {
+    padding:0;
 }
 .widgets .widget-altmetrics figure {
     margin: 0 0 2rem;
@@ -471,15 +473,18 @@ WIDGETS ALTMETRICS & SPECIALTY
 {
     line-height: 1.625rem !important
 }
-.widgets .widget-specialty {
+.widget-specialty-container {
     position: relative;
 }
 .widgets .widget-specialty .specialty-list-container{
     margin-bottom: 35px
 }
+.widget-specialty-container {
+    position: relative;
+}
 .widgets .widget-specialty .full-list {
     position: absolute;
-    bottom: 2%;
+    bottom: 3%;
     left: 45%;
 }
 .widgets .widget-specialty ul.specialty-list{
@@ -533,7 +538,7 @@ WIDGETS ALTMETRICS & SPECIALTY
     border-bottom: 1px solid #eee;
     display: inline-block;
     margin: 0;
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 .widgets .widget-altmetrics article:last-child {
     border:none;
@@ -542,14 +547,13 @@ WIDGETS ALTMETRICS & SPECIALTY
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     padding:0 0 10px;
 }
+
 /* 
 ================================
 WIDGETS PRODUCTS & MOST READ
 ================================
 */
-.widgets .widget-products, .widget-most-read {
-    min-height: 615px
-}
+
 .widgets .widget-products img {
     display: block;
     margin: 10px auto;
@@ -563,6 +567,7 @@ WIDGETS PRODUCTS & MOST READ
     border-bottom: none;
     margin:0
 }
+
 /* 
 ================================
     FOOTER
