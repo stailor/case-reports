@@ -308,7 +308,7 @@ background-color:rgba(255,255,255,.2);
 ================================
 */
 .search-area{
-    background-color: #D4D4D5;
+    background-color: #F2F7FC;
     padding: 15px 0
 }
 .search-area .img-left {
@@ -406,7 +406,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 
 .widgets{
     background-color: #eee;
-    padding:40px;
+    padding:0 40px;
 }
 .widgets .icon{
     margin: -90px auto 0;
@@ -432,7 +432,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-publish button {
     margin: 1.3rem auto;
     width: 93%;
-    font-size: 17px;
+    font-size: 1rem;
 }
 .widgets .widget-spotlight iframe, .widgets .widget-spotlight img {
     float: right;
@@ -460,9 +460,6 @@ WIDGETS PUBLISH & SPOTLIGHT
 WIDGETS ALTMETRICS & SPECIALTY
 ================================
 */
-.widgets .widget-altmetrics .row .col-lg-3 {
-    padding:0;
-}
 .widgets .widget-altmetrics figure {
     margin: 0 0 2rem;
     float: left;
@@ -479,13 +476,8 @@ WIDGETS ALTMETRICS & SPECIALTY
 .widgets .widget-specialty .specialty-list-container{
     margin-bottom: 35px
 }
-.widget-specialty-container {
-    position: relative;
-}
 .widgets .widget-specialty .full-list {
-    position: absolute;
-    bottom: 3%;
-    left: 45%;
+    text-align: center
 }
 .widgets .widget-specialty ul.specialty-list{
     height: auto; /*your fixed height*/
