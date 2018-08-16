@@ -530,7 +530,7 @@ WIDGETS ALTMETRICS & SPECIALTY
     border-bottom: 1px solid #eee;
     display: inline-block;
     margin: 0;
-    padding: 5px 5px;
+    padding: 12px;
 }
 .widgets .widget-altmetrics article:last-child {
     border:none;

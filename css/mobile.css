@@ -4,11 +4,10 @@
         display: flex; /* Make the container element behave like a table */
         width: 100%; /* Set full-width to expand the whole page */
         margin: 0;
-        padding: 20px 0 0
     }
     .row-column-cell {
         flex:2; /* Make elements inside the container behave like table cells */
-        margin: 20px;
+        margin: 16px;
         background: #fff
     }
     .search-area .col-lg-3.img-left img,.search-area .col-lg-3.img-right img {
@@ -40,16 +39,20 @@
     .search-area .col-md-2.img-left img,.search-area .col-md-2.img-right img {
         width:90%;
     }
-    .widgets .icon{
-        margin: -60px auto 0;
+}
+
+@media screen and (max-width:768px)
+{
+    .widgets .widget-spotlight {
+        margin: 80px 20px 40px!important;
     }
 }
 @media screen and (min-width: 1206px) and (max-width:1400px)
 {
     .widget-specialty ul.specialty-list {
-        -webkit-column-count:1!important;
-        -moz-column-count: 1!important;
-        column-count: 1!important;
+        -webkit-column-count:2!important;
+        -moz-column-count: 2!important;
+        column-count: 2!important;
     }
 }    
 @media screen and (min-width: 991px) and (max-width:1206px)
@@ -64,8 +67,11 @@
     .widgets .widget-specialty .specialty-list-container {
         padding-left: 1.5rem;
     }
+    .widgets .icon{
+        margin: -60px auto 0;
+    }
 }
-@media screen and (max-width: 991px){   
+@media screen and (max-width: 990px){   
     .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
         float:none
     }
@@ -86,8 +92,9 @@
     .widgets{
         padding:40px;
     }
-    .widgets .widget-altmetrics, .widgets .widget-most-read {
-        margin:80px 20px 40px
+    
+    .widgets .widget-altmetrics {
+        margin: 80px 20px 40px;
     }
 }
 @media screen and (min-width: 768px) and (max-width:917px) {
@@ -171,6 +178,7 @@
 @media only screen and (min-width: 691px) { 
     .widget-products{
         display: block;
+        margin:40px 20px 80px!important;
     }
 }
 /* HIDE Product widget till width (690px)*/
@@ -201,3 +209,16 @@
         column-count: 1;
     }
  }
+
+ @media only screen and (max-width: 435px) {
+    .search-area .container-browse ul {
+        text-align: center;
+        font-size: 0.7rem
+    }
+    .widgets .widget-publish button {
+        font-size: 0.8rem;
+    }
+    .widgets .widget-specialty ul.specialty-list li {
+        font-size: 80%
+    }
+}
