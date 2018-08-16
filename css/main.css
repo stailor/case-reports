@@ -424,7 +424,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-most-read {
     background-color: #fff;
     margin: 40px 20px;
-    padding: 30px 20px;
+    padding: 30px 15px;
 }
 .widgets .widget-publish {
     text-align: center;
@@ -461,7 +461,7 @@ WIDGETS ALTMETRICS & SPECIALTY
 ================================
 */
 .widgets .widget-altmetrics figure {
-    margin: 0 0 2rem;
+    margin: 0 10px 2rem;
     float: left;
 }
 .widgets .widget-altmetrics article .copy a,
@@ -530,7 +530,13 @@ WIDGETS ALTMETRICS & SPECIALTY
     border-bottom: 1px solid #eee;
     display: inline-block;
     margin: 0;
-    padding: 12px;
+    padding: 0px;
+}
+.widgets .widget-altmetrics article .row {
+    margin: 0px 0px;
+}
+.widgets .widget-altmetrics article .row [class*="col-"] {
+    padding:0;
 }
 .widgets .widget-altmetrics article:last-child {
     border:none;
