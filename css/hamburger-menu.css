@@ -18,6 +18,10 @@ a.nav-expander {
   a.nav-expander.fixed {
     position: absolute;
   } 
+  a.nav-expander.fixed:hover{
+    background-color:rgba(255,255,255,.2);
+    padding:20px
+  }
   .nav-expanded a.nav-expander.fixed {
       right: 15em;
   }
@@ -70,7 +74,7 @@ a.nav-expander {
     width: 40px;
     height: 40px;
     border-radius: 30px;
-    background-color: #2A6EBB;
+    background-color: #336fb8;
     position: relative;
   }
   .nav-mobile .blogs-icon img, .nav-mobile .twitter-icon img, .nav-mobile .fb-icon img {
@@ -96,7 +100,7 @@ a.nav-expander {
   =====================================
   */    
     .main-menu {
-      background-color: #2862b4;
+      background-color: #336fb8;
     }
     .main-menu li {
       padding:7px 0 0 10px;

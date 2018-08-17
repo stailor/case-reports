@@ -8,13 +8,15 @@
     .row-column-cell {
         /* Make elements inside the container behave like table cells  */
         /* flex:2; */
-        margin: 16px;
+        margin: 20px;
         background: #fff
     }
+    /* RESIZE IMAGES AROUND SEARCH BOX */
     .search-area .col-lg-3.img-left img,.search-area .col-lg-3.img-right img {
-        width:60%; /* RESIZE IMAGES AROUND SEARCH BOX */
+        width:60%; 
     }
 }
+
 @media screen and (max-width: 1229px) {
     .container-strapline h2 {
         margin: 15px auto;
@@ -47,12 +49,14 @@
         padding:20px;
     }
 }
+
 @media screen and (max-width:768px)
 {
     .widgets .widget-spotlight {
         margin: 80px 20px 40px!important;
     }
 }
+
 @media screen and (min-width: 1206px) and (max-width:1400px)
 {
     .widget-specialty ul.specialty-list {
@@ -60,7 +64,8 @@
         -moz-column-count: 2!important;
         column-count: 2!important;
     }
-}    
+}   
+
 @media screen and (min-width: 991px) and (max-width:1206px)
 {
     .widget-specialty ul.specialty-list {
@@ -69,6 +74,7 @@
         column-count: 1!important;
     }
 }
+
 @media screen and (min-width: 300px) and (max-width: 990px) {
     .widgets .widget-specialty .specialty-list-container {
         padding-left: 1.5rem;
@@ -77,6 +83,7 @@
         margin: -60px auto 0;
     }
 }
+
 @media screen and (max-width: 990px){   
     .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
         float:none
@@ -103,6 +110,7 @@
         margin: 80px 20px 40px;
     }
 }
+
 @media screen and (min-width: 768px) and (max-width:917px) {
     .container-nav .case-reports{
         max-width: 187px;
@@ -119,6 +127,7 @@
         float:none
     }
 }
+
 @media only screen and (min-width:766px) and (max-width: 838px) { 
     .container-links ul li a{
         padding-right: 0;
@@ -149,8 +158,7 @@
     .container-nav .nav-desktop,
     .container-social,
     .container-logo,
-    .container-banner-ad
-    {
+    .container-banner-ad {
         display:none;
     }
     .container-strapline h2 {
@@ -187,6 +195,7 @@
         margin:40px 20px 80px!important;
     }
 }
+
 /* HIDE Product widget till width (690px)*/
     @media only screen and (max-width: 690px) { 
     .widget-products{
@@ -207,6 +216,7 @@
         font-weight: bold;
     }
 }
+
 /* Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 576px) { 
     .widget-specialty ul.specialty-list{
@@ -217,14 +227,10 @@
  }
 
  @media only screen and (max-width: 435px) {
-    .search-area .container-browse ul {
-        text-align: center;
-        font-size: 0.7rem
-    }
     .widgets .widget-publish button {
-        font-size: 0.8rem;
+        width: 100%
     }
-    .widgets .widget-specialty ul.specialty-list li {
-        font-size: 80%
+    .search-area .container-browse ul{
+        font-size: 0.8rem
     }
 }

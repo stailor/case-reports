@@ -97,7 +97,7 @@ h1, h2, h3{
     margin:10px 0;
 }
 a, .widgets h2 {
-    color: #2a6ebb;
+    color: #336fb8;
 }
 a:hover, a .svg-wrapper:hover{
     cursor: pointer;
@@ -135,7 +135,7 @@ article {
     padding: 0 0 10px 0
 }
 button.btn {
-    background-color: #2a6ebb;
+    background-color: #336fb8;
     color: #fff;
     border-radius: 4px;
     margin:10px auto;
@@ -153,7 +153,7 @@ button.btn:hover, .btn.focus, .btn:focus, .btn:hover{
   color: #fff
 }
 .primary-color {
-    background-color: #2862b4 !important;
+    background-color: #336fb8 !important;
 }
 /* 
 ================================
@@ -173,7 +173,7 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     margin-left:15px;
 }
 .container-logo a img {
-    height: 58px;
+    height: 61px;
 }
 .container-logo .logo a {
     margin-left:5px;
@@ -194,21 +194,26 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     padding-left: 10px;
     padding-right: 10px;
 }
-.container-logo .container-links ul li.login a:hover, .container-links ul li.subscribe a:hover {
+.container-logo .container-links ul li.login a:hover, 
+.container-logo .container-links ul li.subscribe a:hover {
     background-color:#eee;
 }
-.container-links .blogs-icon, .container-links .twitter-icon, .container-links .fb-icon {
+.container-logo .container-links .blogs-icon, 
+.container-logo .container-links .twitter-icon, 
+.container-logo .container-links .fb-icon {
     margin: 10px auto 0;
     width: 40px;
     height: 40px;
     border-radius: 30px;
-    background-color: #2A6EBB;
+    background-color: #336fb8;
     position: relative;
 }
-.container-links .blogs-icon img, .container-links .fb-icon img, .container-links .twitter-icon img {
+.container-logo .container-links .blogs-icon img, 
+.container-logo .container-links .fb-icon img, 
+.container-logo .container-links .twitter-icon img {
     height:26px;
     widows: 26px;
-    background-color: #2A6EBB;
+    background-color: #336fb8;
     background-repeat: no-repeat;
     position: absolute;
     top: 7px;
@@ -221,7 +226,7 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 */
 .container-nav {
     padding-left: 15px;
-    background-color: #2862b4;
+    background-color: #336fb8;
     color: #fff;
 }
 .container-nav .case-reports {
@@ -278,7 +283,7 @@ background-color:rgba(255,255,255,.2);
 }
 .email .email-link a {
     vertical-align: baseline;
-    padding:5px 15px 0 0;
+    padding:5px 15px 5px 0;
     display: inline-block
 }
 .email .email a .svg-wrapper {
@@ -289,7 +294,7 @@ background-color:rgba(255,255,255,.2);
 .email .email a .svg-wrapper svg {
     width: 23px;
     background-color: #fff;
-    stroke: #2a6ebb;
+    stroke: #336fb8;
     display: inline-block;
     margin-top: 1px;
     margin-right: 5px;
@@ -318,7 +323,7 @@ background-color:rgba(255,255,255,.2);
     margin:10px;
 }
 .search-area .search h3 {
-    color: #2a6ebb;
+    color: #336fb8;
     max-width: 670px;
     width:98%;
     margin:10px auto 0;
@@ -377,11 +382,11 @@ background-color:rgba(255,255,255,.2);
     margin:0 auto;
 }
 .search-area .container-browse .title {
-    color:#2a6ebb;
+    color:#336fb8;
     font-family: 'InterFace'
 }
 .search-area .container-browse ul {
-    font-size: 0.88rem;
+    font-size: 1rem;
 }
 .search-area .container-browse ul li {
     list-style-type: none;
@@ -400,13 +405,12 @@ background-color:rgba(255,255,255,.2);
 }
 /* 
 ================================
-WIDGETS PUBLISH & SPOTLIGHT
+WIDGETS 
 ================================
 */
-
 .widgets{
     background-color: #eee;
-    padding:18px 40px 60px;
+    padding:53px 20px;
 }
 .widgets .icon{
     margin: -90px auto 0;
@@ -423,20 +427,8 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-products,
 .widgets .widget-most-read {
     background-color: #fff;
-    margin: 40px 20px;
-    padding: 30px 15px;
-}
-.widgets .widget-publish {
-    text-align: center;
-}
-.widgets .widget-publish button {
-    margin: 1.3rem auto;
-    width: 93%;
-    font-size: 1rem;
-}
-.widgets .widget-spotlight iframe, .widgets .widget-spotlight img {
-    float: right;
-    padding: 5px 0;
+    margin: 40px 20px;    
+    padding: 20px;
 }
 .widgets .widget-spotlight footer,
 .widgets .widget-altmetrics footer,
@@ -448,9 +440,30 @@ WIDGETS PUBLISH & SPOTLIGHT
     line-height: 24px;
     display: inline;
 }
-.widgets .widget-spotlight .row {
+/* 
+================================
+WIDGETS PUBLISH & SPOTLIGHT
+================================
+*/
+.widgets .widget-publish {
+    text-align: center;
+}
+.widgets .widget-publish button {
+    margin: 1.3rem auto;
+    width: 93%;
+    font-size: 1rem;
+}
+.widgets .widget-spotlight iframe, 
+.widgets .widget-spotlight img {
+    float: right;
+    padding: 5px 0;
+}
+.widgets .widget-spotlight .row, 
+.widgets .widget-most-read article,
+.widgets .widget-altmetrics article  {
     border-bottom: 1px solid #eee;
-    margin:5px;
+    margin:10px 5px;
+    padding:10px 0
 }
 .widgets .widget-spotlight .row:last-child {
     border-bottom: none;
@@ -466,8 +479,7 @@ WIDGETS ALTMETRICS & SPECIALTY
 }
 .widgets .widget-altmetrics article .copy a,
 .widgets .widget-most-read article h3 a,
-.widgets .widget-spotlight article h3 a
-{
+.widgets .widget-spotlight article h3 a {
     line-height: 1.625rem !important
 }
 .container-specialty-altmetrics div:first-child {
@@ -516,21 +528,15 @@ WIDGETS ALTMETRICS & SPECIALTY
     padding-left: 8px;
 }
 .widgets .widget-specialty .specialty-blue {
-    border-left: 5px solid #2A6EBB;
+    border-left: 5px solid #336fb8;
     padding-left: 8px;
 }
 .widgets .widget-specialty .full-list h3 {
     text-align: center;
-    color: #2a6ebb;
+    color: #336fb8;
 }
 .widgets .widget-specialty li {
     padding: 15px 0 15px 0;
-}
-.widgets .widget-altmetrics article {
-    border-bottom: 1px solid #eee;
-    display: inline-block;
-    margin: 0;
-    padding: 0px;
 }
 .widgets .widget-altmetrics article .row {
     margin: 0px 0px;
@@ -551,16 +557,10 @@ WIDGETS ALTMETRICS & SPECIALTY
 WIDGETS PRODUCTS & MOST READ
 ================================
 */
-
 .widgets .widget-products img {
     display: block;
     margin: 10px auto;
 }
-.widgets .widget-most-read article {
-    border-bottom: 1px solid #eee;
-    margin: 15px 0;
-}
-
 .widgets .widget-most-read article:last-child {
     border-bottom: none;
     margin:0
