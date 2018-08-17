@@ -141,7 +141,7 @@ button.btn {
     margin:10px auto;
     width:90%;
     clear: both;
-    min-height: 50px;      
+    min-height: 50px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -190,9 +190,14 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 }
 .container-logo .container-links ul li a {
     color: #333;
-    height: 56px;
+    height: 61px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .container-logo .container-links ul li.login a:hover, 
 .container-logo .container-links ul li.subscribe a:hover {
@@ -207,14 +212,20 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     border-radius: 30px;
     background-color: #336fb8;
     position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.container-logo .container-links .blogs-icon:hover,
+.container-logo .container-links .twitter-icon:hover, 
+.container-logo .container-links .fb-icon:hover  {
+    background-color: #1F5189;
 }
 .container-logo .container-links .blogs-icon img, 
 .container-logo .container-links .fb-icon img, 
 .container-logo .container-links .twitter-icon img {
     height:26px;
-    widows: 26px;
-    background-color: #336fb8;
-    background-repeat: no-repeat;
     position: absolute;
     top: 7px;
     left: 7px;
@@ -255,9 +266,14 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 .container-nav .nav-desktop ul li {
     display: inline-block;
     vertical-align: middle;
+    background-color:#336fb8
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .container-nav .nav-desktop ul li:hover {
-background-color:rgba(255,255,255,.2);
+    background-color:rgba(255,255,255,.2);
 }
 .container-nav .nav-desktop ul li a {
     font-size: 1.0625rem;
@@ -278,6 +294,9 @@ background-color:rgba(255,255,255,.2);
     EMAIL ALERTS ROW
 ================================
 */
+.email {
+    background-color: #F2F7FC;
+}
 .email .email-link {
     text-align: right;
 }
