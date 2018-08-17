@@ -9,7 +9,7 @@ img.hamburger-icon{
   cursor: pointer;
 }
 a.nav-expander {
-    right: 33px;
+    right: 15px;
     top: 0px;   
   } 
   a.nav-expander:hover {
@@ -20,7 +20,8 @@ a.nav-expander {
   } 
   a.nav-expander.fixed:hover{
     background-color:rgba(255,255,255,.2);
-    padding:20px
+    padding:20px 15px;
+    margin:-20px -15px;
   }
   .nav-expanded a.nav-expander.fixed {
       right: 15em;
