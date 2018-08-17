@@ -233,4 +233,7 @@
     .search-area .container-browse ul{
         font-size: 0.8rem
     }
+    .widgets .widget-specialty ul.specialty-list li{
+        font-size: 0.9rem
+    }
 }

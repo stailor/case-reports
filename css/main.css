@@ -96,7 +96,11 @@ body{
 h1, h2, h3{
     margin:10px 0;
 }
-a, .widgets h2 {
+a, 
+.widgets h2, 
+.search-area .search h3,
+.search-area .container-browse .title,
+.widgets .widget-specialty .full-list h3 {
     color: #336fb8;
 }
 a:hover, a .svg-wrapper:hover{
@@ -312,7 +316,7 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 }
 .email .email a .svg-wrapper svg {
     width: 23px;
-    height: 23px;
+    height: 17px;
     background-color: #fff;
     stroke: #336fb8;
     display: inline-block;
@@ -343,7 +347,6 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     margin:10px;
 }
 .search-area .search h3 {
-    color: #336fb8;
     max-width: 670px;
     width:98%;
     margin:10px auto 0;
@@ -402,7 +405,6 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     margin:0 auto;
 }
 .search-area .container-browse .title {
-    color:#336fb8;
     font-family: 'InterFace'
 }
 .search-area .container-browse ul {
@@ -553,7 +555,6 @@ WIDGETS ALTMETRICS & SPECIALTY
 }
 .widgets .widget-specialty .full-list h3 {
     text-align: center;
-    color: #336fb8;
 }
 .widgets .widget-specialty li {
     padding: 15px 0 15px 0;
