@@ -540,7 +540,7 @@ WIDGETS ALTMETRICS & SPECIALTY
 }
 .widgets .widget-altmetrics article:last-child {
     border:none;
-    margin:0;
+    /* margin:0; */
 }
 .widgets .container-specialty-altmetrics .widget-altmetrics .copy footer {
     padding:0 0 10px;
