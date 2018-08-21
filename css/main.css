@@ -479,6 +479,8 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-spotlight img {
     float: right;
     padding: 5px 0;
+    max-height:200px;
+    height:auto;
 }
 .widgets .widget-spotlight .row, 
 .widgets .widget-most-read article,
