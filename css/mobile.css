@@ -85,8 +85,11 @@
 }
 
 @media screen and (max-width: 990px){   
-    .widget-spotlight .col-sm-12 iframe, .widget-spotlight .col-sm-12 img {
-        float:none
+    .widgets .widget-spotlight .col-sm-12 iframe, 
+    .widgets .widget-spotlight .col-sm-12 img,
+    .widgets .widget-products img {
+        float:none;
+        max-width: 50%;
     }
     .widget-specialty ul.specialty-list{
         -webkit-column-count:2;

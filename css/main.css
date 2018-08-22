@@ -480,7 +480,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-products img {
     float: right;
     padding: 5px 0;
-    max-height:200px;
+    max-width:200px;
     height:auto;
 
 }
