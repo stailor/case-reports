@@ -478,7 +478,7 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-spotlight iframe, 
 .widgets .widget-spotlight img,
 .widgets .widget-products img {
-    float: right;
+    float: left;
     padding: 5px 0;
     max-width:200px;
     height:auto;
