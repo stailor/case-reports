@@ -476,11 +476,13 @@ WIDGETS PUBLISH & SPOTLIGHT
     font-size: 1rem;
 }
 .widgets .widget-spotlight iframe, 
-.widgets .widget-spotlight img {
+.widgets .widget-spotlight img,
+.widgets .widget-products img {
     float: right;
     padding: 5px 0;
     max-height:200px;
     height:auto;
+
 }
 .widgets .widget-spotlight .row, 
 .widgets .widget-most-read article,
