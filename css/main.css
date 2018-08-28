@@ -527,7 +527,7 @@ WIDGETS ALTMETRICS & SPECIALTY
 .widgets .widget-specialty ul.specialty-list li {
     display: inline-block;
     max-width: 270px;
-    min-width: 270px;
+    min-width: 165px!important;
     line-height: 1.625rem !important;
 }
 .widgets .widget-specialty .specialty-purple {

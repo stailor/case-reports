@@ -145,6 +145,9 @@
         -moz-column-count: 1!important;
         column-count: 1!important;
     }
+    .widgets .widget-specialty ul.specialty-list li {
+        max-width: 165px;
+    }
     .container-nav nav.nav-mobile,
     nav.nav-mobile, 
     a.nav-expander.fixed,
@@ -210,6 +213,9 @@
         -moz-column-count: 1;
         column-count: 1;
     }
+    .widgets .widget-specialty ul.specialty-list li {
+        max-width: 165px;
+    }
     .search-area .container-browse ul {
         text-align: center;
     }
@@ -231,7 +237,8 @@
 
  @media only screen and (max-width: 435px) {
     .widgets .widget-publish button {
-        width: 100%
+        width: 100%;
+        font-size: 0.9rem;
     }
     .search-area .container-browse ul{
         font-size: 0.8rem
