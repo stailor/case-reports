@@ -298,10 +298,10 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     EMAIL ALERTS ROW
 ================================
 */
-.email {
+.homepage .email {
     background-color: #F2F7FC;
 }
-.homepage .email {
+.email {
     background-color: #fff;
 }
 .email .email-link {
