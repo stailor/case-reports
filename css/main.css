@@ -301,6 +301,9 @@ BMJ JOURNALS LOGO AND LOGIN ROW
 .email {
     background-color: #F2F7FC;
 }
+.homepage .email {
+    background-color: #fff;
+}
 .email .email-link {
     text-align: right;
 }
