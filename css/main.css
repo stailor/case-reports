@@ -605,3 +605,19 @@ footer h3 {
 footer nav.primary-color .wrapper ul li a:hover{
     color: #fff!important;
 }
+
+/* 
+================================
+    IFRAME
+================================
+*/
+iframe .bc-player-default_default .vjs-big-play-button {iframe
+    background: rgba(0,0,0,.45);
+    border-radius: 45px;
+    cursor: pointer;
+    height: 33%;
+    left: 30%;
+    position: absolute;
+    top: 33%;
+    width: 32%;
+}
