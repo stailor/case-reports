@@ -213,9 +213,6 @@
         -moz-column-count: 1;
         column-count: 1;
     }
-    .widgets .widget-specialty ul.specialty-list li {
-        max-width: 165px;
-    }
     .search-area .container-browse ul {
         text-align: center;
     }
@@ -243,7 +240,15 @@
     .search-area .container-browse ul{
         font-size: 0.8rem
     }
-    .widgets .widget-specialty ul.specialty-list li{
-        font-size: 0.9rem
-    }
+}
+
+/* SPECIALTIES COLUMNS */
+@media screen and (min-width: 503px) and (max-width:768px){
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}
+}
+@media screen and (min-width: 853px) and (max-width:991px){
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}    
+}
+@media screen and (min-width: 1041px) and (max-width:1206px){
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}    
 }

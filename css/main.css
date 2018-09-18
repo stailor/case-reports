@@ -532,6 +532,7 @@ WIDGETS ALTMETRICS & SPECIALTY
     max-width: 270px;
     min-width: 165px!important;
     line-height: 1.625rem !important;
+    vertical-align: top
 }
 .widgets .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
@@ -620,4 +621,13 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     position: absolute;
     top: 33%;
     width: 32%;
+}
+iframe {
+    position: relative;
+    left: initial;
+    right: initial;
+    bottom: initial;
+    top: initial;
+    widows: 100%;
+    height:auto;
 }
