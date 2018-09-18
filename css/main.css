@@ -631,3 +631,9 @@ iframe {
     widows: 100%;
     height:auto;
 }
+/* FIX BANNER AD WIDTH AT THE BOTTOM OF THE SITE */
+body footer nav #oas_Bottom #oas_frame_Bottom,
+body footer nav #oas_Bottom #oas_frame_Bottom img {
+	width:100%!important; 
+	height: auto!important;
+}
