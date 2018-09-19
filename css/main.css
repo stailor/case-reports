@@ -622,18 +622,18 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     top: 33%;
     width: 32%;
 }
-iframe {
+iframe, footer nav #oas_Bottom iframe#oas_frame_Bottom {
     position: relative;
     left: initial;
     right: initial;
     bottom: initial;
     top: initial;
-    widows: 100%;
-    height:auto;
+    widows: 100%!important;
+    height:auto!important;
 }
 /* FIX BANNER AD WIDTH AT THE BOTTOM OF THE SITE */
-body footer nav #oas_Bottom #oas_frame_Bottom,
-body footer nav #oas_Bottom #oas_frame_Bottom img {
+footer nav #oas_Bottom #oas_frame_Bottom,
+footer nav #oas_Bottom #oas_frame_Bottom img {
 	width:100%!important; 
 	height: auto!important;
 }
