@@ -50,10 +50,13 @@
     }
 }
 
-@media screen and (max-width:768px)
-{
+@media screen and (max-width:768px) {
     .widgets .widget-spotlight {
         margin: 80px 20px 40px!important;
+    }    
+    /* FIX BANNER AD WIDTH AT THE BOTTOM OF THE SITE */
+    #oas_Botto, #oas_frame_Bottom {
+        display: none;
     }
 }
 
