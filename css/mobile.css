@@ -155,7 +155,7 @@
     nav.nav-mobile, 
     a.nav-expander.fixed,
     .navbar {
-        display: block!important;
+        display: block;
         padding:0;
     }
     a.nav-expander.fixed {
