@@ -1,0 +1,13 @@
+.widget .icon > div{
+    background-repeat: no-repeat;
+    margin: -90px auto 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #C50084;
+    position: relative;
+}
+.widget .icon > div svg {
+    height: 39px;
+    margin: 10px;
+}
