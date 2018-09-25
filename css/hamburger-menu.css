@@ -23,6 +23,9 @@ a.nav-expander {
     padding:20px 15px;
     margin:-20px -15px;
   }
+  .nav-expanded a.nav-expander.fixed:hover{
+    background-color: none;
+  }
   .nav-expanded a.nav-expander.fixed {
       right: 15em;
   }
