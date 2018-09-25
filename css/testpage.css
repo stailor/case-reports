@@ -9,6 +9,9 @@
 .widget header {
     display: block;
 }
+.widget header h2 {
+    color: #336fb8
+}
 .widget div.icon>div{
     width: 38px;
     height: 38px;
