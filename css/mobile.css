@@ -1,6 +1,6 @@
 /* MAKE ALL BOXES EQUAL HEIGHTS     */
 @media screen and (min-width: 991px) {
-    .container-publish-spotlight, .container-specialty-altmetrics, .container-products-most-read {
+    .widgets .row {
         display: flex; /* Make the container element behave like a table */
         width: 100%; /* Set full-width to expand the whole page */
         margin: 0;

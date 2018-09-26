@@ -450,7 +450,8 @@ WIDGETS
 .widgets .widget-specialty,
 .widgets .widget-altmetrics,
 .widgets .widget-products,
-.widgets .widget-most-read {
+.widgets .widget-most-read,
+.widets .widget {
     background-color: #fff;
     margin: 40px 20px;    
     padding: 20px;
