@@ -163,6 +163,9 @@
     }
     .nav-expanded a.nav-expander.fixed {
         right: 13rem;
+    }    
+    .nav-expanded a.nav-expander.fixed, .nav-expanded img.hamburger-icon {
+        display:none!important
     }
     .container-nav .nav-desktop,
     .container-social,

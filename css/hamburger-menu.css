@@ -182,6 +182,3 @@ a.nav-expander {
       margin: 0.1em 0.8em -0.1em 0;
       opacity: 1;
     }
-    .nav-expanded a.nav-expander.fixed, .nav-expanded img.hamburger-icon {
-      display:none!important
-    }
