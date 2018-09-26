@@ -677,8 +677,7 @@ div.misc-related_journals article {
     display: table-cell;
     vertical-align: top;
 }
-.misc-related_journals aside article h3 {
-    font-size: 16px;
+.misc-related_journals article h3 {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: bold;
