@@ -623,9 +623,11 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     top: 33%;
     width: 32%;
 }
+
 /* ==============================
     EXTRA WIDGETS STYLING
 ============================== */
+
 .widget .icon {
     margin: -30px auto 0;
     width: 60px;
@@ -654,4 +656,49 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     fill: #fff;
     background-color: #C50084;
     height: 38px;
+}
+
+/* RELATED JOURNALS WIDGET */
+div.misc-related_journals article {
+    width: 100%;
+    display:block;
+}
+.misc-related_journals article figure.cover-image img {
+    display: block;
+    height: auto;
+    width: 106px;
+}
+.misc-related_journals article figure {
+    display: table-cell;
+    width: 125px;
+    vertical-align: top;
+}
+.misc-related_journals article aside {
+    display: table-cell;
+    vertical-align: top;
+}
+.misc-related_journals aside article h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-top: 0;
+}
+.misc-related_journals article p:first-of-type {
+    margin-top: 6px;
+}
+.misc-related_journals article p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.misc-related_journals article a {
+    color: #2a6ebb;
+    text-decoration: none;
+}
+.misc-related_journals article:nth-child(n+2) {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
 }
