@@ -520,7 +520,8 @@ WIDGETS ALTMETRICS & SPECIALTY
     margin-bottom: 35px
 }
 .widgets .widget-specialty .full-list {
-    text-align: center
+    text-align: center;
+    display: block;
 }
 .widgets .widget-specialty ul.specialty-list{
     height: auto; /*your fixed height*/
@@ -627,7 +628,11 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
 /* ==============================
     EXTRA WIDGETS STYLING
 ============================== */
-
+.widets .row {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
 .widget .icon {
     margin: -30px auto 0;
     width: 60px;
