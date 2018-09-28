@@ -628,7 +628,7 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
 /* ==============================
     EXTRA WIDGETS STYLING
 ============================== */
-.widets .row {
+.widgets .row {
     display: flex;
     width: 100%;
     margin: 0;
