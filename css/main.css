@@ -437,6 +437,10 @@ WIDGETS
     background-color: #eee;
     padding:53px 20px;
 }
+.widgets .row {
+    width: 100%; /* Set full-width to expand the whole page */
+    margin: 0;
+}
 .widgets .icon{
     margin: -90px auto 0;
     width: 60px;
@@ -451,7 +455,9 @@ WIDGETS
 .widgets .widget-altmetrics,
 .widgets .widget-products,
 .widgets .widget-most-read,
-.widets .widget {
+.widgets .widget,
+.widgets .row-column-cell .widget,
+.widgets .row-column-cell>div {
     background-color: #fff;
     margin: 40px 20px;    
     padding: 20px;
@@ -594,7 +600,6 @@ WIDGETS PRODUCTS & MOST READ
     border-bottom: none;
     margin:0
 }
-
 /* 
 ================================
     FOOTER
@@ -662,7 +667,9 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     height: 38px;
 }
 
-/* RELATED JOURNALS WIDGET */
+/* ==============================
+    RELATED JOURNALS WIDGET
+============================== */
 div.misc-related_journals article {
     width: 100%;
     display:block;
@@ -704,4 +711,49 @@ div.misc-related_journals article {
     border-top: 1px solid #ccc;
     margin-top: 20px;
     padding-top: 20px;
+}
+/* ==============================
+    EDITORS CHOICE WIDGET
+============================== */
+img.editors-choice {
+    height: 13px;
+    margin: 2px 0.5em 2px 0;
+}
+
+/* ==============================
+    FEATURED VIDEO WIDGET
+============================== */
+.blurb {
+    padding-left: 24px;
+    display: table-cell;
+    vertical-align: top;
+}
+.video {
+    width: 66.66666%;
+    display: table-cell;
+    vertical-align: top;
+}
+.video>div {
+    width: 100%;
+    display: table-cell;
+    vertical-align: top;
+}
+/* ==============================
+    EXPANDABLE WIDGET
+============================== */
+.widgets .row-column-cell .expandable-widget>header .expandable{
+    display: none;
+}
+.widgets .row .row-column-cell [class^="widget-"] header .icon>div:first-child{
+	background-size: cover;
+	width: 39px;
+	height: 39px;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+}
+.widgets .row .row-column-cell [class^="widget-"] header .icon div svg {
+    margin: 10px;
+    height: 39px;
+    stroke: #fff;
+    fill: #fff;
 }
