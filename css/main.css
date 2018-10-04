@@ -719,7 +719,6 @@ img.editors-choice {
     height: 13px;
     margin: 2px 0.5em 2px 0;
 }
-
 /* ==============================
     FEATURED VIDEO WIDGET
 ============================== */
@@ -737,6 +736,59 @@ img.editors-choice {
     width: 100%;
     display: table-cell;
     vertical-align: top;
+}
+.widget.media-video .video>div {
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.widget.media-video .video h3 {      
+    color: #2a6ebb;  
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2;
+    margin: 16px 0;
+
+}
+.widget.media-video .video .media-video time {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 2;
+}
+
+/* ==============================
+    JOBS WIDGET
+============================== */
+div.widget.jobs-list header div.view-all {
+    display: none;
+}
+div.widget.jobs-list div.view-all {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+div.widget.jobs-list div.list-of-jobs article h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    line-height: 1.2;
+}
+div.widget.jobs-list div.list-of-jobs article p.location, div.widget.jobs-list div.list-of-jobs article p.recruiter, div.widget.jobs-list div.list-of-jobs article p.salary {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #333;
+}
+div.widget.jobs-list div.list-of-jobs article p {   
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    line-height: 1.2;
+}
+div.widget.jobs-list div.list-of-jobs article + article {
+    border-top: 1px solid #ccc;
+    margin-top: 8.6px;
+    padding-top: 8.4px;
 }
 /* ==============================
     EXPANDABLE WIDGET
