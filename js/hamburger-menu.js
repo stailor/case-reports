@@ -1,9 +1,27 @@
 // http://blog.themearmada.com/off-canvas-slide-menu-for-bootstrap/
 
-
 $(document).ready(function(){												
 
-    //Navigation Menu Slider
+// CODE TO TOGGLE EXPANDABLE WIDGETS
+
+    // $(".expandable-widget section").hide();
+    // $(".collapse").hide();
+    // $(".expand").show();
+
+    // $('.expand').click(function(){
+    //     $(".collapse").toggle();
+    //     $(".expand").toggle();
+    //     $(".expandable-widget section").slideDown();
+        
+    // }),
+    // $('.collapse').click(function(){
+    //     $(".collapse").toggle();
+    //     $(".expand").toggle();
+    //     $(".expandable-widget section").slideUp();
+    // });
+
+//Navigation Menu Slider
+
      $('#nav-expander').on('click',function(e){
            e.preventDefault();
            $('body').toggleClass('nav-expanded');

@@ -456,8 +456,8 @@ WIDGETS
 .widgets .widget-products,
 .widgets .widget-most-read,
 .widgets .widget,
-.widgets .row-column-cell .widget,
-.widgets .row-column-cell>div {
+.widgets .row-column-cell div .widget,
+.widgets .row-column-cell>div>div {
     background-color: #fff;
     margin: 40px 20px;    
     padding: 20px;
@@ -505,7 +505,9 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-spotlight .row:last-child {
     border-bottom: none;
 }
-
+  .widgets .widget-spotlight header .icon svg .star {
+    fill: #fff;
+}
 /*================================
 WIDGETS ALTMETRICS & SPECIALTY
 ================================
@@ -797,15 +799,18 @@ div.widget.jobs-list div.list-of-jobs article + article {
     display: none;
 }
 .widgets .row .row-column-cell [class^="widget-"] header .icon>div:first-child{
-	background-size: cover;
-	width: 39px;
-	height: 39px;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 38px;
+    background-color:  #C50084;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 11px;
+    left: 11px;
 }
 .widgets .row .row-column-cell [class^="widget-"] header .icon div svg {
-    margin: 10px;
-    height: 39px;
-    stroke: #fff;
+    height: 38px;
+    background-color: #C50084;    
     fill: #fff;
 }
