@@ -76,7 +76,8 @@
         font-size: 24px;
         vertical-align: middle;
         display:table-cell;
-        text-align: left
+        text-align: left;
+        padding-right: 20px;
     }
     .widgets .row .row-column-cell .expandable-widget:not(.open) header .icon {
         background-color: #fff;
