@@ -638,9 +638,10 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
 .widgets .row {
     width: 100%;
     margin: 0;
+    display: block
 }
 .widget .icon {
-    margin: -30px auto 0;
+    margin: -90px auto 0;
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -721,13 +722,14 @@ img.editors-choice {
     height: 13px;
     margin: 2px 0.5em 2px 0;
 }
+.articles-editors_choice time{
+    font-size: 0.875rem;
+}
 /* ==============================
     FEATURED VIDEO WIDGET
 ============================== */
 .blurb {
-    padding-left: 24px;
-    display: table-cell;
-    vertical-align: top;
+    padding: 10px 0;
 }
 .video {
     width: 66.66666%;
@@ -736,7 +738,8 @@ img.editors-choice {
 }
 .video>div {
     width: 100%;
-    display: table-cell;
+    height:311px;
+    display: block;
     vertical-align: top;
 }
 .widget.media-video .video>div {
@@ -744,7 +747,7 @@ img.editors-choice {
     height: -webkit-fill-available;
 }
 .widget.media-video .video h3 {      
-    color: #2a6ebb;  
+    color: #C50084;  
     font-size: 16px;
     font-weight: bold;
     line-height: 2;

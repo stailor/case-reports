@@ -62,49 +62,52 @@
     EXPANDABLE WIDGETS AT MOBILE 
     ========================================
     */
-    .widgets .row .row-column-cell .expandable-widget {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget {
         padding: 0;
     }
-    .widgets .row .row-column-cell .expandable-widget:not(.open) header{
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header{
         border:1px solid #336fb8;
         padding: 17px 17px 17px 20px;
         display: block;
         width: auto;
         position: relative;
     }
-    .widgets .row .row-column-cell .expandable-widget:not(.open) header h2 {        
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header h2 {        
         font-size: 24px;
         vertical-align: middle;
         display:table-cell;
         text-align: left;
         padding-right: 20px;
     }
-    .widgets .row .row-column-cell .expandable-widget:not(.open) header .icon {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header .icon {
         background-color: #fff;
         display:table-cell;
         height: auto;
         margin: 0;
         -webkit-text-fill-color: #C50084;
     }
-    .widgets .row-column-cell .expandable-widget:not(.open) header .icon [class^="icon-"]:before, [class*=" icon-"]:before{
+    .widgets .row-column-cell [class^="widget-"].expandable-widget:not(.open) header .icon [class^="icon-"]:before, [class*=" icon-"]:before{
         top:0;
         margin: 0;
         font-size: 30px;
         line-height: initial;
     }
-    .widgets .row .row-column-cell .expandable-widget[class^="widget-"] header .icon div svg {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon div svg {
         height:32px;
         margin:0;
         stroke: #C50084;
         background-color: #fff
     }
-    .widgets .row .row-column-cell .expandable-widget header .icon svg .st0 {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon svg .st0 {
         fill: #C50084;
     }
-    .widgets .row .row-column-cell .expandable-widget header .icon svg .star {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon svg .star {
         stroke: #C50084;
     }
-    .widgets .row .row-column-cell .expandable-widget[class^="widget-"] header .icon>div:first-child {
+    .widgets .row .row-column-cell .widget-products.expandable-widget header .icon svg #Layer_2 .st2{
+        fill:#C50084!important
+    }
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon>div:first-child {
         background-size: cover;
         width: 32px;
         height: 32px;
@@ -114,25 +117,37 @@
         top:0;
         left:0
     }   
-    .widgets .row .row-column-cell .expandable-widget header svg {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header svg {
         background-color: #fff;
         max-width: 30px;
     }
-    .widgets .row .row-column-cell .expandable-widget:not(.open) section {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) section {
         display: none;
     }
-    .widgets .row-column-cell .expandable-widget header .expandable {
+    .widgets .row-column-cell [class^="widget-"].expandable-widget header .expandable {
         display: block;
     }
-    .widgets .row-column-cell .expandable-widget header .expandable div {
+    .widgets .row-column-cell [class^="widget-"] header .expandable{
+        display: none;
+    }
+    .widgets .row-column-cell [class^="widget-"].expandable-widget header .expandable div {
         width: 15px;
         height: 15px;
         position: absolute;
         top: 22px;
         right: 18px;
+        cursor: pointer;
     }
 }
 
+@media screen and (min-width: 768px) {
+    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) section {
+        display: block;
+    }
+    .widgets .row-column-cell [class^="widget-"] header .expandable{
+        display: none;
+    }
+}
 @media screen and (min-width: 1206px) and (max-width:1400px)
 {
     .widget-specialty ul.specialty-list {

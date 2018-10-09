@@ -9,6 +9,7 @@ $(document).ready(function(){
 
             $(".expand").click(function(){
                 // $(this).closest(".expandable-widget").find("section")show();
+                // $(this).closest(".expandable-widget").addClass("testttttttttttttt");
                 $(".expandable-widget section").show();
                 $(".collapse").toggle();
                 $(".expand").toggle();
