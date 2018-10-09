@@ -797,7 +797,7 @@ div.widget.jobs-list div.list-of-jobs article + article {
 /* ==============================
     EXPANDABLE WIDGET
 ============================== */
-.widgets .row-column-cell .expandable-widget>header .expandable{
+.widgets .expandable{
     display: none;
 }
 .widgets .row .row-column-cell [class^="widget-"] header .icon>div:first-child{
