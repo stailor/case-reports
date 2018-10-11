@@ -255,6 +255,10 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     font-size: 26px;
     max-width: 280px;
 }
+.container-nav .case-reports h1 a {
+    color: #fff;
+    text-decoration: none
+}
 .container-nav .navigation{    
     padding-left: 0;
     float: right;
@@ -730,20 +734,10 @@ img.editors-choice {
 .blurb {
     padding: 10px 0;
 }
-.video {
-    width: 66.66666%;
-    display: table-cell;
-    vertical-align: top;
-}
-.video>div {
+.widget.media-video .video {
     width: 100%;
-    height:311px;
     display: block;
     vertical-align: top;
-}
-.widget.media-video .video>div {
-    width: 100%;
-    height: -webkit-fill-available;
 }
 .widget.media-video .video h3 {      
     color: #C50084;  
@@ -758,7 +752,6 @@ img.editors-choice {
     font-size: 0.875rem;
     line-height: 2;
 }
-
 /* ==============================
     JOBS WIDGET
 ============================== */
@@ -793,6 +786,42 @@ div.widget.jobs-list div.list-of-jobs article + article {
     border-top: 1px solid #ccc;
     margin-top: 8.6px;
     padding-top: 8.4px;
+}
+
+/* ==============================
+    BLOGS WIDGET
+============================== */
+t.misc-blog article h4 a {
+    color: #2a6ebb;
+    text-decoration: none;
+    display: inline;
+}
+ul {
+    list-style: none;
+}
+.misc-blog article footer ul li {
+    display: inline;
+}
+.misc-blog article footer ul li a {
+    color: #2a6ebb;
+    text-decoration: none;
+}
+.misc-blog article h4 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: inline;
+}
+.misc-blog article footer {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #333;
+    line-height: 24px;
+    padding-bottom: 0;
+}
+.misc-blog article:first-of-type {
+    margin-top: 4px;
 }
 /* ==============================
     EXPANDABLE WIDGET

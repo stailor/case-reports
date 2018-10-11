@@ -14,6 +14,94 @@
         width:60%; 
     }
 }
+/* 
+========================================    
+VIDEO WIDTH 
+========================================    
+*/
+@media screen and (min-width: 1550px) {
+    .widget.media-video .video>div {
+        width: 100%!important;
+        height: 357px;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1550px){
+    .widget.media-video .video>div {
+        width: 100%!important;
+        height:269px!important
+    }
+}
+@media screen and (min-width: 11100px) and (max-width:1200px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:238px
+    }
+}
+@media screen and (min-width: 992px) and (max-width:11100px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:184px
+    }
+}
+@media screen and (min-width: 940px) and (max-width:992px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:438px
+    }
+}
+@media screen and (min-width: 870px) and (max-width:940px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:413px
+    }
+}
+@media screen and (min-width: 790px) and (max-width:870px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:373px
+    }
+}
+@media screen and (min-width: 720px) and (max-width:790px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:331px
+    }
+}
+@media screen and (min-width: 680px) and (max-width:720px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:289px
+    }
+}
+@media screen and (min-width: 640px) and (max-width:680px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:266px
+    }
+}
+@media screen and (min-width: 620px) and (max-width:640px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:246px
+    }
+}
+@media screen and (min-width: 590px) and (max-width:620px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:232px
+    }
+}
+@media screen (max-width:590px){
+    .widget.media-video .video>div {
+        width: 100%;
+        height:215px
+    }
+}
+/* 
+========================================
+VIDEO WIDTH ENDS
+========================================    
+*/
 
 @media screen and (max-width: 991px) {
     .widgets .row {
@@ -67,52 +155,52 @@
     EXPANDABLE WIDGETS AT MOBILE 
     ========================================
     */
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget {
         padding: 0;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header{
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child {
         border:1px solid #336fb8;
         padding: 17px 17px 17px 20px;
         display: block;
         width: auto;
         position: relative;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header h2 {        
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child h2 {        
         font-size: 24px;
         vertical-align: middle;
         display:table-cell;
         text-align: left;
         padding-right: 20px;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) header .icon {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon {
         background-color: #fff;
         display:table-cell;
         height: auto;
         margin: 0;
         -webkit-text-fill-color: #C50084;
     }
-    .widgets .row-column-cell [class^="widget-"].expandable-widget:not(.open) header .icon [class^="icon-"]:before, [class*=" icon-"]:before{
+    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .icon [class^="icon-"]:before, [class*=" icon-"]:before{
         top:0;
         margin: 0;
         font-size: 30px;
         line-height: initial;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon div svg {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon div svg {
         height:32px;
         margin:0;
         stroke: #C50084;
         background-color: #fff
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon svg .st0 {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .st0 {
         fill: #C50084;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon svg .star {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .star {
         stroke: #C50084;
     }
-    .widgets .row .row-column-cell .widget-products.expandable-widget header .icon svg #Layer_2 .st2{
+    .widgets .row .row-column-cell .widget-products.expandable-widget header:first-child .icon svg #Layer_2 .st2{
         fill:#C50084!important
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header .icon>div:first-child {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon>div:first-child {
         background-size: cover;
         width: 32px;
         height: 32px;
@@ -122,34 +210,45 @@
         top:0;
         left:0
     }   
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget header svg {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child svg {
         background-color: #fff;
         max-width: 30px;
     }
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) section {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget section {
         display: none;
     }
-    .widgets .row-column-cell [class^="widget-"].expandable-widget header .expandable {
+    .widgets .row .row-column-cell .widget-products.expandable-widget section {
+        padding:0 15px;
+    }
+    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .expandable {
         display: block;
+        top: 20px;
+        right: 52px;
+        position: absolute;
     }
-    .widgets .row-column-cell [class^="widget-"] header .expandable{
-        display: none;
-    }
-    .widgets .row-column-cell [class^="widget-"].expandable-widget header .expandable div {
+    .widgets .row-column-cell .expandable {
+        display: block;
         width: 15px;
         height: 15px;
         position: absolute;
-        top: 22px;
-        right: 18px;
+        top: 21px;
+        right: 51px;
         cursor: pointer;
     }
+    .widgets .row-column-cell .expandable div {
+        padding: 0;
+        margin: 0;        
+    }
+    .widgets .row-column-cell .expandable div svg {
+        height:15px;
+        width: 15px;
+    }
 }
-
 @media screen and (min-width: 768px) {
-    .widgets .row .row-column-cell [class^="widget-"].expandable-widget:not(.open) section {
+    .widgets .row .row-column-cell .expandable-widget section {
         display: block;
     }
-    .widgets .row-column-cell [class^="widget-"] header .expandable{
+    .widgets .row-column-cell .expandable{
         display: none;
     }
 }
