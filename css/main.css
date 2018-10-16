@@ -91,7 +91,7 @@
 body{
     font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 17px
+    font-size: 16px
 }
 h1, h2, h3{
     margin:10px 0;
@@ -137,6 +137,9 @@ h5 {
 }
 article {
     padding: 0 0 10px 0
+}
+.btn {
+    font-size: 16px
 }
 button.btn {
     background-color: #336fb8;
@@ -513,8 +516,8 @@ WIDGETS PUBLISH & SPOTLIGHT
     fill: #fff;
 }
 /*================================
-WIDGETS ALTMETRICS & SPECIALTY
-================================
+WIDGETS ALTMETRICS
+==================================
 */
 .widgets .widget-altmetrics figure {
     margin: 0 10px 2rem;
@@ -528,6 +531,20 @@ WIDGETS ALTMETRICS & SPECIALTY
 .container-specialty-altmetrics div:first-child {
     position: relative;
 }
+.widgets .widget-altmetrics article .row {
+    margin: 0px 0px;
+}
+.widgets .widget-altmetrics article .row [class*="col-"] {
+    padding:0;
+}
+.widgets .widget-altmetrics article:last-child {
+    border:none;
+}
+
+/*================================
+WIDGETS SPECIALTY
+==================================
+*/
 .widgets .widget-specialty .specialty-list-container{
     margin-bottom: 35px
 }
@@ -582,16 +599,6 @@ WIDGETS ALTMETRICS & SPECIALTY
 .widgets .widget-specialty li {
     padding: 15px 0 15px 0;
 }
-.widgets .widget-altmetrics article .row {
-    margin: 0px 0px;
-}
-.widgets .widget-altmetrics article .row [class*="col-"] {
-    padding:0;
-}
-.widgets .widget-altmetrics article:last-child {
-    border:none;
-    /* margin:0; */
-}
 
 /* 
 ================================
@@ -622,7 +629,7 @@ footer nav.primary-color .wrapper ul li a:hover{
 
 /* 
 ================================
-    IFRAME
+JNP: IFRAME STYLING
 ================================
 */
 iframe .bc-player-default_default .vjs-big-play-button {iframe
@@ -637,8 +644,8 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
 }
 
 /* ==============================
-    EXTRA WIDGETS STYLING
-============================== */
+JNP: WIDGETS STYLING
+================================= */
 .widgets .row {
     width: 100%;
     margin: 0;
@@ -673,9 +680,9 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     height: 38px;
 }
 
-/* ==============================
-    RELATED JOURNALS WIDGET
-============================== */
+/* ==================================
+JNP: RELATED JOURNALS WIDGET
+===================================== */
 div.misc-related_journals article {
     width: 100%;
     display:block;
@@ -719,8 +726,8 @@ div.misc-related_journals article {
     padding-top: 20px;
 }
 /* ==============================
-    EDITORS CHOICE WIDGET
-============================== */
+JNP: EDITORS CHOICE WIDGET
+================================= */
 img.editors-choice {
     height: 13px;
     margin: 2px 0.5em 2px 0;
@@ -729,8 +736,8 @@ img.editors-choice {
     font-size: 0.875rem;
 }
 /* ==============================
-    FEATURED VIDEO WIDGET
-============================== */
+JNP: FEATURED VIDEO WIDGET
+================================= */
 .blurb {
     padding: 10px 0;
 }
@@ -753,8 +760,8 @@ img.editors-choice {
     line-height: 2;
 }
 /* ==============================
-    JOBS WIDGET
-============================== */
+JNP: JOBS WIDGET
+================================= */
 div.widget.jobs-list header div.view-all {
     display: none;
 }
@@ -789,14 +796,17 @@ div.widget.jobs-list div.list-of-jobs article + article {
 }
 
 /* ==============================
-    BLOGS WIDGET
-============================== */
-t.misc-blog article h4 a {
+JNP: BLOGS WIDGET
+================================= */
+.misc-blog #blog, #careers-featured-recruiters-list {
+    padding: 10px;
+}
+.misc-blog article h4 a {
     color: #2a6ebb;
     text-decoration: none;
     display: inline;
 }
-ul {
+.misc-blog ul {
     list-style: none;
 }
 .misc-blog article footer ul li {
@@ -824,8 +834,8 @@ ul {
     margin-top: 4px;
 }
 /* ==============================
-    EXPANDABLE WIDGET
-============================== */
+JNP: EXPANDABLE WIDGET
+================================= */
 .widgets .expandable{
     display: none;
 }
@@ -844,4 +854,12 @@ ul {
     height: 38px;
     background-color: #C50084;    
     fill: #fff;
+}
+/* 
+=================================
+JNP: FEATURED RECRUITERS
+=================================
+*/
+.careers-featured_recruiters .icon {
+    display: none;
 }

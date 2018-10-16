@@ -103,6 +103,12 @@ VIDEO WIDTH ENDS
 ========================================    
 */
 
+/* 
+============================================
+SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
+============================================
+*/
+
 @media screen and (max-width: 991px) {
     .widgets .row {
         display: block
@@ -165,12 +171,18 @@ VIDEO WIDTH ENDS
         width: auto;
         position: relative;
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child h2 {        
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget section header {
+        border: none!important;
+        padding: 0!important;
+    }
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child h2,
+    .widgets .expandable-widget header:first-child div h2 {
         font-size: 24px;
         vertical-align: middle;
         display:table-cell;
         text-align: left;
         padding-right: 20px;
+        margin:0;
     }
     .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon {
         background-color: #fff;
@@ -214,7 +226,8 @@ VIDEO WIDTH ENDS
         background-color: #fff;
         max-width: 30px;
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget section {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget section,
+    .widgets .expandable-widget div:nth-child(2) {
         display: none;
     }
     .widgets .row .row-column-cell .widget-products.expandable-widget section {
@@ -252,6 +265,12 @@ VIDEO WIDTH ENDS
         display: none;
     }
 }
+/* 
+========================================
+SPECIALTY STYLES
+========================================    
+*/
+
 @media screen and (min-width: 1206px) and (max-width:1400px)
 {
     .widget-specialty ul.specialty-list {
@@ -442,11 +461,11 @@ VIDEO WIDTH ENDS
 
 /* SPECIALTIES COLUMNS */
 @media screen and (min-width: 503px) and (max-width:768px){
-    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165px;}
 }
 @media screen and (min-width: 853px) and (max-width:991px){
-    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}    
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165px;}    
 }
 @media screen and (min-width: 1041px) and (max-width:1206px){
-    .widgets .widget-specialty ul.specialty-list li{max-width: 165PX;}    
+    .widgets .widget-specialty ul.specialty-list li{max-width: 165px;}    
 }
