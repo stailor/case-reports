@@ -860,6 +860,7 @@ JNP: EXPANDABLE WIDGET
 JNP: FEATURED RECRUITERS
 =================================
 */
-.careers-featured_recruiters .icon {
+.widgets .careers-featured_jobs header .icon,
+.widgets .careers-featured_recruiters header .icon {
     display: none;
 }

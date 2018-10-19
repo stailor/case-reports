@@ -1,0 +1,141 @@
+@media screen and (min-width:769px){
+
+    /* GREEN Circle ICON */
+    /* .articles-latest header>div .icon {
+        display: table-cell;
+        color: #669933;
+        font-size: 28px;
+        line-height: 38px;      
+        margin: 0;
+        vertical-align: top;  
+    }
+    .articles-latest header>div .icon {
+        margin:-30px auto 0;
+        width:60px;
+        height:60px;
+        border-radius:30px;
+        background-color:#669933;
+        position:relative
+    }
+    .articles-latest header>div .icon>div{
+        width:38px;
+        height:38px;
+        background-color:#669933;
+        background-repeat:no-repeat;
+        position:absolute;
+        top:11px;
+        left:11px
+    } */
+    /* GREEN Circle ICON ENDS */
+
+    /* BMJ PRODUCTS GREEN ICON WHITE BG */
+    .articles-latest {
+        padding:0 20px 20px
+    }
+    .articles-latest article p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .articles-latest header>div .icon svg {
+        height:38px
+    }
+    .articles-latest header>div .icon svg g#Layer_2 path {
+        fill:#669933!important;
+    }
+    /* BMJ PRODUCTS GREEN ICON WHITE BG ENDS */
+
+    /* BMJ SPECIALTY GREEN ICON WHITE BG */
+    .widget-specialty {        
+        padding:0 20px 20px
+    }
+    .widget-specialty h2 {
+        color: var(--primaryColor);
+        font-size: 28px;
+        line-height: 38px;
+        display: table-cell;
+    }
+    .widget-specialty ul.specialty-list li {
+        display: inline-block;
+        max-width: 270px;
+        min-width: 165px!important;
+        line-height: 1.625rem !important;
+        vertical-align: top;
+        padding: 15px 0 15px 0;
+    }
+    .widget-specialty .full-list {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        color: #2a6ebb;
+        line-height: 2rem;
+        font-size: 24px;
+        margin-bottom: 0!important;
+        font-weight: 400;
+    }
+    .widget-specialty .full-list a {   
+        text-decoration: none;
+    }
+    /* BMJ SPECIALTY GREEN ICON WHITE BG ENDS */
+
+    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
+    .widget-spotlight a {
+        color: #336fb8;
+        text-decoration: none;
+    }
+    .widget-spotlight header {
+        display: table;
+        table-layout: fixed;
+        border-spacing: 0;
+        width: 100%;
+        padding: 17px 0 21px;        
+    }
+    .widget-spotlight header .icon {
+        display: table-cell;
+        width: 52px;
+    }
+    .widget-spotlight header .icon svg {
+        height:38px
+    }
+    .widget-spotlight header .icon svg#Layer_1 {
+        fill: none;
+    }
+    .widget-spotlight header .icon svg#Layer_1 path.st0 {
+        stroke: #669933;
+    }
+    .widget-spotlight header h2 {
+        color: var(--primaryColor);
+        margin: 0;
+        vertical-align: top;
+        font-size: 28px;
+        line-height: 38px;
+        display: table-cell;
+    }
+    .widget-spotlight article {
+        padding: 0 0 10px 0;
+    }
+    .widget-spotlight article h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .widget-spotlight article h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+        display: inline;
+    }
+    .widget-spotlight footer {
+        font-size: 0.875rem;
+        color: #333;
+        line-height: 24px;
+        display: inline;
+        padding: 0 0 0 0.3rem;
+    }
+    .widget-spotlight section .row {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
+}
