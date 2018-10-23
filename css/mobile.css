@@ -161,22 +161,25 @@ SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
     EXPANDABLE WIDGETS AT MOBILE 
     ========================================
     */
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget, 
+    .widgets .row .row-column-cell .expandable-widget {
         padding: 0;
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget>header:first-child, 
+    .widgets .row .row-column-cell .expandable-widget>header:first-child {
         border:1px solid #336fb8;
         padding: 17px 17px 17px 20px;
         display: block;
         width: auto;
         position: relative;
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget section header {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget section header, 
+    .widgets .row .row-column-cell .expandable-widget ::selection header {
         border: none!important;
         padding: 0!important;
     }
     .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child h2,
-    .widgets .expandable-widget header:first-child div h2 {
+    .widgets .expandable-widget header:first-child h2 {
         font-size: 24px;
         vertical-align: middle;
         display:table-cell;
@@ -184,14 +187,18 @@ SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
         padding-right: 20px;
         margin:0;
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon, 
+    .widgets .row .row-column-cell .expandable-widget header:first-child .icon {
         background-color: #fff;
         display:table-cell;
         height: auto;
         margin: 0;
         -webkit-text-fill-color: #C50084;
     }
-    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .icon [class^="icon-"]:before, [class*=" icon-"]:before{
+    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .icon [class^="icon-"]:before, 
+    [class*=" icon-"]:before, 
+    .widgets .row-column-cell .expandable-widget header:first-child .icon [class^="icon-"]:before,
+    {
         top:0;
         margin: 0;
         font-size: 30px;
@@ -203,16 +210,18 @@ SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
         stroke: #C50084;
         background-color: #fff
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .st0 {
+    /* .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .st0 {
         fill: #C50084;
-    }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .star {
+    } */
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon svg .star,
+    .widgets .row .row-column-cell .expandable-widget header:first-child .icon svg .star {
         stroke: #C50084;
     }
     .widgets .row .row-column-cell .widget-products.expandable-widget header:first-child .icon svg #Layer_2 .st2{
         fill:#C50084!important
     }
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon>div:first-child {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child .icon>div:first-child,
+    .widgets .row .row-column-cell .expandable-widget header:first-child .icon>div:first-child {
         background-size: cover;
         width: 32px;
         height: 32px;
@@ -222,18 +231,22 @@ SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
         top:0;
         left:0
     }   
-    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child svg {
+    .widgets .row .row-column-cell [class^="widget"].expandable-widget header:first-child svg,
+    .widgets .row .row-column-cell .expandable-widget header:first-child svg {
         background-color: #fff;
         max-width: 30px;
     }
     .widgets .row .row-column-cell [class^="widget"].expandable-widget section,
+    .widgets .row .row-column-cell .expandable-widget section,
     .widgets .expandable-widget div:nth-child(2) {
         display: none;
     }
     .widgets .row .row-column-cell .widget-products.expandable-widget section {
         padding:0 15px;
     }
-    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .expandable {
+    .widgets .row-column-cell [class^="widget"].expandable-widget header:first-child .expandable,
+    .widgets .row-column-cell 
+    .expandable-widget header:first-child .expandable {
         display: block;
         top: 20px;
         right: 52px;
@@ -255,6 +268,10 @@ SPECIALTY, SPOTLIGHT, EMAIL LINK, STRAPLINE
     .widgets .row-column-cell .expandable div svg {
         height:15px;
         width: 15px;
+    }
+    .widgets .row-column-cell .expandable-widget div article,
+    .widgets .row-column-cell .expandable-widget>div {
+        padding: 10px;
     }
 }
 @media screen and (min-width: 768px) {
