@@ -1,0 +1,163 @@
+@media screen and (min-width:769px){
+
+    a {
+        color: #336fb8;
+        text-decoration: none
+    }
+
+/* =====================================
+    ROW 2 - GREEN CIRCLE WHITE ICON
+===================================== */
+
+    #layout-e #row-2  .misc-bmjproducts .widget-products header .icon,
+    #layout-e #row-2 .misc-spotlight .widget-spotlight header .icon,
+    #layout-e #row-2 .misc-specialty .widget-specialty header .icon {
+        display:none;
+    }
+    
+/* =====================================
+    ROW 2 - GREEN CIRCLE WHITE ICON ENDS
+===================================== */
+
+    /* BMJ PRODUCTS */
+    .misc-bmjproducts header .icon>div{
+        background-image:url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/bell-regular.png')
+    }
+    .misc-bmjproducts .widget-products section h3 {
+        line-height: 2rem;
+        margin-bottom: 0!important;
+        font-weight: 400;
+    }
+    .misc-bmjproducts .widget-products section p {
+        font-size: 1rem;
+        line-height: 1.5;       
+    }
+
+    /* BMJ SPOTLIGHT */
+    .misc-spotlight header .icon>div {
+        background-image:url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/spotlight-star.png')
+    }
+    .misc-spotlight .widget-spotlight section h4 {
+        line-height: 2rem;
+        margin-bottom: 0!important;
+        font-weight: 400;
+    }
+    .misc-spotlight .widget-spotlight section h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .misc-spotlight .widget-spotlight section h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+        display: inline;
+    }
+
+    /* BMJ SPECIALTY */
+    .misc-specialty header .icon>div {
+        background-image: url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/specialties.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .widget-specialty ul.specialty-list li {
+        display: inline-block;
+        max-width: 270px;
+        min-width: 165px!important;
+        line-height: 1.625rem !important;
+        vertical-align: top;
+        padding: 15px 0 15px 0;
+    }
+    .widget-specialty .full-list {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        color: #2a6ebb;
+        line-height: 2rem;
+        font-size: 24px;
+        margin-bottom: 0!important;
+        font-weight: 400;
+    }
+    .widget-specialty .full-list a {   
+        text-decoration: none;
+        color: #2a6ebb;
+    }
+
+    /* BMJ PRODUCTS GREEN ICON WHITE BG */
+    .row-3 .articles-latest {
+        padding:0 20px 20px
+    }
+    .row-3 .articles-latest article p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .row-3 .articles-latest header>div .icon svg {
+        height:38px
+    }
+    .row-3 .articles-latest header>div .icon svg g#Layer_2 path {
+        fill:#669933!important;
+    }
+
+    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
+    .row-3 .widget-spotlight a {
+        color: #336fb8;
+        text-decoration: none;
+    }
+    .row-3 .widget-spotlight header {
+        display: table;
+        table-layout: fixed;
+        border-spacing: 0;
+        width: 100%;
+        padding: 17px 0 21px;        
+    }
+    .row-3 .widget-spotlight header .icon {
+        display: table-cell;
+        width: 52px;
+    }
+    .row-3 .widget-spotlight header .icon svg {
+        height:38px
+    }
+    .row-3 .widget-spotlight header .icon svg#Layer_1 {
+        fill: none;
+    }
+    .row-3 .widget-spotlight header .icon svg#Layer_1 path.st0 {
+        stroke: #669933;
+    }
+    .row-3 .widget-spotlight header h2 {
+        color: var(--primaryColor);
+        margin: 0;
+        vertical-align: top;
+        font-size: 28px;
+        line-height: 38px;
+        display: table-cell;
+    }
+    .row-3 .widget-spotlight article {
+        padding: 0 0 10px 0;
+    }
+    .row-3 .widget-spotlight article h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .row-3 .widget-spotlight article h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+        display: inline;
+    }
+    .row-3 .widget-spotlight footer {
+        font-size: 0.875rem;
+        color: #333;
+        line-height: 24px;
+        display: inline;
+        padding: 0 0 0 0.3rem;
+    }
+    .row-3 .widget-spotlight section .row {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+    }
+    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
+}
