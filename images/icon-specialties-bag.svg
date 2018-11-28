@@ -1,0 +1,23 @@
+<svg class="primary-color-fill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-277 400.9 40 40" style="enable-background:new -277 400.9 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0 {fill: stroke:var(--primaryColor)!important;stroke: stroke:var(--primaryColor)!important}
+</style>
+<g id="specialties">
+	<g>
+		<polygon class="st0" points="-251.5,410.7 -251.5,404.5 -262.6,404.5 -262.6,410.7 -264.2,410.7 -264.2,404.6 -262.5,402.9 
+			-251.4,402.9 -249.8,404.7 -249.8,410.7 		"/>
+	</g>
+	<g>
+		<path class="st0" d="M-242.4,438.9h-29.2c-2.7,0-5-2.3-4.9-5l1.6-18.6c0.1-2.5,2.2-4.7,4.9-4.7h26c2.7,0,5,2.1,4.9,4.8l1.6,18.5
+			C-237.5,436.7-239.7,438.9-242.4,438.9z M-270,412.2c-1.9,0-3.1,1.7-3.2,3.3l-1.7,18.9c0,2.2,2.3,2.9,3.2,2.9h29.4
+			c0.9,0,3.3-0.7,3.3-2.9l-1.6-19c-0.2-2.2-1.2-3.3-3.4-3.3L-270,412.2z"/>
+	</g>
+	<g>
+		<rect x="-257.9" y="417" class="st0" width="1.7" height="14.7"/>
+	</g>
+	<g>
+		<rect x="-264.3" y="423.6" class="st0" width="14.7" height="1.6"/>
+	</g>
+</g>
+</svg>

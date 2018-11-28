@@ -608,7 +608,6 @@ WIDGETS PRODUCTS & MOST READ
 .widgets .widget-products img {
     display: block;
     margin: 10px auto;
-    float:none;
 }
 .widgets .widget-most-read article:last-child {
     border-bottom: none;

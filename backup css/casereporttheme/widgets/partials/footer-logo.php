@@ -1,0 +1,1 @@
+<a href="<?=@$instance['link']?>" title="<?=@$instance['title']?>"><img alt="<?=@$instance['alt']?>" src="<?=@$instance['url']?>" width="<?=@$instance['size'][0]?>" height="<?=@$instance['size'][1]?>"></a>

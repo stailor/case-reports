@@ -1,0 +1,184 @@
+/* HAMBURGER MENU 
+==========================
+Let’s make the magic. We will start with the navigation button. In this animation we will need to control each element of the navigation button and sliding navigation separately using CSS3. See below for the styles used to do this.
+==========================
+*/
+
+img.hamburger-icon{
+  height: 35px;
+  cursor: pointer;
+}
+a.nav-expander {
+    right: 15px;
+    top: 0px;   
+  } 
+  a.nav-expander:hover {
+    cursor: pointer;
+  } 
+  a.nav-expander.fixed {
+    position: absolute;
+  } 
+  a.nav-expander.fixed:hover{
+    background-color:rgba(255,255,255,.2);
+    padding:20px 15px;
+    margin:-20px -15px;
+  }
+  .nav-expanded a.nav-expander.fixed:hover{
+    background-color: none;
+  }
+  .nav-expanded a.nav-expander.fixed {
+      right: 15em;
+  }
+  /*
+  =============================
+  Next we will style the off canvas menu. Here you can adjust the background color of the menu container.
+  =============================
+  */
+  nav.nav-mobile {
+    display: block;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    right: -20em;
+    top: 0;
+    width: 250px;
+    z-index: 2000;
+    border-right: 1px solid #555;
+    background-color: #fff;
+  
+    transition: right 0.3s ease-in-out 0s;
+    -webkit-transition: right 0.3s ease-in-out 0s;
+    -moz-transition: right 0.3s ease-in-out 0s;
+    -o-transition: right 0.3s ease-in-out 0s;  
+  }
+  nav.nav-mobile li.grey {
+    background-color: #555;
+  }
+  nav.nav-mobile li.white-logo {
+    background-color: #fff;
+    border-bottom: none;
+    clear: both;
+    padding: 6px 0;
+    border-bottom: 1px solid #888;
+    height: 42px;
+    vertical-align: middle;
+  }
+  nav.nav-mobile li.white-logo img {
+    height:31px;
+    width: auto
+  }
+  nav.nav-mobile li.white {
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    padding:10px 15px;
+  }
+  .nav-mobile .blogs-icon, .nav-mobile .twitter-icon, .nav-mobile .fb-icon {
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #336fb8;
+    position: relative;
+  }
+  .nav-mobile .blogs-icon img, .nav-mobile .twitter-icon img, .nav-mobile .fb-icon img {
+    height: 39px;
+    padding: 5px;
+  }
+  .nav-expanded nav {
+    right: 0;
+  }  
+  body.nav-expanded {
+    margin-left: 0em;
+    transition: right 0.4s ease-in-out 0s;
+    -webkit-transition: right 0.4s ease-in-out 0s;
+    -moz-transition: right 0.4s ease-in-out 0s;
+    -o-transition: right 0.4s ease-in-out 0s;
+  }  
+  #nav-close {
+    padding-right: 10px;
+  }
+  /*
+  =====================================
+  style the menu and animations on hover. You can adjust fonts, sizes, colors, etc of the menu links. Since FontAwesome is svg based, we can use the icons in our CSS as well as HTML.
+  =====================================
+  */    
+    .main-menu {
+      background-color: #336fb8;
+    }
+    .main-menu li {
+      padding:7px 0 0 10px;
+      height: 42px;
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      vertical-align: middle;
+    }    
+    .main-menu li a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Interface';
+      display: block;
+      padding-left: 5px;     
+    }
+    .main-menu li.icon-close {
+      padding:0 12px 12px 12px;
+      height: 60px;
+    }
+
+    .main-menu li.icon-close img {
+      height:56px;
+      padding: 10px 0;
+    }
+    .main-menu li a:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+    }    
+    .main-menu li .sub-nav {
+      border-bottom: 0px;
+      padding: 4px;
+    }    
+    .main-menu a .caret {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: top;
+        border-top: 4px solid #fff;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        margin-top: 8px;
+    }    
+    .main-menu a:hover .caret {
+        border-top-color: #fff;
+    }    
+    .main-menu li.open > a > .caret {
+        border-top: none;
+        border-bottom: 4px solid #fff;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }    
+    .main-menu li.open > a:hover > .caret {
+        border-bottom-color: #fff;
+    }    
+    .nav-mobile .icon:before {
+      font-family: 'FontAwesome';
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      text-transform: none;
+      content: '\f105';
+    }    
+    .main-menu li > a > span.icon {
+      float: right;
+      margin: 0.1em 1.7em -0.1em 0;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;    
+    }    
+    .main-menu li > a:hover > span.icon {
+      float: right;
+      margin: 0.1em 0.8em -0.1em 0;
+      opacity: 1;
+    }

@@ -1,163 +1,256 @@
-@media screen and (min-width:769px){
-
-    a {
-        color: #336fb8;
-        text-decoration: none
-    }
-
-/* =====================================
-    ROW 2 - GREEN CIRCLE WHITE ICON
-===================================== */
-
-    #layout-e #row-2  .misc-bmjproducts .widget-products header .icon,
-    #layout-e #row-2 .misc-spotlight .widget-spotlight header .icon,
-    #layout-e #row-2 .misc-specialty .widget-specialty header .icon {
-        display:none;
-    }
-    
-/* =====================================
-    ROW 2 - GREEN CIRCLE WHITE ICON ENDS
-===================================== */
-
-    /* BMJ PRODUCTS */
-    .misc-bmjproducts header .icon>div{
-        background-image:url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/bell-regular.png')
-    }
-    .misc-bmjproducts .widget-products section h3 {
-        line-height: 2rem;
-        margin-bottom: 0!important;
-        font-weight: 400;
-    }
-    .misc-bmjproducts .widget-products section p {
-        font-size: 1rem;
-        line-height: 1.5;       
-    }
-
-    /* BMJ SPOTLIGHT */
-    .misc-spotlight header .icon>div {
-        background-image:url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/spotlight-star.png')
-    }
-    .misc-spotlight .widget-spotlight section h4 {
-        line-height: 2rem;
-        margin-bottom: 0!important;
-        font-weight: 400;
-    }
-    .misc-spotlight .widget-spotlight section h5 {
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #333;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    .misc-spotlight .widget-spotlight section h4 {
-        font-size: 1rem;
-        line-height: 1.5;
-        display: inline;
-    }
-
-    /* BMJ SPECIALTY */
-    .misc-specialty header .icon>div {
-        background-image: url('https://beta-jnnp.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/specialties.svg');
+@media screen and (max-width: 768px){ 
+    .misc-specialty header div .icon>div {
         background-size: contain;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat
     }
-    .widget-specialty ul.specialty-list li {
-        display: inline-block;
-        max-width: 270px;
-        min-width: 165px!important;
-        line-height: 1.625rem !important;
-        vertical-align: top;
-        padding: 15px 0 15px 0;
+    #layout-d #row-5 .widget {
+        padding-bottom: 23px;
     }
-    .widget-specialty .full-list {
-        text-align: center;
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-        color: #2a6ebb;
-        line-height: 2rem;
-        font-size: 16px;
-        margin-bottom: 0!important;
-        font-weight: bold;
-    }
-    .widget-specialty .full-list a {   
-        text-decoration: none;
-        color: #2a6ebb;
-    }
+}
+a {
+    color: #336fb8;
+    text-decoration: none
+}
+.widget a.button {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    height: 45px;
+    background-color: var(--primaryColor);
+}
+.btn {
+    font-size: 16px
+}
+button.btn {
+    background-color: var(--primaryColor);
+    color: #fff;
+    margin:10px auto;
+    width:90%;
+    clear: both;
+    min-height: 50px;
+    border: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+button.btn:hover, .btn.focus, .btn:focus, .btn:hover{   
+    transition: border 0.2s ease;
+    background-color: var(--primaryColor);
+    color: #fff;
+    cursor: pointer;
+}
+#layout-e #row-3 {
+    background: #fff;
+}
+.widget-products .icon,
+.widget-spotlight .icon,
+.widget-specialty .icon {
+    display:none;
+}
+.careers-featured_recruiters header div .icon {
+    display:none;
+}
+/* BMJ PRODUCTS */
+.misc-bmjproducts header div .icon div{
+    background-image:url('http://jnnp.stage.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/icon-products-bell.png');
+    background-size: contain!important;
+    background-position: center center;
+}
+.misc-bmjproducts header div .icon div svg.primary-color-fill .st0 {
+    fill: none!important
+}
+.misc-bmjproducts section h3 {
+    line-height: 2rem;
+    margin-bottom: 0!important;
+    font-weight: 400;
+}
+.misc-bmjproducts section p {
+    font-size: 1rem;
+    line-height: 1.5;       
+}
+.misc-bmjproducts section img {
+    display: block;
+    margin: 0 auto;
+    float:none;
+}
 
-    /* BMJ PRODUCTS GREEN ICON WHITE BG */
-    .row-3 .articles-latest {
-        padding:0 20px 20px
-    }
-    .row-3 .articles-latest article p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    .row-3 .articles-latest header>div .icon svg {
-        height:38px
-    }
-    .row-3 .articles-latest header>div .icon svg g#Layer_2 path {
-        fill:#669933!important;
-    }
+/* BMJ SPOTLIGHT */
+.misc-spotlight header .icon>div {
+    background-image:url('http://jnnp.stage.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/icon-spotlight-star.png');
+    background-size: contain
+}
+.misc-spotlight .widget-spotlight section h4 {
+    line-height: 2rem;
+    margin-bottom: 0!important;
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline;
+}
+.misc-spotlight .widget-spotlight section h5 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* BMJ SPOTLIGHT GREEN ICON */
+.row-3 .widget-spotlight a {
+    color: #336fb8;
+    text-decoration: none;
+}
+.row-3 .widget-spotlight header {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%;
+    padding: 17px 0 21px;        
+}
+.row-3 .widget-spotlight header h2 {
+    color: var(--primaryColor);
+    margin: 0;
+    vertical-align: top;
+    font-size: 28px;
+    line-height: 38px;
+    display: table-cell;
+}
+.row-3 .widget-spotlight article {
+    padding: 0 0 10px 0;
+}
+.row-3 .widget-spotlight article h5 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+.row-3 .widget-spotlight article h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: inline;
+}
+.row-3 .widget-spotlight footer {
+    font-size: 0.875rem;
+    color: #333;
+    line-height: 24px;
+    display: inline;
+    padding: 0 0 0 0.3rem;
+}
+.row-3 .widget-spotlight section .row {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
 
-    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
-    .row-3 .widget-spotlight a {
-        color: #336fb8;
-        text-decoration: none;
-    }
-    .row-3 .widget-spotlight header {
-        display: table;
-        table-layout: fixed;
-        border-spacing: 0;
-        width: 100%;
-        padding: 17px 0 21px;        
-    }
-    .row-3 .widget-spotlight header .icon {
-        display: table-cell;
-        width: 52px;
-    }
-    .row-3 .widget-spotlight header .icon svg {
-        height:38px
-    }
-    .row-3 .widget-spotlight header .icon svg#Layer_1 {
-        fill: none;
-    }
-    .row-3 .widget-spotlight header .icon svg#Layer_1 path.st0 {
-        stroke: #669933;
-    }
-    .row-3 .widget-spotlight header h2 {
-        color: var(--primaryColor);
-        margin: 0;
-        vertical-align: top;
-        font-size: 28px;
-        line-height: 38px;
-        display: table-cell;
-    }
-    .row-3 .widget-spotlight article {
-        padding: 0 0 10px 0;
-    }
-    .row-3 .widget-spotlight article h5 {
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #333;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    .row-3 .widget-spotlight article h4 {
-        font-size: 1rem;
-        line-height: 1.5;
-        display: inline;
-    }
-    .row-3 .widget-spotlight footer {
-        font-size: 0.875rem;
-        color: #333;
-        line-height: 24px;
-        display: inline;
-        padding: 0 0 0 0.3rem;
-    }
-    .row-3 .widget-spotlight section .row {
-        border-bottom: 1px solid #eee;
-        padding: 10px 0;
-    }
-    /* BMJ SPOTLIGHT GREEN ICON WHITE BG ENDS */
+/* BMJ SPECIALTY */
+.misc-specialty header div .icon>div {
+    background-image: url('http://jnnp.stage.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/icon-specialties-bag.png');
+    background-size: contain
+}
+.misc-specialty header div .icon div svg.primary-color-fill .st0 {
+    fill: none!important;
+    stroke:var(--primaryColor);
+}
+.misc-specialty ul.specialty-list li {
+    display: inline-block;
+    max-width: 270px;
+    min-width: 165px!important;
+    line-height: 1.625rem !important;
+    vertical-align: top;
+    padding: 15px 0 15px 0;
+}
+.misc-specialty ul.specialty-list li div {
+    padding: 0 8px;
+}
+.misc-specialty .full-list {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    color: #2a6ebb;
+    line-height: 2rem;
+    font-size: 16px;
+    margin-bottom: 0!important;
+    font-weight: bold;
+}
+.misc-specialty .full-list a {   
+    text-decoration: none;
+    color: #2a6ebb;
+    text-align: center
+}
+
+/* BMJ TWITTER */
+.misc-twitterfeed {
+    font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+    font-size: 1rem;
+}
+.widget.misc-twitterfeed div.cta {
+    background-color:var(--primaryColor);
+}
+.widget.misc-twitterfeed div.cta a {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    height: 45px;
+    display: block;
+    width: 100%;
+}
+.tweeter-info .fts-right {
+    padding-left: 0!important;
+}
+.fts-twitter-image, .widget .fts-twitter-image{
+    display: none;
+}
+.misc-twitterfeed .widget .fts-twitter-div .fts-uppercase, 
+.widget .tweeter-info .fts-right, 
+.widget .tweeter-info .fts-twitter-full-width {
+    font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 0.9rem;
+}
+.misc-twitterfeed .fts-twitter-text {
+    font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1rem!important;
+}
+.misc-twitterfeed header .icon>div {
+    background-image:url('http://jnnp.stage.bmj.com/pages/wp-content/plugins/jnp-skins/default/plugins/jnp/widgets/articles/icon-twitter.png');
+    background-size: contain
+}
+.misc-twitterfeed section h4 {
+    line-height: 2rem;
+    margin-bottom: 0!important;
+    font-weight: 400;
+}
+.misc-twitterfeed section h5 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+.misc-twitterfeed section h4 {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: inline;
+}
+.row-3 .misc-twitterfeed header>div .icon svg {
+    height:38px
+    fill:var(--primaryColor);
+    stroke:var(--primaryColor);
+    background-color: #fff;
+    width: auto;
+}
+
+#layout-d #row-3 #box-3 header div h2, #layout-d #row-3 #box-4 header div h2 {	   
+    text-align: center
+}  
+#layout-d #row-3 #box-3 div.widget>header>div h2,
+#layout-d #row-3 #box-4 div.widget>header>div h2,
+#layout-d #row-6 #box-9 div.widget>header>div h2,
+#layout-d #row-6 #box-10 div.widget>header>div h2 {
+    text-align: left
 }

@@ -91,7 +91,7 @@
 body{
     font-family:'Interface Regular',HelveticaNeue,'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 16px
+    font-size: 17px
 }
 h1, h2, h3{
     margin:10px 0;
@@ -137,9 +137,6 @@ h5 {
 }
 article {
     padding: 0 0 10px 0
-}
-.btn {
-    font-size: 16px
 }
 button.btn {
     background-color: #336fb8;
@@ -258,10 +255,6 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     font-size: 26px;
     max-width: 280px;
 }
-.container-nav .case-reports h1 a {
-    color: #fff;
-    text-decoration: none
-}
 .container-nav .navigation{    
     padding-left: 0;
     float: right;
@@ -305,10 +298,10 @@ BMJ JOURNALS LOGO AND LOGIN ROW
     EMAIL ALERTS ROW
 ================================
 */
-.homepage .email {
+.email {
     background-color: #F2F7FC;
 }
-.email {
+.homepage .email {
     background-color: #fff;
 }
 .email .email-link {
@@ -444,10 +437,6 @@ WIDGETS
     background-color: #eee;
     padding:53px 20px;
 }
-.widgets .row {
-    width: 100%; /* Set full-width to expand the whole page */
-    margin: 0;
-}
 .widgets .icon{
     margin: -90px auto 0;
     width: 60px;
@@ -462,9 +451,7 @@ WIDGETS
 .widgets .widget-altmetrics,
 .widgets .widget-products,
 .widgets .widget-most-read,
-.widgets .widget,
-.widgets .row-column-cell div .widget,
-.widgets .row-column-cell>div>div {
+.widets .widget {
     background-color: #fff;
     margin: 40px 20px;    
     padding: 20px;
@@ -512,12 +499,10 @@ WIDGETS PUBLISH & SPOTLIGHT
 .widgets .widget-spotlight .row:last-child {
     border-bottom: none;
 }
-  .widgets .widget-spotlight header .icon svg .star {
-    fill: #fff;
-}
+
 /*================================
-WIDGETS ALTMETRICS
-==================================
+WIDGETS ALTMETRICS & SPECIALTY
+================================
 */
 .widgets .widget-altmetrics figure {
     margin: 0 10px 2rem;
@@ -531,26 +516,11 @@ WIDGETS ALTMETRICS
 .container-specialty-altmetrics div:first-child {
     position: relative;
 }
-.widgets .widget-altmetrics article .row {
-    margin: 0px 0px;
-}
-.widgets .widget-altmetrics article .row [class*="col-"] {
-    padding:0;
-}
-.widgets .widget-altmetrics article:last-child {
-    border:none;
-}
-
-/*================================
-WIDGETS SPECIALTY
-==================================
-*/
 .widgets .widget-specialty .specialty-list-container{
     margin-bottom: 35px
 }
 .widgets .widget-specialty .full-list {
-    text-align: center;
-    display: block;
+    text-align: center
 }
 .widgets .widget-specialty ul.specialty-list{
     height: auto; /*your fixed height*/
@@ -563,7 +533,7 @@ WIDGETS SPECIALTY
     max-width: 270px;
     min-width: 165px!important;
     line-height: 1.625rem !important;
-    vertical-align: top
+    vertical-align: top;
 }
 .widgets .widget-specialty .specialty-purple {
     border-left: 5px solid #7D5CC6;
@@ -599,6 +569,16 @@ WIDGETS SPECIALTY
 .widgets .widget-specialty li {
     padding: 15px 0 15px 0;
 }
+.widgets .widget-altmetrics article .row {
+    margin: 0px 0px;
+}
+.widgets .widget-altmetrics article .row [class*="col-"] {
+    padding:0;
+}
+.widgets .widget-altmetrics article:last-child {
+    border:none;
+    /* margin:0; */
+}
 
 /* 
 ================================
@@ -608,12 +588,12 @@ WIDGETS PRODUCTS & MOST READ
 .widgets .widget-products img {
     display: block;
     margin: 10px auto;
-    float:none;
 }
 .widgets .widget-most-read article:last-child {
     border-bottom: none;
     margin:0
 }
+
 /* 
 ================================
     FOOTER
@@ -627,10 +607,9 @@ footer h3 {
 footer nav.primary-color .wrapper ul li a:hover{
     color: #fff!important;
 }
-
-/* 
+/*
 ================================
-JNP: IFRAME STYLING
+    IFRAME
 ================================
 */
 iframe .bc-player-default_default .vjs-big-play-button {iframe
@@ -644,15 +623,21 @@ iframe .bc-player-default_default .vjs-big-play-button {iframe
     width: 32%;
 }
 
-/* ==============================
-JNP: WIDGETS STYLING
-================================= */
-.widgets .row {
-    width: 100%;
-    margin: 0;
+/*
+Website Logo
+*/
+
+.siteLogo {
+    color: #ffffff;
 }
-.widget .icon {
-    margin: -90px auto 0;
+
+.siteLogo:hover {
+    color: #ffffff;
+}
+
+/*Widgets Icon*/
+    .widget .icon {
+    margin: -30px auto 0;
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -679,189 +664,4 @@ JNP: WIDGETS STYLING
     fill: #fff;
     background-color: #C50084;
     height: 38px;
-}
-
-/* ==================================
-JNP: RELATED JOURNALS WIDGET
-===================================== */
-div.misc-related_journals article {
-    width: 100%;
-    display:block;
-}
-.misc-related_journals article figure.cover-image img {
-    display: block;
-    height: auto;
-    width: 106px;
-}
-.misc-related_journals article figure {
-    display: table-cell;
-    width: 125px;
-    vertical-align: top;
-}
-.misc-related_journals article aside {
-    display: table-cell;
-    vertical-align: top;
-}
-.misc-related_journals article h3 {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: bold;
-    margin-top: 16px;
-    margin-top: 0;
-}
-.misc-related_journals article p:first-of-type {
-    margin-top: 6px;
-}
-.misc-related_journals article p {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-.misc-related_journals article a {
-    color: #2a6ebb;
-    text-decoration: none;
-}
-.misc-related_journals article:nth-child(n+2) {
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-/* ==============================
-JNP: EDITORS CHOICE WIDGET
-================================= */
-img.editors-choice {
-    height: 13px;
-    margin: 2px 0.5em 2px 0;
-}
-.articles-editors_choice time{
-    font-size: 0.875rem;
-}
-/* ==============================
-JNP: FEATURED VIDEO WIDGET
-================================= */
-.blurb {
-    padding: 10px 0;
-}
-.widget.media-video .video {
-    width: 100%;
-    display: block;
-    vertical-align: top;
-}
-.widget.media-video .video h3 {      
-    color: #C50084;  
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 2;
-    margin: 16px 0;
-
-}
-.widget.media-video .video .media-video time {
-    font-size: 14px;
-    font-size: 0.875rem;
-    line-height: 2;
-}
-/* ==============================
-JNP: JOBS WIDGET
-================================= */
-div.widget.jobs-list header div.view-all {
-    display: none;
-}
-div.widget.jobs-list div.view-all {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 16px;
-}
-div.widget.jobs-list div.list-of-jobs article h3 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-    line-height: 1.2;
-}
-div.widget.jobs-list div.list-of-jobs article p.location, div.widget.jobs-list div.list-of-jobs article p.recruiter, div.widget.jobs-list div.list-of-jobs article p.salary {
-    font-size: 14px;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #333;
-}
-div.widget.jobs-list div.list-of-jobs article p {   
-    font-size: 15px;
-    font-size: 0.9375rem;
-    line-height: 1.5;
-    line-height: 1.2;
-}
-div.widget.jobs-list div.list-of-jobs article + article {
-    border-top: 1px solid #ccc;
-    margin-top: 8.6px;
-    padding-top: 8.4px;
-}
-
-/* ==============================
-JNP: BLOGS WIDGET
-================================= */
-.misc-blog #blog, #careers-featured-recruiters-list {
-    padding: 10px;
-}
-.misc-blog article h4 a {
-    color: #2a6ebb;
-    text-decoration: none;
-    display: inline;
-}
-.misc-blog ul {
-    list-style: none;
-}
-.misc-blog article footer ul li {
-    display: inline;
-}
-.misc-blog article footer ul li a {
-    color: #2a6ebb;
-    text-decoration: none;
-}
-.misc-blog article h4 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-    display: inline;
-}
-.misc-blog article footer {
-    font-size: 14px;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: #333;
-    line-height: 24px;
-    padding-bottom: 0;
-}
-.misc-blog article:first-of-type {
-    margin-top: 4px;
-}
-/* ==============================
-JNP: EXPANDABLE WIDGET
-================================= */
-.widgets .expandable{
-    display: none;
-}
-.widgets .row .row-column-cell [class^="widget-"] header .icon>div:first-child{
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 38px;
-    height: 38px;
-    background-color:  #C50084;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 11px;
-    left: 11px;
-}
-.widgets .row .row-column-cell [class^="widget-"] header .icon div svg {
-    height: 38px;
-    background-color: #C50084;    
-    fill: #fff;
-}
-/* 
-=================================
-JNP: FEATURED RECRUITERS
-=================================
-*/
-.widgets .careers-featured_jobs header .icon,
-.widgets .careers-featured_recruiters header .icon {
-    display: none;
 }
