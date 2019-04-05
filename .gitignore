@@ -1,0 +1,11 @@
+*.swp
+
+build/
+logs/
+bin/
+out/
+src/main/resources/static/.sass-cache
+
+# files to ignore
+.ai
+.psd
